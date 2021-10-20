@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f201f279bad5fa4439ab3f806184e337, type: 3}
+  m_Name: Data_Fox
+  m_EditorClassIdentifier: 
+  prefabName: Fox
+  animalMesh: {fileID: -462981019419857548, guid: f93d606cbbf9e3c4586d96d34ede0a2d, type: 3}
+  animalMat: {fileID: 2100000, guid: 30fee803e5cb48a47a4caa4666703ac4, type: 2}
+  strength: Sneaky
