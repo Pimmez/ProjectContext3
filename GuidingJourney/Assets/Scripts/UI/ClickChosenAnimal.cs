@@ -1,11 +1,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/*
+ * 
+ * Idee om het met scriptable objects te regelen dat je daarin aangeeft hoe het object heet, welk model er wordt meegegeven en de bijbehorende icons.
+ * 
+ */
+
 public class ClickChosenAnimal : MonoBehaviour
 {
     private GameObject currentAnimal = null;
     private GameObject newAnimal = null;
     [SerializeField] private List<GameObject> animals = new List<GameObject>();
+
+    AnimalHandlerScriptableObject animal;
 
     public void OnAnimalIconClick(GameObject _thisAnimal)
     {
@@ -27,5 +36,7 @@ public class ClickChosenAnimal : MonoBehaviour
     {
         currentAnimal.SetActive(false);
         newAnimal.SetActive(true);
+
+        animal.prefabImage.enabled = true;
     }
 }

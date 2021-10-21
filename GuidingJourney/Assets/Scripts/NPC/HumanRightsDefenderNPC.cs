@@ -1,11 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HumanRightsDefenderNPC : MonoBehaviour
 {
     [SerializeField] private Transform targetObject = null;
-
     [SerializeField] private float minRange = 6f;
 
     private int movementSpeed = 0;
@@ -14,10 +11,6 @@ public class HumanRightsDefenderNPC : MonoBehaviour
     private int turnSpeed = 0;
     public int tSpeed = 3;
 
-
-    private void Start()
-    {
-    }
 
     // Update is called once per frame
     private void Update()
