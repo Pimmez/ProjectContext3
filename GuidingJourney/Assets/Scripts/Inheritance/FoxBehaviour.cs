@@ -1,18 +1,26 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
 public class FoxBehaviour : AnimalBehaviour
 {
-
     private void Sneak()
     {
         //
     }
 
-    protected override void AnimalMovement()
+    protected override void AnimalBaseMovement()
     {
-        base.AnimalMovement();
+        base.AnimalBaseMovement();
     }
 
-    protected override void SpecialPower()
+    protected override void CameraBaseMovement()
     {
-        base.SpecialPower();
+        base.CameraBaseMovement();
+    }
+
+    protected override void SpecialBasePower()
+    {
+        base.SpecialBasePower();
     }
 }

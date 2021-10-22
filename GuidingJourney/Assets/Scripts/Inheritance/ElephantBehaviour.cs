@@ -2,17 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ElephantBehaviour : MonoBehaviour
+public class ElephantBehaviour : AnimalBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void Force()
     {
-        
+        //
     }
 
-    // Update is called once per frame
-    void Update()
+    protected override void AnimalBaseMovement()
     {
-        
+        base.AnimalBaseMovement();
+    }
+
+    protected override void CameraBaseMovement()
+    {
+        base.CameraBaseMovement();
+    }
+
+    protected override void SpecialBasePower()
+    {
+        base.SpecialBasePower();
     }
 }

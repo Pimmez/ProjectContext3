@@ -22,25 +22,17 @@ public class OwlBehaviour : AnimalBehaviour
     [SerializeField] private LayerMask groundMask;
     private float ground = 0.1f;
 
+    
+
     private void Start()
     {
         charController = GetComponent<CharacterController>();
     }
 
-    protected override bool CheckActiveState(bool _isActive)
-    {
-        base.CheckActiveState(_isActive);
-        return _isActive;
-    }
-
     private void Update()
     {
-        if(CheckActiveState(gameObject.activeSelf))
-        {
 
             isGrounded = Physics.CheckSphere(groundCheck.position, groundCheckSphere, groundMask);
-
-            
 
             //my movement
             if (isGrounded)
@@ -111,10 +103,24 @@ public class OwlBehaviour : AnimalBehaviour
                 moveDirection.y = moveDirection.y * Time.deltaTime;
             }
             */
-        }
-        else
-        {
-            return;
-        }
-    }    
+    }
+
+    private void NightVision()
+    {
+        //
+    }
+
+    protected override void AnimalBaseMovement()
+    {
+        base.AnimalBaseMovement();
+    }
+    protected override void CameraBaseMovement()
+    {
+        base.CameraBaseMovement();
+    }
+
+    protected override void SpecialBasePower()
+    {
+        base.SpecialBasePower();
+    }
 }

@@ -4,31 +4,39 @@ using UnityEngine;
 
 public class AnimalBehaviour : MonoBehaviour
 {
+    // Getter and setter
+    public float animalWalkMovement { get { return movementSpeed; } set { movementSpeed = value; } }
+    private float movementSpeed;
+    public float animalTurningMovement { get { return rotationSpeed; } set { rotationSpeed = value; } }
+    private float rotationSpeed = 30f;
+    private float universalGravity { get { return gravity; } }
+    private float gravity = 9.8f;
 
-    private void Test()
+    private CharacterController charController;
+    private Vector3 moveDirection = Vector3.zero;  
+
+    private void Start()
+    {
+
+    }
+    private void Update()
+    {
+        
+    }
+
+    
+
+    protected virtual void AnimalBaseMovement()
     {
         //
     }
 
-    protected virtual bool CheckActiveState(bool _isActive)
-    {
-        if(gameObject.activeSelf)
-        {
-            _isActive = true;
-        }
-        else if(!gameObject.activeSelf)
-        {
-            _isActive = false;
-        }
-        return _isActive;
-    }
-
-    protected virtual void AnimalMovement()
+    protected virtual void CameraBaseMovement()
     {
         //
     }
 
-    protected virtual void SpecialPower()
+    protected virtual void SpecialBasePower()
     {
         //
     }
