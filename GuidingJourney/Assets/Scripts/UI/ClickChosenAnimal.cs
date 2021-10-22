@@ -14,8 +14,6 @@ public class ClickChosenAnimal : MonoBehaviour
     private GameObject newAnimal = null;
     [SerializeField] private List<GameObject> animals = new List<GameObject>();
 
-    AnimalHandlerScriptableObject animal;
-
     public void OnAnimalIconClick(GameObject _thisAnimal)
     {
         for (int i = 0; i < animals.Count; i++)
@@ -36,7 +34,5 @@ public class ClickChosenAnimal : MonoBehaviour
     {
         currentAnimal.SetActive(false);
         newAnimal.SetActive(true);
-
-        animal.prefabImage.enabled = true;
     }
 }
