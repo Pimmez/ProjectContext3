@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class FoxBehaviour : AnimalBehaviour
-{
+{ 
     private void Sneak()
     {
         //

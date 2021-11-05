@@ -4,29 +4,41 @@ using UnityEngine;
 
 public class AnimalBehaviour : MonoBehaviour
 {
-    // Getter and setter
-    public float animalWalkMovement { get { return movementSpeed; } set { movementSpeed = value; } }
-    private float movementSpeed;
-    public float animalTurningMovement { get { return rotationSpeed; } set { rotationSpeed = value; } }
-    private float rotationSpeed = 30f;
-    private float universalGravity { get { return gravity; } }
-    private float gravity = 9.8f;
+    [SerializeField] private Rigidbody _rb;
+    [SerializeField] private float _speed = 5;
+    [SerializeField] private float _turnSpeed = 360;
+    private Vector3 _input;
 
-    private CharacterController charController;
-    private Vector3 moveDirection = Vector3.zero;  
-
-    private void Start()
-    {
-
-    }
     private void Update()
     {
-        
+        GatherInput();
+        Look();
     }
 
-    
+    private void FixedUpdate()
+    {
+        Move();
+    }
 
-    protected virtual void AnimalBaseMovement()
+    private void GatherInput()
+    {
+        _input = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical"));
+    }
+
+    private void Look()
+    {
+        if (_input == Vector3.zero) return;
+
+        var rot = Quaternion.LookRotation(_input.ToIso(), Vector3.up);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, rot, _turnSpeed * Time.deltaTime);
+    }
+
+    private void Move()
+    {
+        _rb.MovePosition(transform.position + transform.forward * _input.normalized.magnitude * _speed * Time.deltaTime);
+    }
+
+protected virtual void AnimalBaseMovement()
     {
         //
     }
@@ -40,4 +52,10 @@ public class AnimalBehaviour : MonoBehaviour
     {
         //
     }
+}
+
+public static class Helpers
+{
+    private static Matrix4x4 _isoMatrix = Matrix4x4.Rotate(Quaternion.Euler(0, 45, 0));
+    public static Vector3 ToIso(this Vector3 input) => _isoMatrix.MultiplyPoint3x4(input);
 }
