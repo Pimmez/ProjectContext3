@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if(Input.anyKey)
+        if (Input.anyKey)
         {
             Move();
         }
@@ -39,5 +39,4 @@ public class PlayerController : MonoBehaviour
         transform.position += rightmovement;
         transform.position += upmovement;
     }
-
 }
