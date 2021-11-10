@@ -41,10 +41,7 @@ public class GrabObject : MonoBehaviour
             else if (owl.activeSelf)
             {
                 transform.position = new Vector3(playerGrabOwl.position.x, -3.15f, playerGrabOwl.position.z);
-            }
-
-            
-            
+            } 
             isGrabbed = false;
         }
     }
