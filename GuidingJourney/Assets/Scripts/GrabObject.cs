@@ -11,13 +11,15 @@ public class GrabObject : MonoBehaviour
     public GameObject owl;
 
     private bool isGrabbed = false;
+
+    [SerializeField] GameObject textRemove;
     
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == Tags.PLAYER && Input.GetKeyDown(KeyCode.Space) && !isGrabbed)
         {
             Debug.Log("GRAB");
-
+            textRemove.SetActive(false);
             if (fox.activeSelf)
             {
                 transform.position = playerGrabFox.position;
