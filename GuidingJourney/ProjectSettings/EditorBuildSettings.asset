@@ -17,4 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PimScene(click).unity
     guid: 1d7f88f1d2544b14eb2f10f557d1db2c
+    path: Assets/Scenes/NadjaMayScene.unity
+    guid: e68454c569586804ba0ffcdd446c3f20
   m_configObjects: {}
