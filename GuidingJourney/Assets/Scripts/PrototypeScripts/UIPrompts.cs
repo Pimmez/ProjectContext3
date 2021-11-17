@@ -19,6 +19,7 @@ public class UIPrompts : MonoBehaviour
     private bool DoCameraOnce = false;
 
     [SerializeField] private Animator anim;
+    [SerializeField] private Animator selfAnim;
 
     // Start is called before the first frame update
     private void Awake()
@@ -37,7 +38,7 @@ public class UIPrompts : MonoBehaviour
     {
         if(!onlyOnce)
         {
-            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.S) || Input.GetMouseButtonDown(0))
+            if (Input.GetAxis("Horizontal") > 0 || Input.GetAxis("Vertical") > 0 || Input.GetMouseButtonDown(0))
             {
                 text_input.SetActive(false);
                 onlyOnce = true;
@@ -49,18 +50,20 @@ public class UIPrompts : MonoBehaviour
     //EVENTS
     private void NPCTalk()
     {
+        selfAnim.SetBool("isWaving", true);
         text_npcTalk.SetActive(true);
         text_input.SetActive(false);
         text_GrabObject.SetActive(false);
         text_presskey.SetActive(false);
         text_finish.SetActive(false);
-
     }
 
     private void NPCGetObject()
     {
         if(!DoCameraOnce)
         {
+            selfAnim.SetBool("isWaving", false);
+
             text_GrabObject.SetActive(true);
             text_input.SetActive(false);
             text_npcTalk.SetActive(false);
