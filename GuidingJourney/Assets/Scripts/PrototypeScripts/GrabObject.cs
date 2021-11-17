@@ -6,18 +6,20 @@ public class GrabObject : MonoBehaviour
 {
     [SerializeField] private Transform playerGrabFox, playerGrabOwl;
     [SerializeField] private Transform parentTransform;
+    [SerializeField] GameObject textRemove;
 
     public GameObject fox;
     public GameObject owl;
 
     private bool isGrabbed = false;
+    bool triggered = false;
 
-    [SerializeField] GameObject textRemove;
-    
-    private void OnTriggerStay(Collider other)
+
+    private void Update()
     {
-        if (other.gameObject.tag == Tags.PLAYER && Input.GetKeyDown(KeyCode.Space) && !isGrabbed)
+        if (triggered && !isGrabbed && Input.GetKeyDown(KeyCode.Space))
         {
+            //Do something!
             Debug.Log("GRAB");
             textRemove.SetActive(false);
             if (fox.activeSelf)
@@ -31,7 +33,7 @@ public class GrabObject : MonoBehaviour
             transform.SetParent(parentTransform);
             isGrabbed = true;
         }
-        else if (other.gameObject.tag == Tags.PLAYER && Input.GetKeyDown(KeyCode.Space) && isGrabbed)
+        else if (triggered && Input.GetKeyDown(KeyCode.Space) && isGrabbed)
         {
 
             Debug.Log("LET GO");
@@ -43,8 +45,26 @@ public class GrabObject : MonoBehaviour
             else if (owl.activeSelf)
             {
                 transform.position = new Vector3(playerGrabOwl.position.x, -3.15f, playerGrabOwl.position.z);
-            } 
+            }
             isGrabbed = false;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Entered");
+        if (other.gameObject.tag == Tags.PLAYER)
+        {
+            triggered = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        Debug.Log("Exited");
+        if (other.gameObject.tag == Tags.PLAYER)
+        {
+            triggered = false;
         }
     }
 }

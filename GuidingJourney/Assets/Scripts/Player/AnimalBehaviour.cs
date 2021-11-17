@@ -5,7 +5,8 @@ using UnityEngine;
 public class AnimalBehaviour : MonoBehaviour
 {
     [SerializeField] private Rigidbody _rb;
-    [SerializeField] private float _speed = 5;
+    [SerializeField] private float _speed = 30;
+
     [SerializeField] private float _turnSpeed = 360;
     private Vector3 _input;
 
@@ -17,7 +18,10 @@ public class AnimalBehaviour : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Move();
+        if (Input.anyKey)
+        {
+            Move();
+        }
     }
 
     private void GatherInput()
@@ -35,8 +39,16 @@ public class AnimalBehaviour : MonoBehaviour
 
     private void Move()
     {
-        _rb.MovePosition(transform.position + transform.forward * _input.normalized.magnitude * _speed * Time.deltaTime);
+        //_rb.MovePosition(transform.position + transform.forward * _input.normalized.magnitude * _speed * Time.deltaTime);
+        //_rb.AddForce(transform.position + transform.forward * _input.normalized.magnitude * _speed * Time.deltaTime);
+
+        //_rb.AddForce(transform.position + transform.forward * _input.normalized.magnitude * _speed * Time.deltaTime);
+
+        //_rb.velocity = transform.position + transform.forward * _input.normalized.magnitude * _speed * Time.fixedDeltaTime;
+        _rb.velocity = transform.position + transform.forward * _input.normalized.magnitude * _speed * Time.fixedDeltaTime;
     }
+
+
 
 protected virtual void AnimalBaseMovement()
     {
@@ -52,10 +64,4 @@ protected virtual void AnimalBaseMovement()
     {
         //
     }
-}
-
-public static class Helpers
-{
-    private static Matrix4x4 _isoMatrix = Matrix4x4.Rotate(Quaternion.Euler(0, 45, 0));
-    public static Vector3 ToIso(this Vector3 input) => _isoMatrix.MultiplyPoint3x4(input);
 }

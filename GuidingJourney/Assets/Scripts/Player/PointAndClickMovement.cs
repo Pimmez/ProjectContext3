@@ -9,6 +9,8 @@ public class PointAndClickMovement : MonoBehaviour
     public NavMeshAgent playerNav;
     public GameObject targetDestination;
 
+    public float moveSpeed;
+
     public GameObject fox;
 
     private void Start()
@@ -38,11 +40,11 @@ public class PointAndClickMovement : MonoBehaviour
 
         if(fox.activeSelf)
         {
-            playerNav.speed = 10;
+            playerNav.acceleration = moveSpeed;
         }
         else
         {
-            playerNav.speed = 6;
+            playerNav.acceleration = moveSpeed / 1.5f;
         }
     }
 
