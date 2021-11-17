@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 7148670469265930437}
   - component: {fileID: 8225507513135215336}
   - component: {fileID: 7181834340521451880}
+  - component: {fileID: 184397935}
   m_Layer: 0
   m_Name: tree_detailed_fall (12)
   m_TagString: Untagged
@@ -166,6 +167,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &184397935
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70453080896765209}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471152, y: 1.3324168, z: 0.7616027}
+  m_Center: {x: -0.008925798, y: 0.66620845, z: -0.008664775}
 --- !u!1 &75420266928830009
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +191,7 @@ GameObject:
   - component: {fileID: 3740112583112365654}
   - component: {fileID: 7518734204258973890}
   - component: {fileID: 1446340950010110527}
+  - component: {fileID: 1002986935}
   m_Layer: 0
   m_Name: tree_detailed_fall (5)
   m_TagString: Untagged
@@ -249,6 +264,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1002986935
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75420266928830009}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471152, y: 1.3324169, z: 0.7616027}
+  m_Center: {x: -0.00892699, y: 0.6662084, z: -0.008667636}
 --- !u!1 &258329668089095743
 GameObject:
   m_ObjectHideFlags: 0
@@ -587,6 +615,7 @@ GameObject:
   - component: {fileID: 8017355534009168626}
   - component: {fileID: 2751556148156271207}
   - component: {fileID: 6147927124044560060}
+  - component: {fileID: 506522921}
   m_Layer: 0
   m_Name: tree_detailed_fall (7)
   m_TagString: Untagged
@@ -659,6 +688,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &506522921
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512477984307912699}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471154, y: 1.3324169, z: 0.7616029}
+  m_Center: {x: -0.008926516, y: 0.6662084, z: -0.008660248}
 --- !u!1 &584295511994972872
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,6 +712,7 @@ GameObject:
   - component: {fileID: 1858206543851808823}
   - component: {fileID: 8320399883451276736}
   - component: {fileID: 442921966776157581}
+  - component: {fileID: 1613925072}
   m_Layer: 0
   m_Name: fence_simpleCenter
   m_TagString: Untagged
@@ -741,6 +784,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1613925072
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584295511994972872}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 0.3450273, z: 0.06999998}
+  m_Center: {x: -0.00000333786, y: 0.17251359, z: 0.4650002}
 --- !u!1 &808337242178585453
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,88 +1448,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &1269490472683919064
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6195498164322107088}
-  - component: {fileID: 4316849301538714018}
-  - component: {fileID: 7837455620326205802}
-  m_Layer: 0
-  m_Name: fence_simpleDiagonal (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6195498164322107088
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269490472683919064}
-  m_LocalRotation: {x: -0, y: -0.38247117, z: -0, w: 0.9239675}
-  m_LocalPosition: {x: 53.780014, y: 16.482082, z: -29.4}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_Children: []
-  m_Father: {fileID: 4728664658821770299}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: -44.974, z: 0}
---- !u!33 &4316849301538714018
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269490472683919064}
-  m_Mesh: {fileID: -8090483929830968157, guid: 197d84c2e4a30b24281c9abbf1f508c6, type: 3}
---- !u!23 &7837455620326205802
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269490472683919064}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 55ecba662b0b7024f82b19f92b7c15fd, type: 2}
-  - {fileID: -5173966397720942367, guid: 197d84c2e4a30b24281c9abbf1f508c6, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &1306710824579688969
 GameObject:
   m_ObjectHideFlags: 0
@@ -1529,6 +1503,7 @@ GameObject:
   - component: {fileID: 6947998979661532612}
   - component: {fileID: 7659178724087267691}
   - component: {fileID: 3611809350089178205}
+  - component: {fileID: 1463975408}
   m_Layer: 0
   m_Name: tree_detailed_fall (11)
   m_TagString: Untagged
@@ -1601,6 +1576,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1463975408
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328078672315836779}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471148, y: 1.3324168, z: 0.7616023}
+  m_Center: {x: -0.008924364, y: 0.66620845, z: -0.008664294}
 --- !u!1 &1333672721808805046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1693,6 +1681,7 @@ GameObject:
   - component: {fileID: 1382812060937022447}
   - component: {fileID: 205551201946873771}
   - component: {fileID: 3563796733054462573}
+  - component: {fileID: 199080043}
   m_Layer: 0
   m_Name: tree_detailed_fall (17)
   m_TagString: Untagged
@@ -1765,6 +1754,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &199080043
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600171218231818731}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471152, y: 1.3324169, z: 0.7616027}
+  m_Center: {x: -0.008923176, y: 0.6662084, z: -0.008667159}
 --- !u!1 &1604640020829962022
 GameObject:
   m_ObjectHideFlags: 0
@@ -1776,6 +1778,7 @@ GameObject:
   - component: {fileID: 2023083250978201396}
   - component: {fileID: 7710273294247593119}
   - component: {fileID: 8777902528188462533}
+  - component: {fileID: 895244781}
   m_Layer: 0
   m_Name: tree_pineSmallA (12)
   m_TagString: Untagged
@@ -1847,6 +1850,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &895244781
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604640020829962022}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5000002, y: 0.9671999, z: 0.5000002}
+  m_Center: {x: 0.0000009536743, y: 0.48359993, z: -0.00000047683716}
 --- !u!1 &1620208964564840454
 GameObject:
   m_ObjectHideFlags: 0
@@ -2021,6 +2037,7 @@ GameObject:
   - component: {fileID: 5923031201969740670}
   - component: {fileID: 2589744181836441616}
   - component: {fileID: 370214831860253276}
+  - component: {fileID: 236136529}
   m_Layer: 0
   m_Name: tent_detailedOpen
   m_TagString: Untagged
@@ -2092,6 +2109,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &236136529
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671634508637499004}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8749281, y: 0.56113076, z: 0.66640013}
+  m_Center: {x: 0, y: 0.28056538, z: 0.014999066}
 --- !u!1 &1721505579345379871
 GameObject:
   m_ObjectHideFlags: 0
@@ -2103,6 +2133,7 @@ GameObject:
   - component: {fileID: 5801111588280385623}
   - component: {fileID: 3938575978945831372}
   - component: {fileID: 2066398014647497137}
+  - component: {fileID: 1647058898}
   m_Layer: 0
   m_Name: tree_detailed_fall (14)
   m_TagString: Untagged
@@ -2175,6 +2206,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1647058898
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721505579345379871}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471151, y: 1.3324168, z: 0.7616026}
+  m_Center: {x: -0.008925082, y: 0.66620845, z: -0.008664295}
 --- !u!1 &1746086115726068601
 GameObject:
   m_ObjectHideFlags: 0
@@ -2666,6 +2710,88 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &2310628041415464182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7160430458804178365}
+  - component: {fileID: 2891800215663545007}
+  - component: {fileID: 2044806076144287390}
+  m_Layer: 0
+  m_Name: fence_simpleCenter (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7160430458804178365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2310628041415464182}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 70.6, y: 16.482079, z: -32}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_Children: []
+  m_Father: {fileID: 4728664658821770299}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2891800215663545007
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2310628041415464182}
+  m_Mesh: {fileID: -4008676679046863574, guid: 4a97ff80096fc2749aa9115a28783122, type: 3}
+--- !u!23 &2044806076144287390
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2310628041415464182}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -8067726398312463513, guid: 4a97ff80096fc2749aa9115a28783122, type: 3}
+  - {fileID: -5173966397720942367, guid: 4a97ff80096fc2749aa9115a28783122, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &2315293552873556813
 GameObject:
   m_ObjectHideFlags: 0
@@ -2791,6 +2917,7 @@ GameObject:
   - component: {fileID: 3054354899219753433}
   - component: {fileID: 6040739831608171254}
   - component: {fileID: 1198721562887814213}
+  - component: {fileID: 1623167530}
   m_Layer: 0
   m_Name: tree_detailed_fall (23)
   m_TagString: Untagged
@@ -2863,6 +2990,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1623167530
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2403357876833914684}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471151, y: 1.3324168, z: 0.7616026}
+  m_Center: {x: -0.008923175, y: 0.66620845, z: -0.008665727}
 --- !u!1 &2424317090756767827
 GameObject:
   m_ObjectHideFlags: 0
@@ -2924,6 +3064,88 @@ MeshRenderer:
   m_Materials:
   - {fileID: -7908462029823311255, guid: f03950579384e5043b0f0b83582e66c0, type: 3}
   - {fileID: -6126091556477775235, guid: f03950579384e5043b0f0b83582e66c0, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &2531647443549752078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 613297639917298830}
+  - component: {fileID: 8283525119357389854}
+  - component: {fileID: 6717558643578843011}
+  m_Layer: 0
+  m_Name: fence_simpleCenter (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &613297639917298830
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2531647443549752078}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 46.49, y: 16.482079, z: -32}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_Children: []
+  m_Father: {fileID: 4728664658821770299}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8283525119357389854
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2531647443549752078}
+  m_Mesh: {fileID: -4008676679046863574, guid: 4a97ff80096fc2749aa9115a28783122, type: 3}
+--- !u!23 &6717558643578843011
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2531647443549752078}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -8067726398312463513, guid: 4a97ff80096fc2749aa9115a28783122, type: 3}
+  - {fileID: -5173966397720942367, guid: 4a97ff80096fc2749aa9115a28783122, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3119,6 +3341,7 @@ GameObject:
   - component: {fileID: 2169537539338385504}
   - component: {fileID: 2692666725709247187}
   - component: {fileID: 123615433563883993}
+  - component: {fileID: 1986283833}
   m_Layer: 0
   m_Name: tree_detailed_fall (6)
   m_TagString: Untagged
@@ -3191,6 +3414,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1986283833
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2612667556124975309}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471151, y: 1.3324169, z: 0.7616026}
+  m_Center: {x: -0.008929374, y: 0.6662084, z: -0.00866382}
 --- !u!1 &2676059359310059897
 GameObject:
   m_ObjectHideFlags: 0
@@ -3202,6 +3438,7 @@ GameObject:
   - component: {fileID: 1376331488260927302}
   - component: {fileID: 8451029902158175210}
   - component: {fileID: 8548114617538871673}
+  - component: {fileID: 197984352}
   m_Layer: 0
   m_Name: tree_detailed_fall (8)
   m_TagString: Untagged
@@ -3274,6 +3511,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &197984352
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2676059359310059897}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.84711534, y: 1.3324169, z: 0.76160276}
+  m_Center: {x: -0.008924131, y: 0.6662084, z: -0.00866406}
 --- !u!1 &2708339606032548054
 GameObject:
   m_ObjectHideFlags: 0
@@ -3367,6 +3617,7 @@ GameObject:
   - component: {fileID: 4040724618170770428}
   - component: {fileID: 2830320013330554460}
   - component: {fileID: 6288660169819465548}
+  - component: {fileID: 1462820750}
   m_Layer: 0
   m_Name: tree_detailed_fall (10)
   m_TagString: Untagged
@@ -3439,6 +3690,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1462820750
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2780300699330060109}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471154, y: 1.3324169, z: 0.7616029}
+  m_Center: {x: -0.008924132, y: 0.6662084, z: -0.008664301}
 --- !u!1 &2782284412118424539
 GameObject:
   m_ObjectHideFlags: 0
@@ -3532,6 +3796,7 @@ GameObject:
   - component: {fileID: 7219059730240144481}
   - component: {fileID: 9061292968133594860}
   - component: {fileID: 426996217898077084}
+  - component: {fileID: 1653836503}
   m_Layer: 0
   m_Name: tree_detailed_fall (21)
   m_TagString: Untagged
@@ -3604,6 +3869,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1653836503
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2866934684453989349}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471151, y: 1.3324168, z: 0.7616026}
+  m_Center: {x: -0.008924367, y: 0.66620845, z: -0.00866811}
 --- !u!1 &2963054619257608989
 GameObject:
   m_ObjectHideFlags: 0
@@ -3796,16 +4074,17 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1858206543851808823}
-  - {fileID: 3193303711237626276}
-  - {fileID: 6195498164322107088}
-  - {fileID: 3461789538574824876}
-  - {fileID: 407694626440066434}
   - {fileID: 1897320663098594569}
   - {fileID: 4919140914218252429}
   - {fileID: 4352079362908788470}
   - {fileID: 4193197381305681912}
   - {fileID: 6996590540099993520}
   - {fileID: 2541434633667678931}
+  - {fileID: 5734267819143856005}
+  - {fileID: 5553881229460502718}
+  - {fileID: 2508097430204822455}
+  - {fileID: 7160430458804178365}
+  - {fileID: 613297639917298830}
   m_Father: {fileID: 8215519433194922612}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3982,6 +4261,7 @@ GameObject:
   - component: {fileID: 680699202809589456}
   - component: {fileID: 5841048240239387150}
   - component: {fileID: 8694378228654567108}
+  - component: {fileID: 1460447162}
   m_Layer: 0
   m_Name: stone_tallE (4)
   m_TagString: Untagged
@@ -3996,13 +4276,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3332425789122233526}
-  m_LocalRotation: {x: -0, y: 0.5911019, z: -0, w: 0.806597}
+  m_LocalRotation: {x: -0, y: 0.4404819, z: -0, w: 0.8977615}
   m_LocalPosition: {x: 29.22, y: 16.482082, z: 35.75}
   m_LocalScale: {x: 22, y: 20, z: 23}
   m_Children: []
   m_Father: {fileID: 6864454186402131549}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 72.47, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 52.269, z: 0}
 --- !u!33 &5841048240239387150
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4053,6 +4333,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1460447162
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3332425789122233526}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561946, y: 0.44378397, z: 0.52676815}
+  m_Center: {x: -0.00000017881393, y: 0.22189198, z: 0.00000047683716}
 --- !u!1 &3418108644364619492
 GameObject:
   m_ObjectHideFlags: 0
@@ -4064,6 +4357,7 @@ GameObject:
   - component: {fileID: 1897320663098594569}
   - component: {fileID: 7368194712691198095}
   - component: {fileID: 4228193098254019897}
+  - component: {fileID: 1727091346}
   m_Layer: 0
   m_Name: fence_simpleCenter (1)
   m_TagString: Untagged
@@ -4083,7 +4377,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 4728664658821770299}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &7368194712691198095
 MeshFilter:
@@ -4135,6 +4429,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1727091346
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3418108644364619492}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 0.3450273, z: 0.06999998}
+  m_Center: {x: -0.0000038966537, y: 0.17251359, z: 0.46500027}
 --- !u!1 &3512783853065841186
 GameObject:
   m_ObjectHideFlags: 0
@@ -4294,6 +4601,88 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 5932ec65a58518b44a6747c82af84493, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &3605124349778353978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2508097430204822455}
+  - component: {fileID: 625004662932547533}
+  - component: {fileID: 2592956465352599529}
+  m_Layer: 0
+  m_Name: fence_simpleCenter (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2508097430204822455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3605124349778353978}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 64.829994, y: 16.482079, z: -32}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_Children: []
+  m_Father: {fileID: 4728664658821770299}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &625004662932547533
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3605124349778353978}
+  m_Mesh: {fileID: -4008676679046863574, guid: 4a97ff80096fc2749aa9115a28783122, type: 3}
+--- !u!23 &2592956465352599529
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3605124349778353978}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -8067726398312463513, guid: 4a97ff80096fc2749aa9115a28783122, type: 3}
+  - {fileID: -5173966397720942367, guid: 4a97ff80096fc2749aa9115a28783122, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4653,6 +5042,7 @@ GameObject:
   - component: {fileID: 1197498937094511147}
   - component: {fileID: 4927034820389835162}
   - component: {fileID: 7735697202680583324}
+  - component: {fileID: 1636093453}
   m_Layer: 0
   m_Name: tree_detailed_fall (15)
   m_TagString: Untagged
@@ -4725,6 +5115,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1636093453
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4104484022826399019}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471151, y: 1.3324168, z: 0.7616026}
+  m_Center: {x: -0.008925082, y: 0.66620845, z: -0.008664297}
 --- !u!1 &4131507891590864010
 GameObject:
   m_ObjectHideFlags: 0
@@ -4937,6 +5340,7 @@ GameObject:
   - component: {fileID: 943169272548043169}
   - component: {fileID: 7634555860252245857}
   - component: {fileID: 5719611093408226448}
+  - component: {fileID: 2035135993}
   m_Layer: 0
   m_Name: tree_detailed_fall (22)
   m_TagString: Untagged
@@ -5009,6 +5413,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2035135993
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4328823301006575323}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471151, y: 1.3324168, z: 0.7616026}
+  m_Center: {x: -0.008922698, y: 0.66620845, z: -0.008664295}
 --- !u!1 &4445890539127454070
 GameObject:
   m_ObjectHideFlags: 0
@@ -5345,6 +5762,7 @@ GameObject:
   - component: {fileID: 576907067850680132}
   - component: {fileID: 5347216546812372969}
   - component: {fileID: 6772798065905078217}
+  - component: {fileID: 1463207528}
   m_Layer: 0
   m_Name: stone_tallE (3)
   m_TagString: Untagged
@@ -5416,6 +5834,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1463207528
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4799980971716183759}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: 0.00000047683716, y: 0.22189198, z: 0.00000035762787}
 --- !u!1 &4851607439297776876
 GameObject:
   m_ObjectHideFlags: 0
@@ -7022,6 +7453,88 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &5158678678721033604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5734267819143856005}
+  - component: {fileID: 5339087376992981820}
+  - component: {fileID: 7835076907515964202}
+  m_Layer: 0
+  m_Name: fence_simpleCenter (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5734267819143856005
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5158678678721033604}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 52.799995, y: 16.482079, z: -32}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_Children: []
+  m_Father: {fileID: 4728664658821770299}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &5339087376992981820
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5158678678721033604}
+  m_Mesh: {fileID: -4008676679046863574, guid: 4a97ff80096fc2749aa9115a28783122, type: 3}
+--- !u!23 &7835076907515964202
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5158678678721033604}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -8067726398312463513, guid: 4a97ff80096fc2749aa9115a28783122, type: 3}
+  - {fileID: -5173966397720942367, guid: 4a97ff80096fc2749aa9115a28783122, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5175059857758272618
 GameObject:
   m_ObjectHideFlags: 0
@@ -7578,6 +8091,7 @@ GameObject:
   - component: {fileID: 4193197381305681912}
   - component: {fileID: 8854143121182249190}
   - component: {fileID: 6619720155228740076}
+  - component: {fileID: 415931099}
   m_Layer: 0
   m_Name: fence_simpleCenter (4)
   m_TagString: Untagged
@@ -7597,7 +8111,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 4728664658821770299}
-  m_RootOrder: 8
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8854143121182249190
 MeshFilter:
@@ -7649,6 +8163,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &415931099
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5629133370920046835}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 0.3450273, z: 0.06999998}
+  m_Center: {x: -0.0000023841858, y: 0.17251359, z: 0.4650002}
 --- !u!1 &5722053188890095032
 GameObject:
   m_ObjectHideFlags: 0
@@ -7709,170 +8236,6 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: e1277c8e74eb549439e8480cffa7ff4a, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &5748111522129857026
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3461789538574824876}
-  - component: {fileID: 1291465763184102433}
-  - component: {fileID: 233180668549217867}
-  m_Layer: 0
-  m_Name: fence_simpleDiagonal (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3461789538574824876
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5748111522129857026}
-  m_LocalRotation: {x: -0, y: -0.38247117, z: -0, w: 0.9239675}
-  m_LocalPosition: {x: 62.1, y: 16.482082, z: -29.4}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_Children: []
-  m_Father: {fileID: 4728664658821770299}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: -44.974, z: 0}
---- !u!33 &1291465763184102433
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5748111522129857026}
-  m_Mesh: {fileID: -8090483929830968157, guid: 197d84c2e4a30b24281c9abbf1f508c6, type: 3}
---- !u!23 &233180668549217867
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5748111522129857026}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 55ecba662b0b7024f82b19f92b7c15fd, type: 2}
-  - {fileID: -5173966397720942367, guid: 197d84c2e4a30b24281c9abbf1f508c6, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &5777698939940027339
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3193303711237626276}
-  - component: {fileID: 6692197476599076502}
-  - component: {fileID: 4911713203929941114}
-  m_Layer: 0
-  m_Name: fence_simpleDiagonal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3193303711237626276
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5777698939940027339}
-  m_LocalRotation: {x: -0, y: -0.38247117, z: -0, w: 0.9239675}
-  m_LocalPosition: {x: 45.63002, y: 16.482082, z: -29.4}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_Children: []
-  m_Father: {fileID: 4728664658821770299}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: -44.974, z: 0}
---- !u!33 &6692197476599076502
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5777698939940027339}
-  m_Mesh: {fileID: -8090483929830968157, guid: 197d84c2e4a30b24281c9abbf1f508c6, type: 3}
---- !u!23 &4911713203929941114
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5777698939940027339}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 55ecba662b0b7024f82b19f92b7c15fd, type: 2}
-  - {fileID: -5173966397720942367, guid: 197d84c2e4a30b24281c9abbf1f508c6, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8069,6 +8432,7 @@ GameObject:
   - component: {fileID: 6013854085928031268}
   - component: {fileID: 7956824493137354737}
   - component: {fileID: 5953130640701332997}
+  - component: {fileID: 179540493}
   m_Layer: 0
   m_Name: tree_detailed_fall (19)
   m_TagString: Untagged
@@ -8141,6 +8505,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &179540493
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5999628104236943532}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471148, y: 1.3324168, z: 0.7616023}
+  m_Center: {x: -0.008924126, y: 0.66620845, z: -0.008666798}
 --- !u!1 &6056716043127846012
 GameObject:
   m_ObjectHideFlags: 0
@@ -8203,88 +8580,6 @@ MeshRenderer:
   - {fileID: -7908462029823311255, guid: 8997db8d3a16054479561ea6263788d0, type: 3}
   - {fileID: -9117483709511198939, guid: 8997db8d3a16054479561ea6263788d0, type: 3}
   - {fileID: -6126091556477775235, guid: 8997db8d3a16054479561ea6263788d0, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &6191158323376618729
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 407694626440066434}
-  - component: {fileID: 5180260983779008586}
-  - component: {fileID: 7203736658738089482}
-  m_Layer: 0
-  m_Name: fence_simpleDiagonal (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &407694626440066434
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6191158323376618729}
-  m_LocalRotation: {x: -0, y: -0.38247117, z: -0, w: 0.9239675}
-  m_LocalPosition: {x: 70.51002, y: 16.482082, z: -29.4}
-  m_LocalScale: {x: 5, y: 5, z: 5}
-  m_Children: []
-  m_Father: {fileID: 4728664658821770299}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: -44.974, z: 0}
---- !u!33 &5180260983779008586
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6191158323376618729}
-  m_Mesh: {fileID: -8090483929830968157, guid: 197d84c2e4a30b24281c9abbf1f508c6, type: 3}
---- !u!23 &7203736658738089482
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6191158323376618729}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 55ecba662b0b7024f82b19f92b7c15fd, type: 2}
-  - {fileID: -5173966397720942367, guid: 197d84c2e4a30b24281c9abbf1f508c6, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8480,6 +8775,7 @@ GameObject:
   - component: {fileID: 7778163281508835846}
   - component: {fileID: 877904113997050330}
   - component: {fileID: 720965081001963711}
+  - component: {fileID: 30651588}
   m_Layer: 0
   m_Name: tree_detailed_fall (20)
   m_TagString: Untagged
@@ -8552,6 +8848,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &30651588
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6346263071970214791}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471152, y: 1.3324168, z: 0.7616027}
+  m_Center: {x: -0.008924606, y: 0.66620845, z: -0.008663106}
 --- !u!1 &6408689802948666708
 GameObject:
   m_ObjectHideFlags: 0
@@ -8563,6 +8872,7 @@ GameObject:
   - component: {fileID: 3617651149030327547}
   - component: {fileID: 5944447572580463180}
   - component: {fileID: 7847117049721705818}
+  - component: {fileID: 565916538}
   m_Layer: 0
   m_Name: tree_detailed_fall (9)
   m_TagString: Untagged
@@ -8635,6 +8945,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &565916538
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6408689802948666708}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471152, y: 1.3324169, z: 0.7616027}
+  m_Center: {x: -0.008923176, y: 0.6662084, z: -0.008664298}
 --- !u!1 &6413556681549045511
 GameObject:
   m_ObjectHideFlags: 0
@@ -8728,6 +9051,7 @@ GameObject:
   - component: {fileID: 1237115928137207245}
   - component: {fileID: 2681236075522298907}
   - component: {fileID: 714333339079262326}
+  - component: {fileID: 1128715882}
   m_Layer: 0
   m_Name: tree_detailed_fall (13)
   m_TagString: Untagged
@@ -8800,6 +9124,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1128715882
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6513797122510938670}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471151, y: 1.3324168, z: 0.7616026}
+  m_Center: {x: -0.008923413, y: 0.66620845, z: -0.008665726}
 --- !u!1 &6576602148534229345
 GameObject:
   m_ObjectHideFlags: 0
@@ -8811,6 +9148,7 @@ GameObject:
   - component: {fileID: 16914492725607825}
   - component: {fileID: 5118491200157593137}
   - component: {fileID: 5420800999279471242}
+  - component: {fileID: 1529507733}
   m_Layer: 0
   m_Name: stone_tallE (5)
   m_TagString: Untagged
@@ -8882,6 +9220,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1529507733
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6576602148534229345}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: 0, y: 0.22189201, z: 0.00000071525574}
 --- !u!1 &6755407727770870517
 GameObject:
   m_ObjectHideFlags: 0
@@ -9055,6 +9406,7 @@ GameObject:
   - component: {fileID: 8601511100049792597}
   - component: {fileID: 2319725907980312588}
   - component: {fileID: 7342050196710350141}
+  - component: {fileID: 1354592499}
   m_Layer: 0
   m_Name: tree_pineSmallA (13)
   m_TagString: Untagged
@@ -9126,6 +9478,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1354592499
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6886409758924068610}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5000001, y: 0.9671999, z: 0.5000001}
+  m_Center: {x: 0.0000009536743, y: 0.48359996, z: -0.00000023841858}
 --- !u!1 &6941493758359896521
 GameObject:
   m_ObjectHideFlags: 0
@@ -9381,6 +9746,7 @@ GameObject:
   - component: {fileID: 4919140914218252429}
   - component: {fileID: 6250170207880516660}
   - component: {fileID: 1455857195158878652}
+  - component: {fileID: 2103479553}
   m_Layer: 0
   m_Name: fence_simpleCenter (2)
   m_TagString: Untagged
@@ -9400,7 +9766,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 4728664658821770299}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6250170207880516660
 MeshFilter:
@@ -9452,6 +9818,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2103479553
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7039112665117410726}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 0.3450273, z: 0.06999998}
+  m_Center: {x: -0.00000333786, y: 0.17251359, z: 0.4650002}
 --- !u!1 &7079265638141935395
 GameObject:
   m_ObjectHideFlags: 0
@@ -9826,6 +10205,7 @@ GameObject:
   - component: {fileID: 5755279383415041103}
   - component: {fileID: 2681651569041099220}
   - component: {fileID: 6455751503427061728}
+  - component: {fileID: 718051179}
   m_Layer: 0
   m_Name: tree_detailed_fall (18)
   m_TagString: Untagged
@@ -9898,6 +10278,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &718051179
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7313838003091299354}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471154, y: 1.3324169, z: 0.7616029}
+  m_Center: {x: -0.00892747, y: 0.6662084, z: -0.008666685}
 --- !u!1 &7418586808522593610
 GameObject:
   m_ObjectHideFlags: 0
@@ -10035,6 +10428,7 @@ GameObject:
   - component: {fileID: 8013858012434114855}
   - component: {fileID: 220395489263544954}
   - component: {fileID: 5135103170955296894}
+  - component: {fileID: 1043193506}
   m_Layer: 0
   m_Name: stone_tallE (2)
   m_TagString: Untagged
@@ -10106,6 +10500,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1043193506
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7852055444968953811}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: 0, y: 0.22189201, z: 0.00000047683716}
 --- !u!1 &7921933914579543102
 GameObject:
   m_ObjectHideFlags: 0
@@ -10315,6 +10722,7 @@ GameObject:
   - component: {fileID: 4352079362908788470}
   - component: {fileID: 4033162075602137528}
   - component: {fileID: 1489307553317317137}
+  - component: {fileID: 1678063806}
   m_Layer: 0
   m_Name: fence_simpleCenter (3)
   m_TagString: Untagged
@@ -10334,7 +10742,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 4728664658821770299}
-  m_RootOrder: 7
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4033162075602137528
 MeshFilter:
@@ -10386,6 +10794,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1678063806
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8008116709960937820}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 0.3450273, z: 0.06999998}
+  m_Center: {x: -0.0000026226044, y: 0.17251359, z: 0.4650002}
 --- !u!1 &8147772521909641911
 GameObject:
   m_ObjectHideFlags: 0
@@ -10519,6 +10940,7 @@ GameObject:
   - component: {fileID: 8215519433202314005}
   - component: {fileID: 8215519433202314003}
   - component: {fileID: 8215519433202314004}
+  - component: {fileID: 1771951829}
   m_Layer: 0
   m_Name: tree_pineSmallA (3)
   m_TagString: Untagged
@@ -10590,6 +11012,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1771951829
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519433202314006}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.50000006, y: 0.96719986, z: 0.50000006}
+  m_Center: {x: 0.0000009536743, y: 0.48360002, z: 0.000000014901161}
 --- !u!1 &8215519433327632021
 GameObject:
   m_ObjectHideFlags: 0
@@ -10683,6 +11118,7 @@ GameObject:
   - component: {fileID: 8215519433383167498}
   - component: {fileID: 8215519433383167496}
   - component: {fileID: 8215519433383167497}
+  - component: {fileID: 748047112}
   m_Layer: 0
   m_Name: stone_tallE
   m_TagString: Untagged
@@ -10754,6 +11190,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &748047112
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519433383167499}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378394, z: 0.5267681}
+  m_Center: {x: 0, y: 0.22189209, z: -0.00000017881393}
 --- !u!1 &8215519433420248031
 GameObject:
   m_ObjectHideFlags: 0
@@ -10765,6 +11214,7 @@ GameObject:
   - component: {fileID: 8215519433420248030}
   - component: {fileID: 8215519433420248028}
   - component: {fileID: 8215519433420248029}
+  - component: {fileID: 950764730}
   m_Layer: 0
   m_Name: tree_detailed_fall (4)
   m_TagString: Untagged
@@ -10837,6 +11287,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &950764730
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519433420248031}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.84711516, y: 1.3324168, z: 0.76160264}
+  m_Center: {x: -0.008924129, y: 0.66620845, z: -0.008666442}
 --- !u!1 &8215519433470982674
 GameObject:
   m_ObjectHideFlags: 0
@@ -10848,6 +11311,7 @@ GameObject:
   - component: {fileID: 8215519433470982673}
   - component: {fileID: 8215519433470982767}
   - component: {fileID: 8215519433470982672}
+  - component: {fileID: 116127379}
   m_Layer: 0
   m_Name: tree_detailed_fall (3)
   m_TagString: Untagged
@@ -10920,6 +11384,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &116127379
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519433470982674}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471151, y: 1.3324168, z: 0.7616026}
+  m_Center: {x: -0.008926513, y: 0.66620845, z: -0.008664535}
 --- !u!1 &8215519433530992697
 GameObject:
   m_ObjectHideFlags: 0
@@ -11094,6 +11571,7 @@ GameObject:
   - component: {fileID: 8215519433558447474}
   - component: {fileID: 8215519433558447472}
   - component: {fileID: 8215519433558447473}
+  - component: {fileID: 608810155}
   m_Layer: 0
   m_Name: tree_pineSmallA (10)
   m_TagString: Untagged
@@ -11165,6 +11643,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &608810155
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519433558447475}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.96719986, z: 0.5}
+  m_Center: {x: 0, y: 0.48360002, z: 0.00000023841858}
 --- !u!1 &8215519433663036137
 GameObject:
   m_ObjectHideFlags: 0
@@ -11422,6 +11913,7 @@ GameObject:
   - component: {fileID: 8215519434025311884}
   - component: {fileID: 8215519434025311882}
   - component: {fileID: 8215519434025311883}
+  - component: {fileID: 1795209791}
   m_Layer: 0
   m_Name: tree_pineSmallA (4)
   m_TagString: Untagged
@@ -11493,6 +11985,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1795209791
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519434025311885}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.50000006, y: 0.96719986, z: 0.50000006}
+  m_Center: {x: 0, y: 0.48360002, z: 0.00000011920929}
 --- !u!1 &8215519434042242006
 GameObject:
   m_ObjectHideFlags: 0
@@ -11505,7 +12010,7 @@ GameObject:
   - component: {fileID: 8215519434042242001}
   - component: {fileID: 8215519434042242002}
   - component: {fileID: 8215519434042242003}
-  - component: {fileID: 8215519434042242004}
+  - component: {fileID: 4887013859581171518}
   m_Layer: 0
   m_Name: Land_1
   m_TagString: Untagged
@@ -11521,8 +12026,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8215519434042242006}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -86.1, y: 15.4820795, z: 43.651283}
-  m_LocalScale: {x: 0.8, y: 1, z: 1.5}
+  m_LocalPosition: {x: -150.2, y: 15.4820795, z: 101.2}
+  m_LocalScale: {x: 2, y: 1, z: 4}
   m_Children: []
   m_Father: {fileID: 8215519433194922612}
   m_RootOrder: 0
@@ -11792,8 +12297,8 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8215519434042242006}
   m_Mesh: {fileID: 0}
---- !u!64 &8215519434042242004
-MeshCollider:
+--- !u!65 &4887013859581171518
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -11802,10 +12307,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
+  serializedVersion: 2
+  m_Size: {x: 150.00003, y: 1, z: 50.00001}
+  m_Center: {x: 75, y: 0.5, z: -24.999998}
 --- !u!1 &8215519434165650266
 GameObject:
   m_ObjectHideFlags: 0
@@ -11898,6 +12402,7 @@ GameObject:
   - component: {fileID: 8215519434287552238}
   - component: {fileID: 8215519434287552236}
   - component: {fileID: 8215519434287552237}
+  - component: {fileID: 1581914787}
   m_Layer: 0
   m_Name: tree_pineSmallA (7)
   m_TagString: Untagged
@@ -11969,6 +12474,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1581914787
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519434287552239}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.50000006, y: 0.96719986, z: 0.50000006}
+  m_Center: {x: 0, y: 0.48360002, z: 0.0000009536743}
 --- !u!1 &8215519434337740744
 GameObject:
   m_ObjectHideFlags: 0
@@ -11980,6 +12498,7 @@ GameObject:
   - component: {fileID: 8215519434337740743}
   - component: {fileID: 8215519434337740741}
   - component: {fileID: 8215519434337740742}
+  - component: {fileID: 1641782636}
   m_Layer: 0
   m_Name: tree_pineSmallA (2)
   m_TagString: Untagged
@@ -12051,6 +12570,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1641782636
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519434337740744}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.50000006, y: 0.96719986, z: 0.50000006}
+  m_Center: {x: 0, y: 0.48360002, z: 0}
 --- !u!1 &8215519434392890145
 GameObject:
   m_ObjectHideFlags: 0
@@ -12062,6 +12594,7 @@ GameObject:
   - component: {fileID: 8215519434392890144}
   - component: {fileID: 8215519434392890174}
   - component: {fileID: 8215519434392890175}
+  - component: {fileID: 1120191567}
   m_Layer: 0
   m_Name: tree_pineSmallA (1)
   m_TagString: Untagged
@@ -12133,6 +12666,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1120191567
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519434392890145}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5000001, y: 0.96719986, z: 0.5000001}
+  m_Center: {x: 0, y: 0.4836, z: 0.00000047683716}
 --- !u!1 &8215519434434271986
 GameObject:
   m_ObjectHideFlags: 0
@@ -12144,6 +12690,7 @@ GameObject:
   - component: {fileID: 8215519434434271985}
   - component: {fileID: 8215519434434271951}
   - component: {fileID: 8215519434434271984}
+  - component: {fileID: 1109013520}
   m_Layer: 0
   m_Name: stone_tallE (1)
   m_TagString: Untagged
@@ -12215,6 +12762,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1109013520
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519434434271986}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378394, z: 0.5267681}
+  m_Center: {x: 0, y: 0.22189209, z: -0.00000035762787}
 --- !u!1 &8215519434439330934
 GameObject:
   m_ObjectHideFlags: 0
@@ -12388,6 +12948,7 @@ GameObject:
   - component: {fileID: 8215519434466505360}
   - component: {fileID: 8215519434466505454}
   - component: {fileID: 8215519434466505455}
+  - component: {fileID: 77837318}
   m_Layer: 0
   m_Name: tree_detailed_fall (2)
   m_TagString: Untagged
@@ -12460,6 +13021,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &77837318
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519434466505361}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471152, y: 1.3324168, z: 0.7616027}
+  m_Center: {x: -0.008924368, y: 0.66620845, z: -0.008667815}
 --- !u!1 &8215519434488994795
 GameObject:
   m_ObjectHideFlags: 0
@@ -12471,6 +13045,7 @@ GameObject:
   - component: {fileID: 8215519434488994794}
   - component: {fileID: 8215519434488994792}
   - component: {fileID: 8215519434488994793}
+  - component: {fileID: 1105908983}
   m_Layer: 0
   m_Name: tree_pineSmallA (9)
   m_TagString: Untagged
@@ -12542,6 +13117,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1105908983
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519434488994795}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.9671999, z: 0.5}
+  m_Center: {x: -0.0000009536743, y: 0.48359996, z: 0.00000047683716}
 --- !u!1 &8215519434571835827
 GameObject:
   m_ObjectHideFlags: 0
@@ -12553,6 +13141,7 @@ GameObject:
   - component: {fileID: 8215519434571835826}
   - component: {fileID: 8215519434571835824}
   - component: {fileID: 8215519434571835825}
+  - component: {fileID: 1612210175}
   m_Layer: 0
   m_Name: tree_pineSmallA (6)
   m_TagString: Untagged
@@ -12624,6 +13213,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1612210175
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519434571835827}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.50000006, y: 0.9671999, z: 0.50000006}
+  m_Center: {x: -0.00000047683716, y: 0.48359996, z: 0.00000023841858}
 --- !u!1 &8215519434583464282
 GameObject:
   m_ObjectHideFlags: 0
@@ -12635,6 +13237,7 @@ GameObject:
   - component: {fileID: 8215519434583464281}
   - component: {fileID: 8215519434583464279}
   - component: {fileID: 8215519434583464280}
+  - component: {fileID: 1488827122}
   m_Layer: 0
   m_Name: tree_pineSmallA
   m_TagString: Untagged
@@ -12706,6 +13309,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1488827122
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519434583464282}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.50000006, y: 0.96719986, z: 0.50000006}
+  m_Center: {x: 0.0000009536743, y: 0.48360002, z: -0.00000017881393}
 --- !u!1 &8215519434653199576
 GameObject:
   m_ObjectHideFlags: 0
@@ -12717,6 +13333,7 @@ GameObject:
   - component: {fileID: 8215519434653199575}
   - component: {fileID: 8215519434653199573}
   - component: {fileID: 8215519434653199574}
+  - component: {fileID: 292630849}
   m_Layer: 0
   m_Name: tree_pineSmallA (11)
   m_TagString: Untagged
@@ -12788,6 +13405,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &292630849
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519434653199576}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.96719986, z: 0.5}
+  m_Center: {x: 0, y: 0.48360002, z: 0}
 --- !u!1 &8215519434710358520
 GameObject:
   m_ObjectHideFlags: 0
@@ -12799,6 +13429,7 @@ GameObject:
   - component: {fileID: 8215519434710358519}
   - component: {fileID: 8215519434710358517}
   - component: {fileID: 8215519434710358518}
+  - component: {fileID: 757571648}
   m_Layer: 0
   m_Name: tree_pineSmallA (5)
   m_TagString: Untagged
@@ -12870,6 +13501,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &757571648
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519434710358520}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.50000006, y: 0.9671999, z: 0.50000006}
+  m_Center: {x: 0, y: 0.48359993, z: 0.00000047683716}
 --- !u!1 &8215519434728772516
 GameObject:
   m_ObjectHideFlags: 0
@@ -12881,6 +13525,7 @@ GameObject:
   - component: {fileID: 8215519434728772515}
   - component: {fileID: 8215519434728772513}
   - component: {fileID: 8215519434728772514}
+  - component: {fileID: 34566553}
   m_Layer: 0
   m_Name: tree_detailed_fall
   m_TagString: Untagged
@@ -12953,6 +13598,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &34566553
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519434728772516}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471151, y: 1.3324168, z: 0.7616026}
+  m_Center: {x: -0.008926393, y: 0.66620845, z: -0.008668112}
 --- !u!1 &8215519434829285306
 GameObject:
   m_ObjectHideFlags: 0
@@ -12964,6 +13622,7 @@ GameObject:
   - component: {fileID: 8215519434829285305}
   - component: {fileID: 8215519434829285303}
   - component: {fileID: 8215519434829285304}
+  - component: {fileID: 740285213}
   m_Layer: 0
   m_Name: tree_detailed_fall (1)
   m_TagString: Untagged
@@ -13036,6 +13695,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &740285213
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519434829285306}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.8471151, y: 1.3324168, z: 0.7616026}
+  m_Center: {x: -0.008927466, y: 0.66620845, z: -0.00866382}
 --- !u!1 &8215519434886545093
 GameObject:
   m_ObjectHideFlags: 0
@@ -13047,6 +13719,7 @@ GameObject:
   - component: {fileID: 8215519434886545092}
   - component: {fileID: 8215519434886545090}
   - component: {fileID: 8215519434886545091}
+  - component: {fileID: 1783334145}
   m_Layer: 0
   m_Name: stone_smallF
   m_TagString: Untagged
@@ -13117,6 +13790,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1783334145
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519434886545093}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.35358408, y: 0.24534398, z: 0.30621284}
+  m_Center: {x: 0.0000009536743, y: 0.12267193, z: -0.00000035762787}
 --- !u!1 &8215519434932883619
 GameObject:
   m_ObjectHideFlags: 0
@@ -13128,6 +13814,7 @@ GameObject:
   - component: {fileID: 8215519434932883618}
   - component: {fileID: 8215519434932883616}
   - component: {fileID: 8215519434932883617}
+  - component: {fileID: 1740878192}
   m_Layer: 0
   m_Name: tree_pineSmallA (8)
   m_TagString: Untagged
@@ -13199,6 +13886,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1740878192
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8215519434932883619}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.50000006, y: 0.9671999, z: 0.50000006}
+  m_Center: {x: 0.00000047683716, y: 0.48359996, z: 0.00000047683716}
 --- !u!1 &8356439352973617078
 GameObject:
   m_ObjectHideFlags: 0
@@ -13210,6 +13910,7 @@ GameObject:
   - component: {fileID: 2541434633667678931}
   - component: {fileID: 4369108429039454978}
   - component: {fileID: 4478028576050356190}
+  - component: {fileID: 1400590872}
   m_Layer: 0
   m_Name: fence_simpleCenter (6)
   m_TagString: Untagged
@@ -13229,7 +13930,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 4728664658821770299}
-  m_RootOrder: 10
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4369108429039454978
 MeshFilter:
@@ -13281,6 +13982,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1400590872
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8356439352973617078}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 0.3450273, z: 0.06999998}
+  m_Center: {x: -0.0000014305115, y: 0.17251359, z: 0.4650002}
 --- !u!1 &8368525562756581934
 GameObject:
   m_ObjectHideFlags: 0
@@ -13455,6 +14169,7 @@ GameObject:
   - component: {fileID: 4122130028931933080}
   - component: {fileID: 4020460921284870809}
   - component: {fileID: 744616510819640244}
+  - component: {fileID: 1494952010}
   m_Layer: 0
   m_Name: tree_detailed_fall (16)
   m_TagString: Untagged
@@ -13527,6 +14242,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1494952010
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8422829544283696059}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.84711534, y: 1.3324169, z: 0.76160276}
+  m_Center: {x: -0.008920078, y: 0.6662084, z: -0.008664776}
 --- !u!1 &8547874817584649350
 GameObject:
   m_ObjectHideFlags: 0
@@ -13620,6 +14348,7 @@ GameObject:
   - component: {fileID: 6996590540099993520}
   - component: {fileID: 6047310736188393552}
   - component: {fileID: 3622178438482084062}
+  - component: {fileID: 1483364954}
   m_Layer: 0
   m_Name: fence_simpleCenter (5)
   m_TagString: Untagged
@@ -13639,7 +14368,7 @@ Transform:
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 4728664658821770299}
-  m_RootOrder: 9
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6047310736188393552
 MeshFilter:
@@ -13691,6 +14420,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1483364954
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8583366134595739232}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 0.3450273, z: 0.06999998}
+  m_Center: {x: -0.0000014305115, y: 0.17251359, z: 0.46500027}
 --- !u!1 &8748573452851876664
 GameObject:
   m_ObjectHideFlags: 0
@@ -13994,6 +14736,88 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 3055808038450636745, guid: 82b1091b0f02b0c458aefa9cc44b08b9, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &9202067077058075193
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5553881229460502718}
+  - component: {fileID: 3720101278554733816}
+  - component: {fileID: 8301214742093276675}
+  m_Layer: 0
+  m_Name: fence_simpleCenter (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5553881229460502718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9202067077058075193}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 58.799995, y: 16.482079, z: -32}
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_Children: []
+  m_Father: {fileID: 4728664658821770299}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3720101278554733816
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9202067077058075193}
+  m_Mesh: {fileID: -4008676679046863574, guid: 4a97ff80096fc2749aa9115a28783122, type: 3}
+--- !u!23 &8301214742093276675
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9202067077058075193}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: -8067726398312463513, guid: 4a97ff80096fc2749aa9115a28783122, type: 3}
+  - {fileID: -5173966397720942367, guid: 4a97ff80096fc2749aa9115a28783122, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

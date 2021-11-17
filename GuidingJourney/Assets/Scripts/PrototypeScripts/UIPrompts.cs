@@ -124,6 +124,7 @@ public class UIPrompts : MonoBehaviour
     {
         HRDRadius.OnWalkEvent += NPCGetObject;
         ClickObject.isNearObjectEvent += GrabObjectInfo;
+        PressToGrab.isNearObjectEvent += GrabObjectInfo;
         HRDRadius.FinishEvent += FinishPrototype;
     }
 
@@ -131,6 +132,7 @@ public class UIPrompts : MonoBehaviour
     {
         HRDRadius.OnWalkEvent -= NPCGetObject;
         ClickObject.isNearObjectEvent -= GrabObjectInfo;
+        PressToGrab.isNearObjectEvent -= GrabObjectInfo;
         HRDRadius.FinishEvent -= FinishPrototype;
     }
 }
