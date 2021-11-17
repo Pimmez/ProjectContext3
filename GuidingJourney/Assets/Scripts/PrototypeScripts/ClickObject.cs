@@ -21,10 +21,10 @@ public class ClickObject : MonoBehaviour
     {
         if (Vector3.Distance(parentTransform.transform.position, this.transform.position) <= 20 && !isGrabbed)
         {
-            Debug.Log("Test distance 01");
+            //Debug.Log("Test distance 01");
             if (isNearObjectEvent != null)
             {
-                Debug.Log("Test message 01");
+                //Debug.Log("Test message 01");
 
                 isNearObjectEvent();
             }
@@ -40,13 +40,13 @@ public class ClickObject : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == "Grab")
             {
-                Debug.Log("You selected the " + hit.transform.name); // ensure you picked right object
-                Debug.Log("Position of the clicked object: " + hit.transform.position); // ensure you picked right object
+                //Debug.Log("You selected the " + hit.transform.name); 
+                //Debug.Log("Position of the clicked object: " + hit.transform.position);
 
                 if(Vector3.Distance(parentTransform.transform.position, this.transform.position) <= 15 && !isGrabbed)
                 {
 
-                    Debug.Log("GRAB");
+                    //Debug.Log("GRAB");
                   
                     textRemove.SetActive(false);
 

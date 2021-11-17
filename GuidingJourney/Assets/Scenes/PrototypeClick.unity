@@ -4167,7 +4167,7 @@ MonoBehaviour:
   parentTransform: {fileID: 351945338}
   textRemove: {fileID: 1502975419}
   col: {fileID: 1694730181}
-  hrdRadius: {fileID: 0}
+  hrdRadius: {fileID: 510838094}
 --- !u!23 &1694730178
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4225,7 +4225,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1694730174}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 533, y: -3.15, z: 482.9}
+  m_LocalPosition: {x: 523.9, y: -3.15, z: 466.7}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1910546819}
