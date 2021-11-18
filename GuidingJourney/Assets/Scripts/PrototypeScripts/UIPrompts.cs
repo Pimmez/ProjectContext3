@@ -17,6 +17,8 @@ public class UIPrompts : MonoBehaviour
 
     private bool onlyOnce = false;
     private bool DoCameraOnce = false;
+    private bool doOnce = false;
+
 
     [SerializeField] private Animator anim;
     [SerializeField] private Animator selfAnim;
@@ -36,7 +38,7 @@ public class UIPrompts : MonoBehaviour
 
     private void Update()
     {
-        if(!onlyOnce)
+        if (!onlyOnce)
         {
             if (Input.GetAxis("Horizontal") > 0 || Input.GetAxis("Vertical") > 0 || Input.GetMouseButtonDown(0))
             {
@@ -44,7 +46,7 @@ public class UIPrompts : MonoBehaviour
                 onlyOnce = true;
                 NPCTalk();
             }
-        }        
+        }
     }
 
     //EVENTS
@@ -60,7 +62,7 @@ public class UIPrompts : MonoBehaviour
 
     private void NPCGetObject()
     {
-        if(!DoCameraOnce)
+        if (!DoCameraOnce)
         {
             selfAnim.SetBool("isWaving", false);
 
@@ -94,7 +96,11 @@ public class UIPrompts : MonoBehaviour
 
     private void GrabObjectInfo()
     {
-        text_presskey.SetActive(true);
+        if (!doOnce)
+        {
+            text_presskey.SetActive(true);
+            doOnce = true;
+        }
         text_input.SetActive(false);
         text_npcTalk.SetActive(false);
         text_GrabObject.SetActive(false);

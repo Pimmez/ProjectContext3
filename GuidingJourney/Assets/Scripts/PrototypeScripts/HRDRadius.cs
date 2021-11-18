@@ -51,7 +51,7 @@ public class HRDRadius : MonoBehaviour
         
     }
 
-
+    /*
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == Tags.PLAYER && !isWalkingTowards)
@@ -71,6 +71,7 @@ public class HRDRadius : MonoBehaviour
             }
         }
     }
+    */
     private void OnDrawGizmosSelected()
     {
         // Draw a Red sphere at the transform's position

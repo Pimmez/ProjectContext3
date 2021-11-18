@@ -5,21 +5,36 @@ using UnityEngine.AI;
 
 public class CrawlMechanic : MonoBehaviour
 {
-    [SerializeField] private Transform positionA, positionB;
-    [SerializeField] private Transform parentTransform;
+    [SerializeField] private Transform otherPos = null;
+    [SerializeField] private Transform parentTransform = null;
+    [SerializeField] private CharacterController charController = null;
     private bool isAtB = false;
 
     private void OnTriggerEnter(Collider other)
+  {
+      if(other.gameObject.tag == Tags.PLAYER && !isAtB)
+      {
+          charController.enabled = false;
+          parentTransform.position = otherPos.position;
+          isAtB = true;
+          charController.enabled = true;
+
+      }
+      else if(other.gameObject.tag == Tags.PLAYER && isAtB)
+      {
+          charController.enabled = false;
+          parentTransform.position = otherPos.position;
+          isAtB = false;
+          charController.enabled = true;
+
+      }
+  }
+
+
+    private void OnDrawGizmosSelected()
     {
-        if(other.gameObject.tag == Tags.PLAYER && !isAtB)
-        {
-            parentTransform.position = positionB.position;
-            isAtB = true;
-        }
-        else if(other.gameObject.tag == Tags.PLAYER && isAtB)
-        {
-            parentTransform.position = positionA.position;
-            isAtB = false;
-        }
+        // Draw a Red sphere at the transform's position
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, 10);
     }
 }
