@@ -14,37 +14,117 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 1f4c56
-    second: {instanceID: 0}
+    second: {fileID: 2100000, guid: e6fc200e548164f49871130a81865854, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 2ea6a7
-    second: {instanceID: 0}
+    second: {fileID: 2100000, guid: e6fc200e548164f49871130a81865854, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: 7b77a
-    second: {instanceID: 0}
+    second: {fileID: 2100000, guid: e6fc200e548164f49871130a81865854, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Nails
-    second: {instanceID: 0}
+    second: {fileID: 2100000, guid: 5d6b6e1977429704287b57fd9137a762, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Silver
-    second: {instanceID: 0}
+    second: {fileID: 2100000, guid: e6fc200e548164f49871130a81865854, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: a88999
-    second: {instanceID: 0}
+    second: {fileID: 2100000, guid: e6fc200e548164f49871130a81865854, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: belt line
-    second: {instanceID: 0}
+    second: {fileID: 2100000, guid: 9993acf430a08674bbb38c9c6c116379, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bra
+    second: {fileID: 2100000, guid: 9993acf430a08674bbb38c9c6c116379, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: button
+    second: {fileID: 2100000, guid: ba7aa45184300c443bd493067bf4f98b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eye_lashes
+    second: {fileID: 2100000, guid: 59b30bea7004aee419026c782f0fd56e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyes_inner
+    second: {fileID: 2100000, guid: e6fc200e548164f49871130a81865854, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: eyes_outer
+    second: {fileID: 2100000, guid: e6fc200e548164f49871130a81865854, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jeans
+    second: {fileID: 2100000, guid: 694355184f83fcf42b4b7ff10ce90dd6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jewel1
+    second: {fileID: 2100000, guid: e6fc200e548164f49871130a81865854, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jewel2
+    second: {fileID: 2100000, guid: e6fc200e548164f49871130a81865854, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jewel3
+    second: {fileID: 2100000, guid: e6fc200e548164f49871130a81865854, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: laces
+    second: {fileID: 2100000, guid: 66362a99f79cc834a82c832d625479d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: necklace
+    second: {fileID: 2100000, guid: 9993acf430a08674bbb38c9c6c116379, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pocket
+    second: {fileID: 2100000, guid: 694355184f83fcf42b4b7ff10ce90dd6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shirt_material
+    second: {fileID: 2100000, guid: ba7aa45184300c443bd493067bf4f98b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shoes
+    second: {fileID: 2100000, guid: 66362a99f79cc834a82c832d625479d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tiina_hair
+    second: {fileID: 2100000, guid: 59b30bea7004aee419026c782f0fd56e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tiina_skin
+    second: {fileID: 2100000, guid: b93c2dc221822904180b211ff39fd667, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

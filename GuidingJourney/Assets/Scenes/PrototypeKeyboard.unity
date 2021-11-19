@@ -199,7 +199,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
+  m_AnchoredPosition: {x: 0, y: -450}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &92777336
@@ -519,7 +519,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4330
+  m_Name: pb_Mesh-44944
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -683,7 +683,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3772
+  m_Name: pb_Mesh-44386
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6498,7 +6498,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3756
+  m_Name: pb_Mesh-44370
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7107,6 +7107,8 @@ MonoBehaviour:
   warpWall: {fileID: 1708552899}
   Maincam: {fileID: 338755057}
   sideCam: {fileID: 822319416}
+  navMeshPlayer: {fileID: 0}
+  charControllerPlayer: {fileID: 1657263225}
   anim: {fileID: 822319413}
   selfAnim: {fileID: 1204477815}
 --- !u!1 &667648245
@@ -7143,7 +7145,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
+  m_AnchoredPosition: {x: 0, y: -450}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &667648247
@@ -7222,7 +7224,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
+  m_AnchoredPosition: {x: 0, y: -450}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &701025680
@@ -7595,7 +7597,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2960
+  m_Name: pb_Mesh-43576
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8455,7 +8457,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00012207031, y: 200.00006}
+  m_AnchoredPosition: {x: 0.00012207031, y: -450}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1544523843
@@ -8775,7 +8777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 338755057}
-  moveSpeed: 30
+  moveSpeed: 40
   charController: {fileID: 1657263226}
   movement: {x: 0, y: 0, z: 0}
   forward: {x: 0, y: 0, z: 0}
@@ -8849,7 +8851,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 200}
+  m_AnchoredPosition: {x: 0, y: -450}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1657928224
@@ -9690,18 +9692,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 717042054703889352, guid: e43f35af6cbcf9c4cbe074e0dcfb2e0b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 717042054703889352, guid: e43f35af6cbcf9c4cbe074e0dcfb2e0b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 717042054703889352, guid: e43f35af6cbcf9c4cbe074e0dcfb2e0b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 717042054703889352, guid: e43f35af6cbcf9c4cbe074e0dcfb2e0b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 540
       objectReference: {fileID: 0}
@@ -9749,22 +9739,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 891803361}
-    - target: {fileID: 717042055450536553, guid: e43f35af6cbcf9c4cbe074e0dcfb2e0b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 717042055450536553, guid: e43f35af6cbcf9c4cbe074e0dcfb2e0b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 717042055450536553, guid: e43f35af6cbcf9c4cbe074e0dcfb2e0b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -162.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 717042055450536553, guid: e43f35af6cbcf9c4cbe074e0dcfb2e0b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 79
-      objectReference: {fileID: 0}
     - target: {fileID: 717042055450536557, guid: e43f35af6cbcf9c4cbe074e0dcfb2e0b, type: 3}
       propertyPath: m_Mesh
       value: 

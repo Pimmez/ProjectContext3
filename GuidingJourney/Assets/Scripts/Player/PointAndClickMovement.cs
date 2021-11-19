@@ -15,7 +15,7 @@ public class PointAndClickMovement : MonoBehaviour
 
     private void Start()
     {
-       // playerNav.height = -3.5f;
+        //playerNav.height = -3.5f;
         //playerNav.baseOffset = -3.5f;
     }
 
