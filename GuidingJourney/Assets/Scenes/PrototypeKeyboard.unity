@@ -5841,6 +5841,7 @@ MonoBehaviour:
   parentTransform: {fileID: 1657263228}
   textRemove: {fileID: 667648245}
   hrdRadius: {fileID: 1204477814}
+  charController: {fileID: 1657263225}
 --- !u!1 &276575860
 GameObject:
   m_ObjectHideFlags: 0
@@ -8777,7 +8778,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 338755057}
-  moveSpeed: 40
+  moveSpeed: 30
   charController: {fileID: 1657263226}
   movement: {x: 0, y: 0, z: 0}
   forward: {x: 0, y: 0, z: 0}

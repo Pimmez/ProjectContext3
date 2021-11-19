@@ -100,7 +100,7 @@ public class UIPrompts : MonoBehaviour
             navMeshPlayer.speed = 30;
 
         if (charControllerPlayer != null)
-            charControllerPlayer.moveSpeed = 40;
+            charControllerPlayer.moveSpeed = 30;
 
         warpWall.SetActive(true);
         text_GrabObject.SetActive(false);

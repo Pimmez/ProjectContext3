@@ -7,7 +7,9 @@ public class GrabObject : MonoBehaviour
     [SerializeField] private Transform playerGrabFox;
     [SerializeField] private Transform parentTransform;
     [SerializeField] GameObject textRemove;
-    [SerializeField] private HRDRadius hrdRadius;
+    [SerializeField] private HRDRadius hrdRadius = null;
+
+    [SerializeField] TestCharacterController charController = null;
 
     private bool isGrabbed = false;
     bool triggered = false;
@@ -15,27 +17,41 @@ public class GrabObject : MonoBehaviour
 
     private void Update()
     {
-        if (triggered && !isGrabbed && Input.GetKeyDown(KeyCode.Space))
+        if(charController != null)
         {
-            //Do something!
-            //Debug.Log("GRAB");
-            textRemove.SetActive(false);
+            if (charController.moveSpeed != 0)
+            {
+                if (triggered && !isGrabbed && Input.GetKeyDown(KeyCode.Space))
+                {
+                    //Do something!
+                    //Debug.Log("GRAB");
+                    textRemove.SetActive(false);
 
-            transform.position = playerGrabFox.position;
+                    transform.position = playerGrabFox.position;
 
-            transform.SetParent(parentTransform);
-            isGrabbed = true;
-            hrdRadius.isEnding = true;
+                    transform.SetParent(parentTransform);
+                    isGrabbed = true;
+                    hrdRadius.isEnding = true;
+                }
+                else if (triggered && Input.GetKeyDown(KeyCode.Space) && isGrabbed)
+                {
+                    //Debug.Log("LET GO");
+                    transform.SetParent(null);
+
+                    transform.position = new Vector3(playerGrabFox.position.x, -3.15f, playerGrabFox.position.z);
+
+                    isGrabbed = false;
+                }
+            }
+            else
+            {
+                return;
+            }
         }
-        else if (triggered && Input.GetKeyDown(KeyCode.Space) && isGrabbed)
+        else 
         {
-            //Debug.Log("LET GO");
-            transform.SetParent(null);
-
-            transform.position = new Vector3(playerGrabFox.position.x, -3.15f, playerGrabFox.position.z);
-
-            isGrabbed = false;
-        }
+            return;
+        }    
     }
 
     private void OnTriggerEnter(Collider other)
