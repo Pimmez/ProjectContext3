@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 6680139696777257856}
   - component: {fileID: 4773207730279660158}
   - component: {fileID: 6540951031165329525}
+  - component: {fileID: 5873386179863041229}
   m_Layer: 0
   m_Name: stone_tallE (60)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6680139696777257856
 Transform:
@@ -82,6 +83,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5873386179863041229
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 72614781333589954}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619458, y: 0.44378397, z: 0.5267682}
+  m_Center: {x: 0, y: -0.02, z: 0.0000009536743}
 --- !u!1 &90312798720014385
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,12 +188,13 @@ GameObject:
   - component: {fileID: 7656781786791110038}
   - component: {fileID: 5570205837299444165}
   - component: {fileID: 1937416528274501902}
+  - component: {fileID: 7155558404088318284}
   m_Layer: 0
   m_Name: stone_tallE (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7656781786791110038
 Transform:
@@ -245,6 +260,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7155558404088318284
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161685267628437534}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378397, z: 0.52676815}
+  m_Center: {x: 0.0000009536743, y: -0.02, z: 0}
 --- !u!1 &168207170508953655
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,12 +284,13 @@ GameObject:
   - component: {fileID: 516680634762836102}
   - component: {fileID: 8042275021887915745}
   - component: {fileID: 1306739228731669037}
+  - component: {fileID: 5693664807323534720}
   m_Layer: 0
   m_Name: stone_tallE (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &516680634762836102
 Transform:
@@ -327,6 +356,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5693664807323534720
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168207170508953655}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619443, y: 0.44378394, z: 0.526768}
+  m_Center: {x: 0, y: -0.02, z: 0.0000038146973}
 --- !u!1 &283590919420337525
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,6 +461,7 @@ GameObject:
   - component: {fileID: 7783204071667868807}
   - component: {fileID: 252973491381222079}
   - component: {fileID: 2656072230679628959}
+  - component: {fileID: 5246539501867275086}
   m_Layer: 0
   m_Name: stone_tallE (3)
   m_TagString: Untagged
@@ -490,6 +533,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5246539501867275086
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411662457833701595}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619443, y: 0.44378397, z: 0.526768}
+  m_Center: {x: -0.0000009536743, y: -0.02, z: 0.0000009536743}
 --- !u!1 &425586895828881131
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,12 +557,13 @@ GameObject:
   - component: {fileID: 7527485474589342342}
   - component: {fileID: 2196275391119130534}
   - component: {fileID: 2643709038142165510}
+  - component: {fileID: 5857425302019691538}
   m_Layer: 0
   m_Name: stone_tallE (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7527485474589342342
 Transform:
@@ -572,6 +629,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5857425302019691538
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425586895828881131}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378397, z: 0.52676815}
+  m_Center: {x: -0.0000019073486, y: -0.02, z: 0.0000019073486}
 --- !u!1 &432642111542510810
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,12 +653,13 @@ GameObject:
   - component: {fileID: 5493666239386953966}
   - component: {fileID: 564622141560823788}
   - component: {fileID: 249115145626005567}
+  - component: {fileID: 7649063989069909027}
   m_Layer: 0
   m_Name: stone_tallE (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5493666239386953966
 Transform:
@@ -654,6 +725,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7649063989069909027
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432642111542510810}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: -0.0000038146973, y: -0.02, z: 0}
 --- !u!1 &471472855967703521
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,12 +749,13 @@ GameObject:
   - component: {fileID: 2679805598630683842}
   - component: {fileID: 4267497096200827344}
   - component: {fileID: 1349202107410360458}
+  - component: {fileID: 3500433137384552031}
   m_Layer: 0
   m_Name: stone_tallE (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2679805598630683842
 Transform:
@@ -736,6 +821,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3500433137384552031
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471472855967703521}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378397, z: 0.52676815}
+  m_Center: {x: 0, y: -0.02, z: 0}
 --- !u!1 &532308418002759369
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,6 +845,7 @@ GameObject:
   - component: {fileID: 7550161044359780825}
   - component: {fileID: 4102402044949085790}
   - component: {fileID: 8353651734194466315}
+  - component: {fileID: 4963142205565616907}
   m_Layer: 0
   m_Name: stone_tallE (11)
   m_TagString: Untagged
@@ -818,6 +917,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4963142205565616907
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532308418002759369}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378403, z: 0.52676815}
+  m_Center: {x: 0, y: -0.02, z: 0.0000019073486}
 --- !u!1 &633338666802873271
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,12 +941,13 @@ GameObject:
   - component: {fileID: 3926585903254659123}
   - component: {fileID: 8002869814254965340}
   - component: {fileID: 2895154947793373275}
+  - component: {fileID: 1452133290797474650}
   m_Layer: 0
   m_Name: stone_tallE (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3926585903254659123
 Transform:
@@ -900,6 +1013,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1452133290797474650
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633338666802873271}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378403, z: 0.5267681}
+  m_Center: {x: -0.000002861023, y: -0.02, z: 0.0000038146973}
 --- !u!1 &717042054703889353
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,7 +1055,6 @@ Transform:
   m_Children:
   - {fileID: 717042055450536553}
   - {fileID: 1056567680520301698}
-  - {fileID: 3725276011305926230}
   - {fileID: 2644565295879157729}
   - {fileID: 430794023077594930}
   - {fileID: 4562267572873142609}
@@ -947,6 +1072,7 @@ GameObject:
   - component: {fileID: 717042054900588470}
   - component: {fileID: 717042054900588468}
   - component: {fileID: 717042054900588469}
+  - component: {fileID: 3667161804701879410}
   m_Layer: 0
   m_Name: stone_tallE
   m_TagString: Untagged
@@ -1018,6 +1144,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3667161804701879410
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717042054900588471}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619446, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: 0.0000038146973, y: -0.02, z: -0.0000038146973}
 --- !u!1 &717042055339170534
 GameObject:
   m_ObjectHideFlags: 0
@@ -1504,6 +1643,7 @@ GameObject:
   - component: {fileID: 717042055607944013}
   - component: {fileID: 717042055607944051}
   - component: {fileID: 717042055607944012}
+  - component: {fileID: 8412977111378225198}
   m_Layer: 0
   m_Name: stone_tallE (1)
   m_TagString: Untagged
@@ -1575,6 +1715,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8412977111378225198
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717042055607944014}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: -0.0000009536743, y: -0.02, z: -0.0000009536743}
 --- !u!1 &1126876557230080720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,12 +1739,13 @@ GameObject:
   - component: {fileID: 2170675138383335897}
   - component: {fileID: 3920749272712520751}
   - component: {fileID: 2726206694417195377}
+  - component: {fileID: 707667798576509974}
   m_Layer: 0
   m_Name: stone_tallE (52)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2170675138383335897
 Transform:
@@ -1657,6 +1811,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &707667798576509974
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126876557230080720}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378397, z: 0.52676815}
+  m_Center: {x: -0.0000019073486, y: -0.02, z: -0.0000019073486}
 --- !u!1 &1251827011651618085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,12 +1835,13 @@ GameObject:
   - component: {fileID: 8651736892688273913}
   - component: {fileID: 1762862977002217039}
   - component: {fileID: 7683552327740124886}
+  - component: {fileID: 9168664601324813654}
   m_Layer: 0
   m_Name: stone_tallE (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8651736892688273913
 Transform:
@@ -1739,6 +1907,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &9168664601324813654
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251827011651618085}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378397, z: 0.52676815}
+  m_Center: {x: 0.0000019073486, y: -0.02, z: -0.0000019073486}
 --- !u!1 &1305985903836542021
 GameObject:
   m_ObjectHideFlags: 0
@@ -1750,12 +1931,13 @@ GameObject:
   - component: {fileID: 4166345913987178439}
   - component: {fileID: 4193585234742016658}
   - component: {fileID: 6616947892500252310}
+  - component: {fileID: 7522945301530091628}
   m_Layer: 0
   m_Name: stone_tallE (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4166345913987178439
 Transform:
@@ -1821,6 +2003,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7522945301530091628
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305985903836542021}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.526768}
+  m_Center: {x: -0.0000019073486, y: -0.02, z: -0.0000019073486}
 --- !u!1 &1563912639852173446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1832,12 +2027,13 @@ GameObject:
   - component: {fileID: 8668485588717632522}
   - component: {fileID: 1479973959501669254}
   - component: {fileID: 689206536258472869}
+  - component: {fileID: 184406982804047584}
   m_Layer: 0
   m_Name: stone_tallE (63)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8668485588717632522
 Transform:
@@ -1903,6 +2099,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &184406982804047584
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563912639852173446}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: 0, y: -0.02, z: -0.0000019073486}
 --- !u!1 &1571771106510499781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1914,12 +2123,13 @@ GameObject:
   - component: {fileID: 8538205845442547784}
   - component: {fileID: 3596689809676663404}
   - component: {fileID: 8145166384486754770}
+  - component: {fileID: 5121610549341894083}
   m_Layer: 0
   m_Name: stone_tallE (57)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8538205845442547784
 Transform:
@@ -1985,6 +2195,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5121610549341894083
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571771106510499781}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: 0, y: -0.02, z: -0.0000019073486}
 --- !u!1 &1585353358416346498
 GameObject:
   m_ObjectHideFlags: 0
@@ -2041,12 +2264,13 @@ GameObject:
   - component: {fileID: 2162920014405767648}
   - component: {fileID: 3807423225545510129}
   - component: {fileID: 8894545871196486340}
+  - component: {fileID: 1043826601765006298}
   m_Layer: 0
   m_Name: stone_tallE (58)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2162920014405767648
 Transform:
@@ -2112,6 +2336,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1043826601765006298
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607879498885924190}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: 0.0000019073486, y: -0.02, z: 0}
 --- !u!1 &1711628622229630800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2123,12 +2360,13 @@ GameObject:
   - component: {fileID: 7936239351302620411}
   - component: {fileID: 5397426903934725327}
   - component: {fileID: 7566960663467431462}
+  - component: {fileID: 5124005375019794681}
   m_Layer: 0
   m_Name: stone_tallE (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7936239351302620411
 Transform:
@@ -2194,6 +2432,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5124005375019794681
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711628622229630800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378403, z: 0.5267681}
+  m_Center: {x: -0.0000009536743, y: -0.02, z: 0.0000038146973}
 --- !u!1 &1871155130502489440
 GameObject:
   m_ObjectHideFlags: 0
@@ -2205,12 +2456,13 @@ GameObject:
   - component: {fileID: 7453386970417153664}
   - component: {fileID: 2126559735388853050}
   - component: {fileID: 8037459034041780319}
+  - component: {fileID: 6169754041524323463}
   m_Layer: 0
   m_Name: stone_tallE (53)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7453386970417153664
 Transform:
@@ -2276,6 +2528,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6169754041524323463
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871155130502489440}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378397, z: 0.52676815}
+  m_Center: {x: -0.0000019073486, y: -0.02, z: -0.0000019073486}
 --- !u!1 &1930327499411234885
 GameObject:
   m_ObjectHideFlags: 0
@@ -2287,12 +2552,13 @@ GameObject:
   - component: {fileID: 5858683193565285321}
   - component: {fileID: 4155586729656783461}
   - component: {fileID: 2747546855646012544}
+  - component: {fileID: 5346357038188918187}
   m_Layer: 0
   m_Name: stone_tallE (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5858683193565285321
 Transform:
@@ -2358,6 +2624,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5346357038188918187
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1930327499411234885}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: -0.000005722046, y: -0.02, z: 0}
 --- !u!1 &2003615514293980123
 GameObject:
   m_ObjectHideFlags: 0
@@ -2369,12 +2648,13 @@ GameObject:
   - component: {fileID: 8713712606919209112}
   - component: {fileID: 849212946689174173}
   - component: {fileID: 7563373836629621272}
+  - component: {fileID: 4342033472418551805}
   m_Layer: 0
   m_Name: stone_tallE (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &8713712606919209112
 Transform:
@@ -2440,6 +2720,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4342033472418551805
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003615514293980123}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378403, z: 0.5267681}
+  m_Center: {x: 0.0000009536743, y: -0.02, z: 0.0000038146973}
 --- !u!1 &2125071873032468487
 GameObject:
   m_ObjectHideFlags: 0
@@ -2451,12 +2744,13 @@ GameObject:
   - component: {fileID: 7595791714550509313}
   - component: {fileID: 468661388361110491}
   - component: {fileID: 1268794675660985437}
+  - component: {fileID: 2577056584115330304}
   m_Layer: 0
   m_Name: stone_tallE (61)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7595791714550509313
 Transform:
@@ -2522,6 +2816,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2577056584115330304
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125071873032468487}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: 0, y: -0.02, z: -0.0000019073486}
 --- !u!1 &2261330681520659867
 GameObject:
   m_ObjectHideFlags: 0
@@ -2550,7 +2857,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 717042054703889352}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2317094737341264050
 GameObject:
@@ -2563,6 +2870,7 @@ GameObject:
   - component: {fileID: 32749978554884185}
   - component: {fileID: 673709386813176871}
   - component: {fileID: 631044612494752338}
+  - component: {fileID: 2848915413400084749}
   m_Layer: 0
   m_Name: stone_tallE (8)
   m_TagString: Untagged
@@ -2634,6 +2942,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2848915413400084749
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2317094737341264050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378403, z: 0.52676815}
+  m_Center: {x: 0, y: -0.02, z: 0}
 --- !u!1 &2408901784937796049
 GameObject:
   m_ObjectHideFlags: 0
@@ -2645,6 +2966,7 @@ GameObject:
   - component: {fileID: 2809319495164506700}
   - component: {fileID: 1835539510319424658}
   - component: {fileID: 6980228662246818041}
+  - component: {fileID: 4608397888413306636}
   m_Layer: 0
   m_Name: stone_tallE (10)
   m_TagString: Untagged
@@ -2716,6 +3038,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4608397888413306636
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2408901784937796049}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619446, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: 0, y: -0.02, z: 0.0000038146973}
 --- !u!1 &2459129942515090815
 GameObject:
   m_ObjectHideFlags: 0
@@ -2808,12 +3143,13 @@ GameObject:
   - component: {fileID: 1445677787082090182}
   - component: {fileID: 6455243708862014744}
   - component: {fileID: 4174096490464909833}
+  - component: {fileID: 5289730229465969320}
   m_Layer: 0
   m_Name: stone_tallE (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1445677787082090182
 Transform:
@@ -2879,6 +3215,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5289730229465969320
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2542989389991105900}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619455, y: 0.44378397, z: 0.52676827}
+  m_Center: {x: -0.00000071525574, y: -0.02, z: 0}
 --- !u!1 &2569736189013479629
 GameObject:
   m_ObjectHideFlags: 0
@@ -2890,12 +3239,13 @@ GameObject:
   - component: {fileID: 3620040259029851622}
   - component: {fileID: 9159112795558680729}
   - component: {fileID: 2941026311198150216}
+  - component: {fileID: 2870928647212511983}
   m_Layer: 0
   m_Name: stone_tallE (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3620040259029851622
 Transform:
@@ -2961,6 +3311,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2870928647212511983
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2569736189013479629}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.526768}
+  m_Center: {x: -0.0000014305115, y: -0.02, z: 0}
 --- !u!1 &2690293341262451480
 GameObject:
   m_ObjectHideFlags: 0
@@ -2972,12 +3335,13 @@ GameObject:
   - component: {fileID: 3403668442446070349}
   - component: {fileID: 3915576301626407655}
   - component: {fileID: 6341936010158195348}
+  - component: {fileID: 3818119841129312073}
   m_Layer: 0
   m_Name: stone_tallE (55)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3403668442446070349
 Transform:
@@ -3043,6 +3407,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3818119841129312073
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2690293341262451480}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378397, z: 0.52676815}
+  m_Center: {x: -0.0000019073486, y: -0.02, z: 0}
 --- !u!1 &2730402213142230697
 GameObject:
   m_ObjectHideFlags: 0
@@ -3054,6 +3431,7 @@ GameObject:
   - component: {fileID: 7471753320466428305}
   - component: {fileID: 6084058706598175282}
   - component: {fileID: 4627156840301425807}
+  - component: {fileID: 8901344799907391840}
   m_Layer: 0
   m_Name: stone_tallE (4)
   m_TagString: Untagged
@@ -3125,6 +3503,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8901344799907391840
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2730402213142230697}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378403, z: 0.52676815}
+  m_Center: {x: 0.0000019073486, y: -0.02, z: 0}
 --- !u!1 &2743480958146012797
 GameObject:
   m_ObjectHideFlags: 0
@@ -3136,6 +3527,7 @@ GameObject:
   - component: {fileID: 7527466862589238065}
   - component: {fileID: 247225006682516299}
   - component: {fileID: 3546468786398047702}
+  - component: {fileID: 6183563143719575765}
   m_Layer: 0
   m_Name: stone_tallE (9)
   m_TagString: Untagged
@@ -3207,6 +3599,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6183563143719575765
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2743480958146012797}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378394, z: 0.5267681}
+  m_Center: {x: 0, y: -0.02, z: 0}
 --- !u!1 &2773733305242809509
 GameObject:
   m_ObjectHideFlags: 0
@@ -3218,6 +3623,7 @@ GameObject:
   - component: {fileID: 4020587070453470431}
   - component: {fileID: 3350589660160026941}
   - component: {fileID: 6429371453808791057}
+  - component: {fileID: 6457692455850856515}
   m_Layer: 0
   m_Name: stone_tallE (12)
   m_TagString: Untagged
@@ -3289,6 +3695,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6457692455850856515
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2773733305242809509}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: 0, y: -0.02, z: -0.0000038146973}
 --- !u!1 &2873217863128399848
 GameObject:
   m_ObjectHideFlags: 0
@@ -3300,12 +3719,13 @@ GameObject:
   - component: {fileID: 4981100287626635775}
   - component: {fileID: 5211279504303564164}
   - component: {fileID: 8776702873944967444}
+  - component: {fileID: 5683541642980530679}
   m_Layer: 0
   m_Name: stone_tallE (54)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4981100287626635775
 Transform:
@@ -3371,6 +3791,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5683541642980530679
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2873217863128399848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: 0, y: -0.02, z: -0.0000038146973}
 --- !u!1 &2888632871524368257
 GameObject:
   m_ObjectHideFlags: 0
@@ -3382,12 +3815,13 @@ GameObject:
   - component: {fileID: 7871058738173486233}
   - component: {fileID: 2665984869627383284}
   - component: {fileID: 2003922356644419400}
+  - component: {fileID: 1384904399014648077}
   m_Layer: 0
   m_Name: stone_tallE (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7871058738173486233
 Transform:
@@ -3453,6 +3887,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1384904399014648077
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2888632871524368257}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: -0.0000038146973, y: -0.02, z: -0.0000076293945}
 --- !u!1 &2963803595706904027
 GameObject:
   m_ObjectHideFlags: 0
@@ -3464,12 +3911,13 @@ GameObject:
   - component: {fileID: 6328206373669566999}
   - component: {fileID: 195442159534825571}
   - component: {fileID: 636077341414826167}
+  - component: {fileID: 2677972776848268909}
   m_Layer: 0
   m_Name: stone_tallE (64)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6328206373669566999
 Transform:
@@ -3535,6 +3983,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2677972776848268909
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2963803595706904027}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619458, y: 0.44378397, z: 0.5267682}
+  m_Center: {x: 0, y: -0.02, z: 0.0000009536743}
 --- !u!1 &3002003932351699527
 GameObject:
   m_ObjectHideFlags: 0
@@ -3546,12 +4007,13 @@ GameObject:
   - component: {fileID: 7165276914393029460}
   - component: {fileID: 894984956281710587}
   - component: {fileID: 901921016360828957}
+  - component: {fileID: 2933961753543982011}
   m_Layer: 0
   m_Name: stone_tallE (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7165276914393029460
 Transform:
@@ -3617,6 +4079,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2933961753543982011
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3002003932351699527}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619443, y: 0.44378394, z: 0.526768}
+  m_Center: {x: 0.0000038146973, y: -0.02, z: 0.0000038146973}
 --- !u!1 &3161023806826135733
 GameObject:
   m_ObjectHideFlags: 0
@@ -3628,12 +4103,13 @@ GameObject:
   - component: {fileID: 7898653476562342343}
   - component: {fileID: 2940970277851588645}
   - component: {fileID: 4788893571029031412}
+  - component: {fileID: 3813969441140015030}
   m_Layer: 0
   m_Name: stone_tallE (48)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7898653476562342343
 Transform:
@@ -3699,6 +4175,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3813969441140015030
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3161023806826135733}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378397, z: 0.52676815}
+  m_Center: {x: 0, y: -0.02, z: 0.0000019073486}
 --- !u!1 &3468771929204178781
 GameObject:
   m_ObjectHideFlags: 0
@@ -3710,12 +4199,13 @@ GameObject:
   - component: {fileID: 5846547903561875543}
   - component: {fileID: 2809703737478722684}
   - component: {fileID: 7316594707297938945}
+  - component: {fileID: 6680524564779051245}
   m_Layer: 0
   m_Name: stone_tallE (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5846547903561875543
 Transform:
@@ -3781,6 +4271,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6680524564779051245
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3468771929204178781}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619455, y: 0.44378397, z: 0.52676827}
+  m_Center: {x: -0.0000014305115, y: -0.02, z: 0.0000038146973}
 --- !u!1 &3556879448896556531
 GameObject:
   m_ObjectHideFlags: 0
@@ -3792,12 +4295,13 @@ GameObject:
   - component: {fileID: 926337375743590644}
   - component: {fileID: 4200735400679731832}
   - component: {fileID: 9004034793589662842}
+  - component: {fileID: 8279358471679344700}
   m_Layer: 0
   m_Name: stone_tallE (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &926337375743590644
 Transform:
@@ -3863,6 +4367,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8279358471679344700
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3556879448896556531}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619443, y: 0.44378394, z: 0.526768}
+  m_Center: {x: -0.0000009536743, y: -0.02, z: 0.0000076293945}
 --- !u!1 &3618782253252869179
 GameObject:
   m_ObjectHideFlags: 0
@@ -3874,12 +4391,13 @@ GameObject:
   - component: {fileID: 4703921808403607104}
   - component: {fileID: 2931790707887345431}
   - component: {fileID: 8047574728295642888}
+  - component: {fileID: 6263197590113036981}
   m_Layer: 0
   m_Name: stone_tallE (59)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4703921808403607104
 Transform:
@@ -3945,6 +4463,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6263197590113036981
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3618782253252869179}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: -0.0000019073486, y: -0.02, z: -0.0000019073486}
 --- !u!1 &3623902588657217438
 GameObject:
   m_ObjectHideFlags: 0
@@ -3956,12 +4487,13 @@ GameObject:
   - component: {fileID: 7670216568266828059}
   - component: {fileID: 7669880325421716875}
   - component: {fileID: 1199828021354087108}
+  - component: {fileID: 6183008536814353303}
   m_Layer: 0
   m_Name: stone_tallE (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7670216568266828059
 Transform:
@@ -4027,6 +4559,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6183008536814353303
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3623902588657217438}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: 0, y: -0.02, z: -0.0000019073486}
 --- !u!1 &3662570482257723526
 GameObject:
   m_ObjectHideFlags: 0
@@ -4119,12 +4664,13 @@ GameObject:
   - component: {fileID: 9010555872103183319}
   - component: {fileID: 224316309775233342}
   - component: {fileID: 7725276133807504524}
+  - component: {fileID: 5185513513373921362}
   m_Layer: 0
   m_Name: stone_tallE (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &9010555872103183319
 Transform:
@@ -4190,6 +4736,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5185513513373921362
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3740857639290430272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619443, y: 0.44378394, z: 0.526768}
+  m_Center: {x: -0.0000019073486, y: -0.02, z: 0.0000076293945}
 --- !u!1 &4029739578545112938
 GameObject:
   m_ObjectHideFlags: 0
@@ -4201,12 +4760,13 @@ GameObject:
   - component: {fileID: 6457671842718747441}
   - component: {fileID: 8530450505025085176}
   - component: {fileID: 1564191300991491255}
+  - component: {fileID: 6426823744063303704}
   m_Layer: 0
   m_Name: stone_tallE (51)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6457671842718747441
 Transform:
@@ -4272,6 +4832,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6426823744063303704
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4029739578545112938}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: -0.0000009536743, y: -0.02, z: -0.0000019073486}
 --- !u!1 &4139646682384489297
 GameObject:
   m_ObjectHideFlags: 0
@@ -4364,12 +4937,13 @@ GameObject:
   - component: {fileID: 4864193881026196989}
   - component: {fileID: 5573232994842488314}
   - component: {fileID: 2876678101781222499}
+  - component: {fileID: 97495208522258411}
   m_Layer: 0
   m_Name: stone_tallE (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4864193881026196989
 Transform:
@@ -4435,6 +5009,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &97495208522258411
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4146461048894449254}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.526768}
+  m_Center: {x: -0.0000014305115, y: -0.02, z: 0}
 --- !u!1 &4263642454891408131
 GameObject:
   m_ObjectHideFlags: 0
@@ -4446,12 +5033,13 @@ GameObject:
   - component: {fileID: 4244428934608142296}
   - component: {fileID: 3384530570300860912}
   - component: {fileID: 2680374784333261355}
+  - component: {fileID: 7805169909885047462}
   m_Layer: 0
   m_Name: stone_tallE (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4244428934608142296
 Transform:
@@ -4517,6 +5105,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7805169909885047462
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4263642454891408131}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378403, z: 0.5267681}
+  m_Center: {x: 0.0000009536743, y: -0.02, z: 0}
 --- !u!1 &4269647153748017775
 GameObject:
   m_ObjectHideFlags: 0
@@ -4528,6 +5129,7 @@ GameObject:
   - component: {fileID: 3437865857838788380}
   - component: {fileID: 4952321534602426160}
   - component: {fileID: 8848600300492447517}
+  - component: {fileID: 4893446253463991453}
   m_Layer: 0
   m_Name: stone_tallE (13)
   m_TagString: Untagged
@@ -4599,6 +5201,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4893446253463991453
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4269647153748017775}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378403, z: 0.52676815}
+  m_Center: {x: 0.0000019073486, y: -0.02, z: 0}
 --- !u!1 &4349561505214094425
 GameObject:
   m_ObjectHideFlags: 0
@@ -4610,6 +5225,7 @@ GameObject:
   - component: {fileID: 1869770141199729786}
   - component: {fileID: 3218860403372502179}
   - component: {fileID: 287057965151057379}
+  - component: {fileID: 2223256318163790}
   m_Layer: 0
   m_Name: stone_tallE (7)
   m_TagString: Untagged
@@ -4681,6 +5297,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2223256318163790
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4349561505214094425}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619446, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: 0.0000038146973, y: -0.02, z: 0}
 --- !u!1 &4417927979824549156
 GameObject:
   m_ObjectHideFlags: 0
@@ -4794,7 +5423,7 @@ Transform:
   m_LocalScale: {x: 1.1999997, y: 1.1999999, z: 4}
   m_Children: []
   m_Father: {fileID: 717042054703889352}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -45, z: 0}
 --- !u!114 &4562267572873142608
 MonoBehaviour:
@@ -5806,12 +6435,13 @@ GameObject:
   - component: {fileID: 2086459931178520872}
   - component: {fileID: 6587603115204125933}
   - component: {fileID: 5364073487363374621}
+  - component: {fileID: 515380025756545464}
   m_Layer: 0
   m_Name: stone_tallE (56)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2086459931178520872
 Transform:
@@ -5877,6 +6507,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &515380025756545464
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4662378584820589677}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: 0, y: -0.02, z: -0.0000019073486}
 --- !u!1 &4711201752272288878
 GameObject:
   m_ObjectHideFlags: 0
@@ -5888,12 +6531,13 @@ GameObject:
   - component: {fileID: 2819888391920257932}
   - component: {fileID: 2297756227274771139}
   - component: {fileID: 7979399989386906547}
+  - component: {fileID: 5531874113002077775}
   m_Layer: 0
   m_Name: stone_tallE (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2819888391920257932
 Transform:
@@ -5959,6 +6603,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5531874113002077775
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4711201752272288878}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378397, z: 0.52676815}
+  m_Center: {x: 0, y: -0.02, z: 0}
 --- !u!1 &4768980623147069858
 GameObject:
   m_ObjectHideFlags: 0
@@ -6052,7 +6709,7 @@ Transform:
   - {fileID: 8668485588717632522}
   - {fileID: 6328206373669566999}
   m_Father: {fileID: 717042054703889352}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4785733513645325319
 GameObject:
@@ -6227,12 +6884,13 @@ GameObject:
   - component: {fileID: 4070073204924122994}
   - component: {fileID: 8924464899660645288}
   - component: {fileID: 4349066654895210746}
+  - component: {fileID: 3450056075082920169}
   m_Layer: 0
   m_Name: stone_tallE (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4070073204924122994
 Transform:
@@ -6298,6 +6956,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3450056075082920169
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4960526655321047320}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: -0.0000009536743, y: -0.02, z: -0.0000009536743}
 --- !u!1 &5124213371210934792
 GameObject:
   m_ObjectHideFlags: 0
@@ -6390,12 +7061,13 @@ GameObject:
   - component: {fileID: 2124663099740691626}
   - component: {fileID: 2477091526190434467}
   - component: {fileID: 1241601899746642200}
+  - component: {fileID: 2478586718915619265}
   m_Layer: 0
   m_Name: stone_tallE (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2124663099740691626
 Transform:
@@ -6461,6 +7133,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2478586718915619265
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5146868359127823122}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: -0.0000019073486, y: -0.02, z: 0}
 --- !u!1 &5379933982675984146
 GameObject:
   m_ObjectHideFlags: 0
@@ -6553,6 +7238,7 @@ GameObject:
   - component: {fileID: 9173676538121183068}
   - component: {fileID: 4904161784058642474}
   - component: {fileID: 5117950369340181949}
+  - component: {fileID: 8269921508253280957}
   m_Layer: 0
   m_Name: stone_tallE (2)
   m_TagString: Untagged
@@ -6624,6 +7310,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8269921508253280957
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5724101045770684890}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: 0.0000009536743, y: -0.02, z: 0}
 --- !u!1 &5824586634954840298
 GameObject:
   m_ObjectHideFlags: 0
@@ -6635,12 +7334,13 @@ GameObject:
   - component: {fileID: 7480929828628981395}
   - component: {fileID: 6455325620213973091}
   - component: {fileID: 5566386879639095594}
+  - component: {fileID: 8890100898686615414}
   m_Layer: 0
   m_Name: stone_tallE (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &7480929828628981395
 Transform:
@@ -6706,6 +7406,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8890100898686615414
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5824586634954840298}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.526768}
+  m_Center: {x: -0.0000019073486, y: -0.02, z: 0}
 --- !u!1 &5944811714600669478
 GameObject:
   m_ObjectHideFlags: 0
@@ -6798,12 +7511,13 @@ GameObject:
   - component: {fileID: 5887762855868885795}
   - component: {fileID: 8749792426386013162}
   - component: {fileID: 298566474840592372}
+  - component: {fileID: 387132766222427105}
   m_Layer: 0
   m_Name: stone_tallE (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5887762855868885795
 Transform:
@@ -6869,6 +7583,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &387132766222427105
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6037197447077229793}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: -0.0000038146973, y: -0.02, z: 0}
 --- !u!1 &6250354848250590849
 GameObject:
   m_ObjectHideFlags: 0
@@ -6961,12 +7688,13 @@ GameObject:
   - component: {fileID: 1453780999285711207}
   - component: {fileID: 2190723134688596648}
   - component: {fileID: 8536265267537008568}
+  - component: {fileID: 7596072002052395068}
   m_Layer: 0
   m_Name: stone_tallE (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1453780999285711207
 Transform:
@@ -7032,6 +7760,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &7596072002052395068
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6287106633832826822}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378403, z: 0.5267681}
+  m_Center: {x: -0.0000009536743, y: -0.02, z: 0}
 --- !u!1 &6572052887912408989
 GameObject:
   m_ObjectHideFlags: 0
@@ -7043,12 +7784,13 @@ GameObject:
   - component: {fileID: 5519698598599125411}
   - component: {fileID: 218978339810074064}
   - component: {fileID: 5637794445177087416}
+  - component: {fileID: 8060195705359945091}
   m_Layer: 0
   m_Name: stone_tallE (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5519698598599125411
 Transform:
@@ -7114,6 +7856,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8060195705359945091
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6572052887912408989}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378403, z: 0.5267681}
+  m_Center: {x: -0.0000019073486, y: -0.02, z: 0.0000038146973}
 --- !u!1 &6575851724035158797
 GameObject:
   m_ObjectHideFlags: 0
@@ -7125,12 +7880,13 @@ GameObject:
   - component: {fileID: 5855780636299119225}
   - component: {fileID: 7945362277453780795}
   - component: {fileID: 5849478796425651751}
+  - component: {fileID: 4877848983009636846}
   m_Layer: 0
   m_Name: stone_tallE (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5855780636299119225
 Transform:
@@ -7196,6 +7952,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &4877848983009636846
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6575851724035158797}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378397, z: 0.52676815}
+  m_Center: {x: 0, y: -0.02, z: 0}
 --- !u!1 &6588494741371458066
 GameObject:
   m_ObjectHideFlags: 0
@@ -7207,12 +7976,13 @@ GameObject:
   - component: {fileID: 813362002102481716}
   - component: {fileID: 6528577241384245802}
   - component: {fileID: 523803755545213106}
+  - component: {fileID: 1689489731412517439}
   m_Layer: 0
   m_Name: stone_tallE (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &813362002102481716
 Transform:
@@ -7278,36 +8048,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &6616211914634892017
-GameObject:
+--- !u!65 &1689489731412517439
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3725276011305926230}
-  m_Layer: 0
-  m_Name: Trees
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3725276011305926230
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6616211914634892017}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 717042054703889352}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 6588494741371458066}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378397, z: 0.52676815}
+  m_Center: {x: 0.0000009536743, y: -0.02, z: 0.0000019073486}
 --- !u!1 &6783970299319087146
 GameObject:
   m_ObjectHideFlags: 0
@@ -7319,6 +8072,7 @@ GameObject:
   - component: {fileID: 5384120967916119500}
   - component: {fileID: 720749757383903455}
   - component: {fileID: 7460648148079993806}
+  - component: {fileID: 1631154374570649403}
   m_Layer: 0
   m_Name: stone_tallE (5)
   m_TagString: Untagged
@@ -7390,6 +8144,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1631154374570649403
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6783970299319087146}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378394, z: 0.5267681}
+  m_Center: {x: -0.0000038146973, y: -0.02, z: 0}
 --- !u!1 &7612030013193657328
 GameObject:
   m_ObjectHideFlags: 0
@@ -7401,12 +8168,13 @@ GameObject:
   - component: {fileID: 2064716043723218886}
   - component: {fileID: 2241581297482199256}
   - component: {fileID: 7914703436196109444}
+  - component: {fileID: 2532351397160372742}
   m_Layer: 0
   m_Name: stone_tallE (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2064716043723218886
 Transform:
@@ -7472,6 +8240,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2532351397160372742
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7612030013193657328}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: -0.0000009536743, y: -0.02, z: -0.0000009536743}
 --- !u!1 &8119827977638128683
 GameObject:
   m_ObjectHideFlags: 0
@@ -7483,6 +8264,7 @@ GameObject:
   - component: {fileID: 906022547935368349}
   - component: {fileID: 859628162466476384}
   - component: {fileID: 4936265682871377165}
+  - component: {fileID: 3042119434716602509}
   m_Layer: 0
   m_Name: stone_tallE (6)
   m_TagString: Untagged
@@ -7554,6 +8336,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3042119434716602509
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8119827977638128683}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: 0, y: -0.02, z: -0.0000019073486}
 --- !u!1 &8181289831451732064
 GameObject:
   m_ObjectHideFlags: 0
@@ -7565,12 +8360,13 @@ GameObject:
   - component: {fileID: 3185458376527503523}
   - component: {fileID: 2035236550018516500}
   - component: {fileID: 7612181793068069229}
+  - component: {fileID: 8370538873895868469}
   m_Layer: 0
   m_Name: stone_tallE (62)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &3185458376527503523
 Transform:
@@ -7636,6 +8432,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8370538873895868469
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8181289831451732064}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: 0, y: -0.02, z: -0.0000038146973}
 --- !u!1 &8272128908969660381
 GameObject:
   m_ObjectHideFlags: 0
@@ -7728,12 +8537,13 @@ GameObject:
   - component: {fileID: 132302754504807483}
   - component: {fileID: 1621615760978924045}
   - component: {fileID: 5976415178147269337}
+  - component: {fileID: 8401263339971432009}
   m_Layer: 0
   m_Name: stone_tallE (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &132302754504807483
 Transform:
@@ -7799,6 +8609,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8401263339971432009
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8296504811537667192}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619455, y: 0.44378397, z: 0.52676827}
+  m_Center: {x: -0.0000019073486, y: -0.02, z: 0.0000038146973}
 --- !u!1 &8487045888677530502
 GameObject:
   m_ObjectHideFlags: 0
@@ -7810,12 +8633,13 @@ GameObject:
   - component: {fileID: 5235319406126515876}
   - component: {fileID: 4199323215877885570}
   - component: {fileID: 3970578518748422145}
+  - component: {fileID: 5725608897886647833}
   m_Layer: 0
   m_Name: stone_tallE (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &5235319406126515876
 Transform:
@@ -7881,6 +8705,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5725608897886647833
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8487045888677530502}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378403, z: 0.5267681}
+  m_Center: {x: 0.0000019073486, y: -0.02, z: 0}
 --- !u!1 &8697339595221643555
 GameObject:
   m_ObjectHideFlags: 0
@@ -7892,12 +8729,13 @@ GameObject:
   - component: {fileID: 6623483324742898267}
   - component: {fileID: 6527576353241696067}
   - component: {fileID: 5975150147845532586}
+  - component: {fileID: 5712696013592650064}
   m_Layer: 0
   m_Name: stone_tallE (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &6623483324742898267
 Transform:
@@ -7963,6 +8801,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5712696013592650064
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8697339595221643555}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378397, z: 0.52676815}
+  m_Center: {x: 0.0000009536743, y: -0.02, z: -0.0000019073486}
 --- !u!1 &8934932065773612760
 GameObject:
   m_ObjectHideFlags: 0
@@ -7974,12 +8825,13 @@ GameObject:
   - component: {fileID: 2015820148666912673}
   - component: {fileID: 3830757664185804191}
   - component: {fileID: 8414083360929754562}
+  - component: {fileID: 3383165760982864595}
   m_Layer: 0
   m_Name: stone_tallE (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &2015820148666912673
 Transform:
@@ -8045,6 +8897,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3383165760982864595
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8934932065773612760}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.4561945, y: 0.44378397, z: 0.5267681}
+  m_Center: {x: -0.0000038146973, y: -0.02, z: 0}
 --- !u!1 &9131514362042650272
 GameObject:
   m_ObjectHideFlags: 0
@@ -8056,12 +8921,13 @@ GameObject:
   - component: {fileID: 1379884093813353278}
   - component: {fileID: 667004819937438175}
   - component: {fileID: 3095601991666465511}
+  - component: {fileID: 313871243218865429}
   m_Layer: 0
   m_Name: stone_tallE (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1379884093813353278
 Transform:
@@ -8127,3 +8993,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &313871243218865429
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9131514362042650272}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.45619452, y: 0.44378403, z: 0.5267681}
+  m_Center: {x: 0, y: -0.02, z: 0}

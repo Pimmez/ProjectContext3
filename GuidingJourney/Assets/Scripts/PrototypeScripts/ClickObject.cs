@@ -19,7 +19,7 @@ public class ClickObject : MonoBehaviour
 
     private void Update()
     {
-        if (Vector3.Distance(parentTransform.transform.position, this.transform.position) <= 20 && !isGrabbed)
+        if (Vector3.Distance(parentTransform.transform.position, this.transform.position) <= 15 && !isGrabbed)
         {
             //Debug.Log("Test distance 01");
             if (isNearObjectEvent != null)
@@ -65,7 +65,7 @@ public class ClickObject : MonoBehaviour
     {
         // Draw a yellow sphere at the transform's position
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, 20);
+        Gizmos.DrawWireSphere(transform.position, 15);
 
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, 15);
