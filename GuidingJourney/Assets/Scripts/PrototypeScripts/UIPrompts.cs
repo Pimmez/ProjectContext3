@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.AI;
 
 public class UIPrompts : MonoBehaviour
 {
@@ -14,6 +15,9 @@ public class UIPrompts : MonoBehaviour
     [SerializeField] private GameObject warpWall;
     [SerializeField] private Camera Maincam;
     [SerializeField] private Camera sideCam;
+
+    [SerializeField] private NavMeshAgent navMeshPlayer = null;
+    [SerializeField] private TestCharacterController charControllerPlayer = null;
 
     private bool onlyOnce = false;
     private bool DoCameraOnce = false;
@@ -64,6 +68,11 @@ public class UIPrompts : MonoBehaviour
     {
         if (!DoCameraOnce)
         {
+            if (navMeshPlayer != null)
+                navMeshPlayer.speed = 0;
+
+            if (charControllerPlayer != null)
+                charControllerPlayer.moveSpeed = 0;
             selfAnim.SetBool("isWaving", false);
 
             text_GrabObject.SetActive(true);
@@ -86,6 +95,13 @@ public class UIPrompts : MonoBehaviour
     {
         Maincam.enabled = true;
         sideCam.enabled = false;
+
+        if (navMeshPlayer != null)
+            navMeshPlayer.speed = 30;
+
+        if (charControllerPlayer != null)
+            charControllerPlayer.moveSpeed = 40;
+
         warpWall.SetActive(true);
         text_GrabObject.SetActive(false);
         text_presskey.SetActive(false);
@@ -115,6 +131,12 @@ public class UIPrompts : MonoBehaviour
         text_input.SetActive(false);
         text_npcTalk.SetActive(false);
         text_GrabObject.SetActive(false);
+        
+        if (navMeshPlayer != null)
+            navMeshPlayer.speed = 0;
+
+        if (charControllerPlayer != null)
+            charControllerPlayer.moveSpeed = 0;
 
         StartCoroutine("Ending");
     }
