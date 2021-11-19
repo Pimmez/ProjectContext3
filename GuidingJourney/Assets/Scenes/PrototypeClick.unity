@@ -3501,6 +3501,7 @@ MonoBehaviour:
   Maincam: {fileID: 338755057}
   sideCam: {fileID: 1263586104}
   navMeshPlayer: {fileID: 351945340}
+  charControllerPlayer: {fileID: 0}
   anim: {fileID: 1263586103}
   selfAnim: {fileID: 510838095}
 --- !u!1 &1694730174

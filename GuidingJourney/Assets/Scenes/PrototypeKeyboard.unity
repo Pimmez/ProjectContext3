@@ -519,7 +519,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-4330
+  m_Name: pb_Mesh-44944
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -683,7 +683,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3772
+  m_Name: pb_Mesh-44386
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6498,7 +6498,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3756
+  m_Name: pb_Mesh-44370
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7597,7 +7597,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2960
+  m_Name: pb_Mesh-43576
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9692,18 +9692,6 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 717042054703889352, guid: e43f35af6cbcf9c4cbe074e0dcfb2e0b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 717042054703889352, guid: e43f35af6cbcf9c4cbe074e0dcfb2e0b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 717042054703889352, guid: e43f35af6cbcf9c4cbe074e0dcfb2e0b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 717042054703889352, guid: e43f35af6cbcf9c4cbe074e0dcfb2e0b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 540
       objectReference: {fileID: 0}
@@ -9751,22 +9739,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 891803361}
-    - target: {fileID: 717042055450536553, guid: e43f35af6cbcf9c4cbe074e0dcfb2e0b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 717042055450536553, guid: e43f35af6cbcf9c4cbe074e0dcfb2e0b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 717042055450536553, guid: e43f35af6cbcf9c4cbe074e0dcfb2e0b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -162.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 717042055450536553, guid: e43f35af6cbcf9c4cbe074e0dcfb2e0b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 79
-      objectReference: {fileID: 0}
     - target: {fileID: 717042055450536557, guid: e43f35af6cbcf9c4cbe074e0dcfb2e0b, type: 3}
       propertyPath: m_Mesh
       value: 
