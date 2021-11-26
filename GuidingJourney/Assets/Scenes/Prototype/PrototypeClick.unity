@@ -1495,9 +1495,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a7907c10cca726489177d1c1587bb78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animals:
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &604791523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1510,9 +1507,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4edd88db21daa2840a4dae8252d3b668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  images:
-  - {fileID: 1132814178}
-  - {fileID: 219919173}
 --- !u!114 &604791524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3551,7 +3545,7 @@ GameObject:
   - component: {fileID: 1694730181}
   m_Layer: 0
   m_Name: GrabableObject(ClickVersion)
-  m_TagString: Grab
+  m_TagString: Fox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
