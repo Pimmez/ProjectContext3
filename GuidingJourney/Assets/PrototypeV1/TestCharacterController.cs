@@ -5,7 +5,7 @@ using UnityEngine;
 public class TestCharacterController : MonoBehaviour
 {
     [SerializeField] private Camera mainCamera;
-    public float moveSpeed;
+    public float moveSpeed = 30f;
     [SerializeField] private CharacterController charController;
 
     public Vector3 movement;
@@ -35,7 +35,8 @@ public class TestCharacterController : MonoBehaviour
         Vector3 direction = Vector3.Normalize(right * horizontalAxis + forward * forwardAxis);
 
         // Turn the player towards the direction they are moving towards
-        transform.forward = Vector3.Lerp(transform.forward, direction, time);
+        if(moveSpeed != 0)
+            transform.forward = Vector3.Lerp(transform.forward, direction, time);
 
         charController.Move(direction * moveSpeed * Time.deltaTime);
     }

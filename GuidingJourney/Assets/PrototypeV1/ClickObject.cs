@@ -38,7 +38,7 @@ public class ClickObject : MonoBehaviour
             RaycastHit hit;
 
 
-            if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == "Grab")
+            if (Physics.Raycast(ray, out hit) && hit.transform.gameObject.tag == Tags.FOX)
             {
                 //Debug.Log("You selected the " + hit.transform.name); 
                 //Debug.Log("Position of the clicked object: " + hit.transform.position);
