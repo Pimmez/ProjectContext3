@@ -6,30 +6,16 @@ using UnityEngine;
 public class FoxMovement : MonoBehaviour
 {
     [Header("Component References")]
-    [SerializeField] private CharacterController charController;
-    [SerializeField] private Camera mainCamera;
+    [SerializeField] private CharacterController charController = null;
+    [SerializeField] private Camera mainCamera = null;
 
     [Header("Movement Settings")]
-    [SerializeField] private float movementSpeed = 3f;
-    [SerializeField] private float turnSpeed = 0.1f;
+    [SerializeField] private float movementSpeed = 40f;
+    [SerializeField] private float turnSpeed = 100f;
 
-    [Header("Turn Settings")]
-    [SerializeField] private float time = 0.1f;
-    
     //Stored Values
-    private Vector3 movementDirection;
-    private Vector3 forward;
-    private Vector3 right;
-
-
-    private void Awake()
-    {
-        forward = mainCamera.transform.forward;
-        forward.y = 0;
-        forward = Vector3.Normalize(forward);
-        right = Quaternion.Euler(new Vector3(0, 90, 0)) * forward;
-    }
-
+    private Vector3 movementDirection = Vector3.zero;
+    
     public void UpdateMovementData(Vector3 newMovementDirection)
     {
         movementDirection = newMovementDirection;
@@ -38,34 +24,34 @@ public class FoxMovement : MonoBehaviour
     private void Update()
     {
         MoveThePlayer();
-        CameraDirection();
+        TurnThePlayer();
     }
 
-    private void MoveThePlayer()
+    private Vector3 CameraDirection(Vector3 movementDirection)
     {
-        //Vector3 movement = CameraDirection(movementDirection) * movementSpeed * Time.deltaTime;
-        charController.Move(movementDirection * movementSpeed * Time.deltaTime);    
-    }
-
-    private void CameraDirection()
-    {
-        Vector3 direction = Vector3.Normalize(right * movementDirection.z + forward * movementDirection.x);
-        /*
         var cameraForward = mainCamera.transform.forward;
         var cameraRight = mainCamera.transform.right;
 
         cameraForward.y = 0f;
         cameraRight.y = 0f;
 
+        cameraForward = Vector3.Normalize(cameraForward);
+        cameraRight = Quaternion.Euler(new Vector3(0, 90, 0)) * cameraForward;
+
         return cameraForward * movementDirection.z + cameraRight * movementDirection.x;
-        */
-       
-        /*
-        // Turn the player towards the direction they are moving towards
-        if(movementSpeed != 0)
+    }
+
+    private void TurnThePlayer()
+    {
+        if(movementDirection != Vector3.zero)
         {
-            transform.forward = Vector3.Lerp(transform.forward, direction, time);
+            Quaternion toRotate = Quaternion.LookRotation(CameraDirection(movementDirection), Vector3.up);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotate, turnSpeed * Time.deltaTime);
         }
-        */
+    }
+
+    private void MoveThePlayer()
+    {
+        charController.Move(CameraDirection(movementDirection) * movementSpeed * Time.deltaTime);
     }
 }
