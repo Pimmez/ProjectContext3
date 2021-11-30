@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Input Settings")]
     [SerializeField] private float movementSmoothingSpeed = 1f;
+    [SerializeField] private bool isSmoothMovement = false;
     private Vector3 rawInputMovement = Vector3.zero;
     private Vector3 smoothInputMovement = Vector3.zero;
 
@@ -42,8 +43,15 @@ public class PlayerController : MonoBehaviour
     //Update Loop - Used for calculating frame-based data
     private void Update()
     {
-        CalculateMovementInputSmoothing();
-        UpdatePlayerMovement();
+        if(isSmoothMovement)
+        {
+            CalculateMovementInputSmoothing();
+            UpdatePlayerMovement(smoothInputMovement);
+        }
+        else if(!isSmoothMovement)
+        {
+            UpdatePlayerMovement(rawInputMovement);
+        }        
     }
 
     //Change Input axis from raw to smoot input
@@ -53,9 +61,9 @@ public class PlayerController : MonoBehaviour
     }
 
     //Send data to foxMovement script
-    private void UpdatePlayerMovement()
+    private void UpdatePlayerMovement(Vector3 _movement)
     {
-        foxMovement.UpdateMovementData(smoothInputMovement);
+        foxMovement.UpdateMovementData(_movement);
     }
 
     //Gamemanager set input true or false
