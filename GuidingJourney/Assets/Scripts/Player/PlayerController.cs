@@ -1,21 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Component References")]
+    [SerializeField] private FoxMovement foxMovement = null;
+    [SerializeField] private PlayerInput playerInput = null;
+
     [Header("Input Settings")]
-    public PlayerInput playerInput;
-    public float movementSmoothingSpeed = 1f;
-    private Vector3 rawInputMovement;
-    private Vector3 smoothInputMovement;
+    [SerializeField] private float movementSmoothingSpeed = 1f;
+    private Vector3 rawInputMovement = Vector3.zero;
+    private Vector3 smoothInputMovement = Vector3.zero;
 
-    [Header("Sub Behaviours")]
-    public FoxMovement foxMovement;
-
-
-
+    //Event to get the OnGrab Keyinput
     public void OnGrab(InputAction.CallbackContext value)
     {
         if (value.started)
@@ -24,6 +21,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //Event to get the OnCrawl Keyinput
     public void OnCrawl(InputAction.CallbackContext value)
     {
         if (value.started)
@@ -32,6 +30,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    //Event to get the OnMovement axis
     public void OnMovement(InputAction.CallbackContext value)
     {
         Debug.Log("OnMovement::Activated");
@@ -47,12 +46,13 @@ public class PlayerController : MonoBehaviour
         UpdatePlayerMovement();
     }
 
-    //Input's Axes values are raw
+    //Change Input axis from raw to smoot input
     private void CalculateMovementInputSmoothing()
     {
         smoothInputMovement = Vector3.Lerp(smoothInputMovement, rawInputMovement, Time.deltaTime * movementSmoothingSpeed);
     }
 
+    //Send data to foxMovement script
     private void UpdatePlayerMovement()
     {
         foxMovement.UpdateMovementData(smoothInputMovement);

@@ -2224,9 +2224,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf640be8373b8474d998908faf53fb52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  foxMovement: {fileID: 1903614080}
   playerInput: {fileID: 1903614077}
   movementSmoothingSpeed: 1
-  foxMovement: {fileID: 1903614080}
 --- !u!1 &1920392083
 GameObject:
   m_ObjectHideFlags: 0
