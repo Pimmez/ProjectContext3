@@ -26,8 +26,6 @@ public class PlayerController : MonoBehaviour
     {
         if (value.started)
         {
-            Debug.Log("OnGrab::Activated");
-            
             //Interaction Action/Invoke
             if(OnGrabEvent != null)
             {
@@ -48,8 +46,6 @@ public class PlayerController : MonoBehaviour
     //Event to get the OnMovement axis
     public void OnMovement(InputAction.CallbackContext value)
     {
-        Debug.Log("OnMovement::Activated");
-
         Vector2 inputMovement = value.ReadValue<Vector2>();
         rawInputMovement = new Vector3(inputMovement.x, 0, inputMovement.y);
     }

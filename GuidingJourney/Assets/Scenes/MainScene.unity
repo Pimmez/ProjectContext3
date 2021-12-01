@@ -5086,9 +5086,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1903614076}
-  objectRange: 10
   parentTransform: {fileID: 1903614079}
   holdTransform: {fileID: 985156939}
+  objectRange: 10
   isInChapter: 1
 --- !u!23 &442126376
 MeshRenderer:

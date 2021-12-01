@@ -5,45 +5,56 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
+    [Header("Component References")]
     [SerializeField] private GameObject player;
+    //NEED CHECKOUT
+    [SerializeField] private Transform parentTransform;
+    [SerializeField] private Transform holdTransform;
+
+    [Header("Range Settings")]
     [SerializeField] private float objectRange = 10f;
 
     private bool isHoldingItem = false;
 
-
-    //NEED
-    [SerializeField] private Transform parentTransform;
-    [SerializeField] private Transform holdTransform;
-
-
+    [Header("WIP")]
     //Needs to be managed by gameManager later in the game
     [SerializeField] private bool isInChapter = false;
 
+    //Activated by Action event from PlayerController
     private void GrabObjects()
     {
         if(isInChapter)
         {
+            //Check if distance is within reach and if it is not already holding an item
             if (!isHoldingItem && Vector3.Distance(this.transform.position, player.transform.position) < objectRange)
             {
-                Debug.Log("Can Grab Item");
                 if (!isHoldingItem)
                 {
                     //Grab item 
+
+                    //Set item to specific parent
                     this.transform.parent = parentTransform;
+
+                    //Set item to specific location
                     this.transform.position = holdTransform.position;
+                    
                     isHoldingItem = true;
                 }
             }
             else if (isHoldingItem)
             {
+                //Drop item
+
+                //Disconnect from parent
                 this.transform.parent = null;
+
+                //Set item to the ground
                 this.transform.position = new Vector3(this.transform.position.x, -3.0f, this.transform.position.z);
-                //put item on the ground
+
                 isHoldingItem = false;
             }
             else
             {
-                Debug.Log("Item to far away :(");
                 return;
             }
         }
@@ -53,20 +64,23 @@ public class Item : MonoBehaviour
         }     
     }
 
+    //Recieves action event and connects it to methods
     private void OnEnable()
     {
         PlayerController.OnGrabEvent += GrabObjects;
     }
+
+    //Recieves action event and disconnect it to methods
 
     private void OnDisable()
     {
         PlayerController.OnGrabEvent -= GrabObjects;
     }
 
+    //Gives visible feedback for the area of the method GrabObjects
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(this.transform.position, objectRange);
-        Gizmos.color = Color.blue;
+        Gizmos.color = Color.red;
     }
-
 }
