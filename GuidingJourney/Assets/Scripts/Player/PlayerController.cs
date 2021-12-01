@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -7,11 +9,17 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private FoxMovement foxMovement = null;
     [SerializeField] private PlayerInput playerInput = null;
 
+    //Action Events
+    public static Action OnGrabEvent;
+
     [Header("Input Settings")]
     [SerializeField] private float movementSmoothingSpeed = 1f;
-    [SerializeField] private bool isSmoothMovement = false;
     private Vector3 rawInputMovement = Vector3.zero;
     private Vector3 smoothInputMovement = Vector3.zero;
+  
+    //Getters & Setters
+    public bool IsSmoothMovement { get { return isSmoothMovement; } set { isSmoothMovement = value; } }
+    private bool isSmoothMovement = false;
 
     //Event to get the OnGrab Keyinput
     public void OnGrab(InputAction.CallbackContext value)
@@ -19,6 +27,12 @@ public class PlayerController : MonoBehaviour
         if (value.started)
         {
             Debug.Log("OnGrab::Activated");
+            
+            //Interaction Action/Invoke
+            if(OnGrabEvent != null)
+            {
+                OnGrabEvent();
+            }
         }
     }
 
@@ -27,7 +41,7 @@ public class PlayerController : MonoBehaviour
     {
         if (value.started)
         {
-            Debug.Log("OnCrawl::Activated");
+            Debug.Log("OnCrawl::Activated");    
         }
     }
 

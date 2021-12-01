@@ -10,6 +10,7 @@ public class AnimalBehaviour : MonoBehaviour
     [SerializeField] private float _turnSpeed = 360;
     private Vector3 _input;
 
+
     private void Update()
     {
         GatherInput();
