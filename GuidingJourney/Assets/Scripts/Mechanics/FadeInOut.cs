@@ -31,13 +31,13 @@ public class FadeInOut : MonoBehaviour
 
     private void OnEnable()
     {
-        PlayerController.TestButtonEvent += ActivateStartFade;
-        PlayerController.OnGrabEvent += ActivateEndFade;
+        PlayerInteractions.StartFadeEvent += ActivateStartFade;
+        PlayerInteractions.EndFadeEvent += ActivateEndFade;
     }
 
     private void OnDisable()
     {
-        PlayerController.TestButtonEvent -= ActivateStartFade;
-        PlayerController.OnGrabEvent -= ActivateEndFade;
+        PlayerInteractions.StartFadeEvent -= ActivateStartFade;
+        PlayerInteractions.EndFadeEvent -= ActivateEndFade;
     }
 }

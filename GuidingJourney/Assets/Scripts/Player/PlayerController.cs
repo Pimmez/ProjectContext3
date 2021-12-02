@@ -14,12 +14,14 @@ public class PlayerController : MonoBehaviour
     public static Action OnCrawlEvent;
     public static Action TestButtonEvent;
 
+    //Privates
+    private bool isCrawling = false;
 
     [Header("Input Settings")]
     [SerializeField] private float movementSmoothingSpeed = 1f;
     private Vector3 rawInputMovement = Vector3.zero;
     private Vector3 smoothInputMovement = Vector3.zero;
-  
+    
     //Getters & Setters
     public bool IsSmoothMovement { get { return isSmoothMovement; } set { isSmoothMovement = value; } }
     private bool isSmoothMovement = false;
@@ -40,13 +42,16 @@ public class PlayerController : MonoBehaviour
     //Event to get the OnCrawl Keyinput
     public void OnCrawl(InputAction.CallbackContext value)
     {
-        if (value.started)
+        if (value.started && isCrawling)
         {
-            Debug.Log("OnCrawl::Activated");    
             if(OnCrawlEvent != null)
             {
                 OnCrawlEvent();
             }
+        }
+        else
+        {
+            return;
         }
     }
 
@@ -96,6 +101,11 @@ public class PlayerController : MonoBehaviour
         foxMovement.UpdateMovementData(_movement);
     }
 
+    private void CanCrawl(bool _isCrawling)
+    {
+        isCrawling = _isCrawling;
+    }
+
     //Gamemanager set input true or false
     public void SetInputActiveState(bool gameIsPaused)
     {
@@ -109,5 +119,15 @@ public class PlayerController : MonoBehaviour
                 playerInput.ActivateInput();
                 break;
         }
+    }
+
+    private void OnEnable()
+    {
+        CrawlableObject.CanCrawl += CanCrawl;
+    }
+
+    private void OnDisable()
+    {
+        CrawlableObject.CanCrawl -= CanCrawl;
     }
 }
