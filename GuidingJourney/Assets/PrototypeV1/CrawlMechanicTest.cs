@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class CrawlMechanic : MonoBehaviour
+public class CrawlMechanicTest : MonoBehaviour
 {
     [SerializeField] private Transform otherPos = null;
     [SerializeField] private Transform parentTransform = null;

@@ -11,6 +11,9 @@ public class PlayerController : MonoBehaviour
 
     //Action Events
     public static Action OnGrabEvent;
+    public static Action OnCrawlEvent;
+    public static Action TestButtonEvent;
+
 
     [Header("Input Settings")]
     [SerializeField] private float movementSmoothingSpeed = 1f;
@@ -40,6 +43,23 @@ public class PlayerController : MonoBehaviour
         if (value.started)
         {
             Debug.Log("OnCrawl::Activated");    
+            if(OnCrawlEvent != null)
+            {
+                OnCrawlEvent();
+            }
+        }
+    }
+
+    //Event to get the TestButton Keyinput
+    public void TestButton(InputAction.CallbackContext value)
+    {
+        if (value.started)
+        {
+            Debug.Log("Test button queue");
+            if (TestButtonEvent != null)
+            {
+                TestButtonEvent();
+            }
         }
     }
 
