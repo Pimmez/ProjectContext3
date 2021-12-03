@@ -41,13 +41,14 @@ public class PlayerController : MonoBehaviour
 
     //Event to get the OnCrawl Keyinput
     public void OnCrawl(InputAction.CallbackContext value)
-    {
+    {      
         if (value.started && isCrawling)
         {
             if(OnCrawlEvent != null)
             {
                 OnCrawlEvent();
             }
+            isCrawling = false;
         }
         else
         {

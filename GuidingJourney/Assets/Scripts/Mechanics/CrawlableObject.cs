@@ -3,21 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CrawlableObject : MonoBehaviour
+public class CrawlableObject : MonoBehaviour, IInteractable
 {
     public static Action<bool> CanCrawl;
     private bool isTriggered = false;
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == Tags.PLAYER)
-        {
             isTriggered = true;
-        }
-        else
-        {
-            isTriggered = false;
-        }
         if (CanCrawl != null)
         {
             CanCrawl(isTriggered);
@@ -32,5 +26,10 @@ public class CrawlableObject : MonoBehaviour
         {
             CanCrawl(isTriggered);
         }
+    }
+
+    public void Interact()
+    {
+
     }
 }
