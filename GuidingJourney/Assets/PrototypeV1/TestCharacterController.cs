@@ -5,8 +5,8 @@ using UnityEngine;
 public class TestCharacterController : MonoBehaviour
 {
     [SerializeField] private Camera mainCamera;
-    public float moveSpeed = 30f;
     [SerializeField] private CharacterController charController;
+    public float moveSpeed = 30f;
 
     public Vector3 movement;
     public Vector3 forward;
