@@ -32,10 +32,8 @@ public class PlayerInteractions : MonoBehaviour
        // anim.SetBool("isCrawling", false);
 
         //Teleport Fox
-        
-        
-        //End Fade
-        
+            
+        //End Fade      
     }
 
     public void CrawlToFade()

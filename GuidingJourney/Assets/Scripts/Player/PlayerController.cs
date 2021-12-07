@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [Header("Component References")]
-    [SerializeField] private FoxMovement foxMovement = null;
+    [SerializeField] private AnimalMovement animalMovement = null;
     [SerializeField] private PlayerInput playerInput = null;
 
     //Action Events
@@ -99,7 +99,7 @@ public class PlayerController : MonoBehaviour
     //Send data to foxMovement script
     private void UpdatePlayerMovement(Vector3 _movement)
     {
-        foxMovement.UpdateMovementData(_movement);
+        animalMovement.UpdateMovementData(_movement);
     }
 
     private void CanCrawl(bool _isCrawling)

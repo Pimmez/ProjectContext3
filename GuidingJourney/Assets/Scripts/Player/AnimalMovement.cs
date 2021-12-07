@@ -1,7 +1,6 @@
 using UnityEngine;
 
-
-public class FoxMovement : MonoBehaviour
+public class AnimalMovement : MonoBehaviour
 {
     [Header("Component References")]
     [SerializeField] private CharacterController charController = null;
