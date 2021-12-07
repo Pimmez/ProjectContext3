@@ -22,9 +22,16 @@ public class ScrollBehaviour : MonoBehaviour
     public void OpenScroll()
     {
         isScrollActive = !isScrollActive;
+        ChangeScrollImage();
+
+        //Needs animation in the future
+    }
+
+    private void ChangeScrollImage()
+    {
         scroll.SetActive(isScrollActive);
 
-        if(isScrollActive)
+        if (isScrollActive)
         {
             scrollImage.sprite = scrollOpenImage;
         }
@@ -32,7 +39,6 @@ public class ScrollBehaviour : MonoBehaviour
         {
             scrollImage.sprite = scrollClosedImage;
         }
-        //Needs animation in the future
     }
 
     public void FoxActivation()
@@ -41,6 +47,8 @@ public class ScrollBehaviour : MonoBehaviour
         {
             OnAnimalChangeEvent(0);
         }
+        isScrollActive = false;
+        ChangeScrollImage();
     }
 
     public void DoveActivation()
@@ -49,5 +57,7 @@ public class ScrollBehaviour : MonoBehaviour
         {
             OnAnimalChangeEvent(1);
         }
+        isScrollActive = false;
+        ChangeScrollImage();
     }
 }
