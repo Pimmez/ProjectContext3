@@ -8,32 +8,13 @@ public class PlayerInteractions : MonoBehaviour
     public static Action StartFadeEvent;
     public static Action EndFadeEvent;
 
-    private Vector3 newLocation;
     [SerializeField] CharacterController characterController;
     [SerializeField] private Animator anim;
+    private GameObject newLocation;
 
     private void Start()
     {
         anim = GetComponentInChildren<Animator>();
-        newLocation = new Vector3(-8, this.transform.position.y, 110);
-    }
-
-    private void OnCrawl()
-    {
-        Debug.Log("PlayerInteractions::OnCrawlBegin");
-
-        characterController.enabled = false;
-
-        //Do Fox Crawl Animation
-        anim.SetTrigger("isCrawling");
-
-        Debug.Log("PlayerInteractions::AnimSetBool");
-
-       // anim.SetBool("isCrawling", false);
-
-        //Teleport Fox
-            
-        //End Fade      
     }
 
     public void CrawlToFade()
@@ -46,7 +27,8 @@ public class PlayerInteractions : MonoBehaviour
 
     public void FadeToCrawl()
     {
-        this.transform.position = newLocation;
+        this.transform.position = new Vector3(newLocation.transform.position.x, -21.7f, newLocation.transform.position.z);
+        GameManager.Instance.isGamePaused = false;
 
         anim.SetTrigger("isIdle");
 
@@ -57,13 +39,28 @@ public class PlayerInteractions : MonoBehaviour
         }
     }
 
+    private void Interact(GameObject _location)
+    {
+        Debug.Log("PlayerInteractions::Action");
+        Debug.Log("Other location: " + _location);
+        newLocation = _location;
+
+        Debug.Log("PlayerInteractions::OnCrawlBegin");
+        GameManager.Instance.isGamePaused = true;
+
+        characterController.enabled = false;
+
+        //Do Fox Crawl Animation
+        anim.SetTrigger("isCrawling");
+    }
+
     private void OnEnable()
     {
-        PlayerController.OnCrawlEvent += OnCrawl;
+        CrawlableObject.SendLocationEvent += Interact;
     }
 
     private void OnDisable()
     {
-        PlayerController.OnCrawlEvent -= OnCrawl;
+        CrawlableObject.SendLocationEvent -= Interact;
     }
 }

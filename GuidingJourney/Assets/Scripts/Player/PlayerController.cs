@@ -79,6 +79,7 @@ public class PlayerController : MonoBehaviour
     //Update Loop - Used for calculating frame-based data
     private void Update()
     {
+        SetInputActiveState();
         if(isSmoothMovement)
         {
             CalculateMovementInputSmoothing();
@@ -87,7 +88,7 @@ public class PlayerController : MonoBehaviour
         else if(!isSmoothMovement)
         {
             UpdatePlayerMovement(rawInputMovement);
-        }        
+        }
     }
 
     //Change Input axis from raw to smoot input
@@ -108,9 +109,9 @@ public class PlayerController : MonoBehaviour
     }
 
     //Gamemanager set input true or false
-    public void SetInputActiveState(bool gameIsPaused)
+    public void SetInputActiveState()
     {
-        switch (gameIsPaused)
+        switch (GameManager.Instance.isGamePaused)
         {
             case true:
                 playerInput.DeactivateInput();

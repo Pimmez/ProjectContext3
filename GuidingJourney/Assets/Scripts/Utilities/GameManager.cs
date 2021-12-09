@@ -12,7 +12,7 @@ public class GameManager : GenericSingleton<GameManager, GameManager>
 
     [Header("Settings")]
     [SerializeField] private List<GameObject> ChangeableModels = new List<GameObject>();
- 
+    public bool isGamePaused; 
 
     public void CheckAnimalActiveState()
     {
