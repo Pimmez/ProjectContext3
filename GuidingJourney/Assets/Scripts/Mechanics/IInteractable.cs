@@ -1,4 +1,10 @@
+using UnityEngine;
 public interface IInteractable
 {
-    void Interact();
+    void Interact(GameObject _location);
 }
+
+/*
+interactable = newCollider.GetComponent<IInteractable>();
+interactable.Interact(newLocation);
+*/

@@ -7,4 +7,5 @@ public class AnimalHandlerScriptableObject : ScriptableObject
     public string prefabName;
     public GameObject holdItemTransform;
     public GameObject parentTransform;
+    public string animalTag;
 }
