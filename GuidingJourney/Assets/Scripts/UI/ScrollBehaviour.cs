@@ -9,27 +9,34 @@ public class ScrollBehaviour : MonoBehaviour
     public static Action<int> OnAnimalChangeEvent;
     [SerializeField] private Sprite scrollClosedImage, scrollOpenImage;
     [SerializeField] private GameObject scroll;
-    
+
     private bool isScrollActive = false;
     private Image scrollImage;
 
     private void Awake()
     {
-        scrollImage = GetComponent<Image>();    
+        scrollImage = GetComponent<Image>();
     }
 
     //Enables and Disables the scroll(image) when the button is clicked
     public void OpenScroll()
     {
-        isScrollActive = !isScrollActive;
-        ChangeScrollImage();
-
-        //Needs animation in the future
+        if (!GameManager.Instance.isHoldingObject && !GameManager.Instance.isCrawling)
+        {
+            isScrollActive = !isScrollActive;
+            ChangeScrollImage();
+            //Needs animation in the future
+        }
+        else
+        {
+            return;
+        }
     }
 
     private void ChangeScrollImage()
     {
         scroll.SetActive(isScrollActive);
+        GameManager.Instance.settingsButton.SetActive(!isScrollActive);
 
         if (isScrollActive)
         {
@@ -53,7 +60,7 @@ public class ScrollBehaviour : MonoBehaviour
 
     public void DoveActivation()
     {
-        if(OnAnimalChangeEvent != null)
+        if (OnAnimalChangeEvent != null)
         {
             OnAnimalChangeEvent(1);
         }

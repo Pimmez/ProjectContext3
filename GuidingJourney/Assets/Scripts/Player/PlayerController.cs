@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
 
     //Privates
     private bool isCrawling = false;
+    private bool isGrabable = false;
 
     [Header("Input Settings")]
     [SerializeField] private float movementSmoothingSpeed = 1f;
@@ -29,7 +30,7 @@ public class PlayerController : MonoBehaviour
     //Event to get the OnGrab Keyinput
     public void OnGrab(InputAction.CallbackContext value)
     {
-        if (value.started)
+        if (value.started && isGrabable)
         {
             //Interaction Action/Invoke
             if(OnGrabEvent != null)
@@ -80,12 +81,12 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         SetInputActiveState();
-        if(isSmoothMovement)
+        if(GameManager.Instance.isDoveActive.activeSelf)
         {
             CalculateMovementInputSmoothing();
             UpdatePlayerMovement(smoothInputMovement);
         }
-        else if(!isSmoothMovement)
+        else if(GameManager.Instance.isFoxActive.activeSelf)
         {
             UpdatePlayerMovement(rawInputMovement);
         }
@@ -108,6 +109,11 @@ public class PlayerController : MonoBehaviour
         isCrawling = _isCrawling;
     }
 
+    private void CanGrab(bool _isGrabable)
+    {
+        isGrabable = _isGrabable;
+    }
+
     //Gamemanager set input true or false
     public void SetInputActiveState()
     {
@@ -126,10 +132,12 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         CrawlableObject.CanCrawl += CanCrawl;
+        Item.CanGrabEvent += CanGrab;
     }
 
     private void OnDisable()
     {
         CrawlableObject.CanCrawl -= CanCrawl;
+        Item.CanGrabEvent -= CanGrab;
     }
 }

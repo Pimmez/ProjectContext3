@@ -10,15 +10,16 @@ public class CrawlableObject : MonoBehaviour
 
     [SerializeField] private GameObject newLocation;
     private bool isTriggered = false;
-    private Collider newCollider;
-    public IInteractable interactable;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == Tags.PLAYER)
+        if (other.gameObject.tag == Tags.PLAYER && GameManager.Instance.isFoxActive.activeSelf)
         {
             isTriggered = true;
-            newCollider = other;
+        }
+        else
+        {
+            return;
         }
 
         if (CanCrawl != null)
@@ -27,12 +28,20 @@ public class CrawlableObject : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if(GameManager.Instance.isDoveActive.activeSelf)
+        {
+            isTriggered = false;
+            return;
+        }
+    }
+
     private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == Tags.PLAYER)
         {
             isTriggered = false;
-            newCollider = null;
         }
 
         if (CanCrawl != null)
@@ -47,12 +56,6 @@ public class CrawlableObject : MonoBehaviour
         {
             SendLocationEvent(newLocation);
         }
-
-        /*
-        interactable = newCollider.GetComponent<IInteractable>();
-        interactable.Interact(newLocation);
-        newCollider = null;
-        */
     }
 
     private void OnEnable()
