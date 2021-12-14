@@ -12,6 +12,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 36094134b967e254bb9b7d09acbce83a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 36094134b967e254bb9b7d09acbce83a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 36094134b967e254bb9b7d09acbce83a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.015
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 36094134b967e254bb9b7d09acbce83a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 424.76
       objectReference: {fileID: 0}
@@ -73,7 +85,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: e280c40abcb8bab498df57f606f2a9f0, type: 2}
     - target: {fileID: 919132149155446097, guid: 36094134b967e254bb9b7d09acbce83a, type: 3}
       propertyPath: m_Name
-      value: Tree_apple_1
+      value: Tree_apple_1 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 2063862093775740398, guid: 36094134b967e254bb9b7d09acbce83a, type: 3}
       propertyPath: m_Materials.Array.data[0]
