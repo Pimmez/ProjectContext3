@@ -30,19 +30,7 @@ public class Waypoints : MonoBehaviour
         CheckWaypointsRoute(routeCounter);
     }
 
-    private void CheckWaypointsRoute(int routeNumber)
-    {
-        //Check the amount of childNodes in routes[]
-        childNodes = routes[routeNumber].childCount;
-
-        //for i < childCounts, add the childnodes to the childTransform[]
-        for (int i = 0; i < childNodes; i++)
-        {
-            //childCounts = routes[routeNumber].childCount;
-            childRoutes.Add(routes[routeNumber].GetChild(i).transform);
-        }
-        activeRoute = routes[routeNumber].gameObject;
-    }
+    
 
     private void MoveToWaypoint()
     {
@@ -92,19 +80,23 @@ public class Waypoints : MonoBehaviour
         }
     }
 
+    //Update code loop
     private void Update()
     {
-        if (childCounter < childRoutes.Count && Vector3.Distance(transform.position, player.transform.position) < radius)
+        if (Vector3.Distance(transform.position, player.transform.position) < radius && childCounter < childNodes)
         {
             if (targetNode == null)
             {
                 targetNode = childRoutes[childCounter];
             }
-            WalkAround();
+
+
             MoveToWaypoint();
+            WalkAround();
         }
     }
 
+    //Let the HRD walk || NEED TO GO TO OWN HRD CLASS
     private void WalkAround()
     {
         transform.forward = Vector3.RotateTowards(transform.forward, targetNode.position - transform.position, speed * Time.deltaTime, 0.0f);
@@ -112,6 +104,24 @@ public class Waypoints : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position, targetNode.position, speed * Time.deltaTime);
     }
 
+    //Set new routes and childRoutes
+    private void CheckWaypointsRoute(int routeNumber)
+    {
+        //Check the amount of childNodes in routes[]
+        childNodes = routes[routeNumber].childCount;
+
+        //for i < childCounts, add the childnodes to the childTransform[]
+        for (int i = 0; i < childNodes; i++)
+        {
+            //childCounts = routes[routeNumber].childCount;
+            childRoutes.Add(routes[routeNumber].GetChild(i).transform);
+        }
+
+        //Set routes to activeRoute so I can check what route is active in the inspector
+        activeRoute = routes[routeNumber].gameObject;
+    }
+
+    //Show the walkable area in the HRD
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position, radius);
