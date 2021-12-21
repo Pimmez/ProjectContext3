@@ -11,12 +11,15 @@ public class PlayerController : MonoBehaviour
 
     //Action Events
     public static Action OnGrabEvent;
-    public static Action OnCrawlEvent;
+    public static Action<int> OnCrawlEvent;
     public static Action TestButtonEvent;
 
     //Privates
     private bool isCrawling = false;
     private bool isGrabable = false;
+    private int caveType;
+    
+    //[SerializeField] private CrawlableObject crawlable;
 
     [Header("Input Settings")]
     [SerializeField] private float movementSmoothingSpeed = 1f;
@@ -47,8 +50,9 @@ public class PlayerController : MonoBehaviour
         {
             if(OnCrawlEvent != null)
             {
-                OnCrawlEvent();
+                OnCrawlEvent(caveType);
             }
+
             isCrawling = false;
         }
         else
@@ -104,9 +108,10 @@ public class PlayerController : MonoBehaviour
         animalMovement.UpdateMovementData(_movement);
     }
 
-    private void CanCrawl(bool _isCrawling)
+    private void CanCrawl(bool _isCrawling, int _caveType)
     {
         isCrawling = _isCrawling;
+        caveType = _caveType;
     }
 
     private void CanGrab(bool _isGrabable)

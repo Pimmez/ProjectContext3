@@ -10,12 +10,11 @@ public class PlayerInteractions : MonoBehaviour
 
     [SerializeField] CharacterController characterController;
     [SerializeField] private Animator anim;
-    private GameObject crawlToLocation = null;
+    private Transform crawlToLocation = null;
 
     private void Start()
     {
         anim = GetComponentInChildren<Animator>();
-        crawlToLocation = null;
     }
 
     public void CrawlToFade()
@@ -28,7 +27,7 @@ public class PlayerInteractions : MonoBehaviour
 
     public void FadeToCrawl()
     {
-        this.transform.position = new Vector3(crawlToLocation.transform.position.x, 43, crawlToLocation.transform.position.z);
+        this.transform.position = new Vector3(crawlToLocation.position.x, 43, crawlToLocation.position.z);
         GameManager.Instance.isGamePaused = false;
 
         anim.SetTrigger("isIdle");
@@ -37,11 +36,11 @@ public class PlayerInteractions : MonoBehaviour
         if (EndFadeEvent != null)
         {
             EndFadeEvent();
-            crawlToLocation = null;
+            //crawlToLocation = null;
         }
     }
 
-    private void Interact(GameObject _location)
+    private void Interact(Transform _location)
     {
         Debug.Log("PlayerInteractions::Action");
         Debug.Log("Other location: " + _location);
