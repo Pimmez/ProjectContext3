@@ -9,15 +9,14 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject SettingsHUD = null;
     [SerializeField] private GameObject CreditsHUD = null;
 
+
     public void SceneChanger(string _scene)
     {
-        Debug.Log("Hitscene loader");
         SceneManager.LoadScene(_scene);
     }
 
     public void Settings()
     {
-        Debug.Log("Hit");
         MenuHUD.SetActive(false);
         SettingsHUD.SetActive(true);
     }

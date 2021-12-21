@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CrawlableObject : MonoBehaviour
@@ -11,7 +9,7 @@ public class CrawlableObject : MonoBehaviour
     public int crawlObject;
     public int caveNumber;
 
-    [SerializeField] private Transform otherLocation = null;
+    private Transform otherLocation = null;
     private bool isTriggered = false;
 
     private void OnTriggerEnter(Collider other)
@@ -33,7 +31,7 @@ public class CrawlableObject : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(GameManager.Instance.isDoveActive.activeSelf)
+        if (GameManager.Instance.isDoveActive.activeSelf)
         {
             isTriggered = false;
             return;
@@ -57,10 +55,8 @@ public class CrawlableObject : MonoBehaviour
     {
         otherLocation = this.gameObject.transform.GetChild(0);
 
-        if(SendLocationEvent != null && caveNumber == _caveType)
+        if (SendLocationEvent != null && caveNumber == _caveType)
         {
-            Debug.Log("2x?");
-            Debug.Log("otherLocation: " + otherLocation);
             SendLocationEvent(otherLocation);
         }
     }
