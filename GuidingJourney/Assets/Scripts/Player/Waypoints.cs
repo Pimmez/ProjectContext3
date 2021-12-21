@@ -6,14 +6,14 @@ public class Waypoints : MonoBehaviour
 {
     [Header("Component References")]
     [SerializeField] private List<Transform> routes = new List<Transform>();
-    [SerializeField] private GameObject player;
+    [SerializeField] private GameObject player = null;
 
     [Header("Settings")]
     [SerializeField] private float speed = 4f;
     [SerializeField] private float radius;
 
     [Header("Readable Route")]
-    [SerializeField] private GameObject activeRoute;
+    [SerializeField] private GameObject activeRoute = null;
 
     private List<Transform> childRoutes = new List<Transform>();
     private Transform targetNode;

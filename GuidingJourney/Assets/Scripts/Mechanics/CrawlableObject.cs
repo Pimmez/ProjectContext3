@@ -8,7 +8,7 @@ public class CrawlableObject : MonoBehaviour
     public static Action<bool> CanCrawl;
     public static Action<GameObject> SendLocationEvent;
 
-    [SerializeField] private GameObject newLocation;
+    [SerializeField] private GameObject otherLocation = null;
     private bool isTriggered = false;
 
     private void OnTriggerEnter(Collider other)
@@ -52,9 +52,12 @@ public class CrawlableObject : MonoBehaviour
 
     public void Interaction()
     {
+        otherLocation = this.gameObject.GetComponentInChildren<GameObject>();
+
         if(SendLocationEvent != null)
         {
-            SendLocationEvent(newLocation);
+            Debug.Log("otherLocation: " + otherLocation);
+            SendLocationEvent(otherLocation);
         }
     }
 
