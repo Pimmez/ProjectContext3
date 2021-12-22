@@ -5,8 +5,8 @@ OcclusionCullingSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_OcclusionBakeSettings:
-    smallestOccluder: 200
-    smallestHole: 1
+    smallestOccluder: 100
+    smallestHole: 5
     backfaceThreshold: 100
   m_SceneGUID: f6e0a53b1f8e1fe47b00ecd4a56dbf00
   m_OcclusionCullingData: {fileID: 36300000, guid: f678c743354b4eb4db58946f25ef0733, type: 2}
@@ -8981,7 +8981,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1624044837, guid: 1d5aa2e6f9c9568478aa1f3d7a897dea, type: 3}
       propertyPath: speed
-      value: 300
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1624044837, guid: 1d5aa2e6f9c9568478aa1f3d7a897dea, type: 3}
       propertyPath: player
@@ -10535,9 +10535,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8087607}
     - target: {fileID: 2569586825942156159, guid: d30105255b7ad4845bd3c3b6e289511f, type: 3}
+      propertyPath: turnSpeed
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2569586825942156159, guid: d30105255b7ad4845bd3c3b6e289511f, type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 1686139602}
+    - target: {fileID: 2569586825942156159, guid: d30105255b7ad4845bd3c3b6e289511f, type: 3}
+      propertyPath: movementSpeed
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 2569586825942156160, guid: d30105255b7ad4845bd3c3b6e289511f, type: 3}
       propertyPath: m_RootOrder
       value: 8
