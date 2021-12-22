@@ -9,37 +9,36 @@ public class Waypoints : MonoBehaviour
     [SerializeField] private GameObject player = null;
 
     [Header("Settings")]
-    [SerializeField] private float speed = 4f;
-    [SerializeField] private float radius;
+    [SerializeField] private float speed = 300f;
+    [SerializeField] private float radius = 250f;
 
     [Header("Readable Route")]
     [SerializeField] private GameObject activeRoute = null;
+    [SerializeField] private int routeCounter = 0;
 
     private List<Transform> childRoutes = new List<Transform>();
     private Transform targetNode;
-    private int routeCounter = 0;
     private int childCounter = 0;
     private int childNodes;
 
-
+    [SerializeField] private bool canMove = false;
 
     private void Awake()
     {
+        canMove = true;
         routeCounter = 0;
         childCounter = 0;
         CheckWaypointsRoute(routeCounter);
     }
 
-    
+
 
     private void MoveToWaypoint()
     {
         if (transform.position == targetNode.position)
         {
-            Debug.Log("childCounter begin: " + childCounter);
-
-
             childCounter++;
+
 
             if (childCounter != childNodes)
             {
@@ -47,7 +46,6 @@ public class Waypoints : MonoBehaviour
             }
             else if (childCounter == childNodes)
             {
-                Debug.Log("Reached the last childnote");
                 //Last waypoint in the list.
 
                 //Reset waypoints to begin
@@ -55,27 +53,25 @@ public class Waypoints : MonoBehaviour
 
                 //Make bool to let HRD wait
                 //After bool/task complete go to next route section with new waypoints.
+                canMove = false;
+
 
                 routeCounter++;
-                childCounter = 0;
-                
-                Debug.Log("childCounter middle: " + childCounter);
-                
-                if (routeCounter > routes.Count)
+
+                if (routeCounter < routes.Count)
                 {
-                    Debug.Log("MoveToWaypoint::HELLO?? No routes?");
+
+                    childRoutes.Clear();
+                    childCounter = -1;
+
+                    CheckWaypointsRoute(routeCounter);
+                }
+                else
+                {
                     //go back to begin route
                     //routeToGo = 0;
                     return;
                 }
-                else
-                {
-                    Debug.Log("Switch to next route: " + routeCounter);
-                    CheckWaypointsRoute(routeCounter);
-                }
-
-                //return;
-                Debug.Log("childCounter after: " + childCounter);
             }
         }
     }
@@ -92,7 +88,11 @@ public class Waypoints : MonoBehaviour
 
 
             MoveToWaypoint();
-            WalkAround();
+
+            if (canMove)
+            {
+                WalkAround();
+            }
         }
     }
 
@@ -125,5 +125,20 @@ public class Waypoints : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position, radius);
+    }
+
+    private void SetMovement(bool _boolean)
+    {
+        canMove = _boolean;
+    }
+
+    private void OnEnable()
+    {
+        HumanRightsDefenderNPC.GrabbedItemEvent += SetMovement;
+    }
+
+    private void OnDisable()
+    {
+        HumanRightsDefenderNPC.GrabbedItemEvent -= SetMovement;
     }
 }

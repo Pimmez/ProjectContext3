@@ -42,11 +42,8 @@ public class PlayerInteractions : MonoBehaviour
 
     private void Interact(Transform _location)
     {
-        Debug.Log("PlayerInteractions::Action");
-        Debug.Log("Other location: " + _location);
         crawlToLocation = _location;
 
-        Debug.Log("PlayerInteractions::OnCrawlBegin");
         GameManager.Instance.isGamePaused = true;
 
         characterController.enabled = false;

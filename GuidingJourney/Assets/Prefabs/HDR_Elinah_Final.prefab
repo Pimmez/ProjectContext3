@@ -1224,6 +1224,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7455508689602687276}
+  - component: {fileID: 1624044836}
+  - component: {fileID: 1624044837}
   m_Layer: 0
   m_Name: HDR_Elinah_Final
   m_TagString: Untagged
@@ -1238,7 +1240,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7799276924759141270}
-  m_LocalRotation: {x: -0, y: -0.9371722, z: -0, w: 0.34886727}
+  m_LocalRotation: {x: 0, y: -0.9371725, z: 0, w: 0.34886655}
   m_LocalPosition: {x: 706, y: 0.2697754, z: 3315}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1264,6 +1266,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -139.164, z: 0}
+--- !u!95 &1624044836
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7799276924759141270}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f85cf99c08d63634bb9fcd711c3d00db, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1624044837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7799276924759141270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 648007d6c5bf3c4488c31fbfb8637e2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  routes:
+  - {fileID: 0}
+  - {fileID: 0}
+  player: {fileID: 0}
+  speed: 400
+  radius: 250
+  activeRoute: {fileID: 0}
+  routeCounter: 0
+  canMove: 0
 --- !u!1 &8663028986380785141
 GameObject:
   m_ObjectHideFlags: 0
