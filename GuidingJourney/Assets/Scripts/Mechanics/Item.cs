@@ -79,7 +79,7 @@ public class Item : MonoBehaviour
             this.transform.parent = null;
 
             //Set item to the ground
-            this.transform.position = new Vector3(this.transform.position.x, -22.6f, this.transform.position.z);
+            this.transform.position = new Vector3(this.transform.position.x, 43, this.transform.position.z);
 
             isHoldingItem = false;
         }

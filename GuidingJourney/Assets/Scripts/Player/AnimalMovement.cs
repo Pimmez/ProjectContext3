@@ -7,8 +7,8 @@ public class AnimalMovement : MonoBehaviour
     [SerializeField] private Camera mainCamera = null;
 
     [Header("Movement Settings")]
-    [SerializeField] private float movementSpeed = 40f;
-    [SerializeField] private float turnSpeed = 100f;
+    [SerializeField] private float movementSpeed = 500f;
+    [SerializeField] private float turnSpeed = 600f;
 
     //Stored Values
     private Vector3 movementDirection = Vector3.zero;

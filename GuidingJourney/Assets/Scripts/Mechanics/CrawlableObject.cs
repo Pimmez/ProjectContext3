@@ -1,14 +1,15 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CrawlableObject : MonoBehaviour
 {
-    public static Action<bool> CanCrawl;
-    public static Action<GameObject> SendLocationEvent;
+    public static Action<bool, int> CanCrawl;
+    public static Action<Transform> SendLocationEvent;
 
-    [SerializeField] private GameObject newLocation;
+    public int crawlObject;
+    public int caveNumber;
+
+    private Transform otherLocation = null;
     private bool isTriggered = false;
 
     private void OnTriggerEnter(Collider other)
@@ -24,13 +25,13 @@ public class CrawlableObject : MonoBehaviour
 
         if (CanCrawl != null)
         {
-            CanCrawl(isTriggered);
+            CanCrawl(isTriggered, crawlObject);
         }
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if(GameManager.Instance.isDoveActive.activeSelf)
+        if (GameManager.Instance.isDoveActive.activeSelf)
         {
             isTriggered = false;
             return;
@@ -46,15 +47,17 @@ public class CrawlableObject : MonoBehaviour
 
         if (CanCrawl != null)
         {
-            CanCrawl(isTriggered);
+            CanCrawl(isTriggered, crawlObject);
         }
     }
 
-    public void Interaction()
+    public void Interaction(int _caveType)
     {
-        if(SendLocationEvent != null)
+        otherLocation = this.gameObject.transform.GetChild(0);
+
+        if (SendLocationEvent != null && caveNumber == _caveType)
         {
-            SendLocationEvent(newLocation);
+            SendLocationEvent(otherLocation);
         }
     }
 
