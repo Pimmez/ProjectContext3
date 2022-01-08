@@ -5,7 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
+    path: Assets/Scenes/Prototype/StartScene.unity
+    guid: 086f343dd01c25344afdf06d339296ac
+  - enabled: 1
+    path: Assets/Scenes/Prototype/PrototypeKeyboard.unity
+    guid: d1f4a9847d3396e48808cda6f446a3f3
+  - enabled: 1
+    path: Assets/Scenes/Prototype/PrototypeClick.unity
+    guid: 1d7f88f1d2544b14eb2f10f557d1db2c
+  - enabled: 1
+    path: Assets/Scenes/Prototype/EndDemoScene.unity
+    guid: c4ad27d2e9353a747a11f8e785b1eabd
   m_configObjects: {}

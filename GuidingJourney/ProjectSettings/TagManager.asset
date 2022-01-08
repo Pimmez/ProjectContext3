@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Grab
+  - NPC
+  - Fox
+  - Dove
+  - HRD
   layers:
   - Default
   - TransparentFX
