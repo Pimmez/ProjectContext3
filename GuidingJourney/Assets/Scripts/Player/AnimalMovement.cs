@@ -55,7 +55,10 @@ public class AnimalMovement : MonoBehaviour
     {
         if(movementDirection != Vector3.zero)
         {
-            Quaternion toRotate = Quaternion.LookRotation(CameraDirection(movementDirection), Vector3.up);
+            //Quaternion toRotate = Quaternion.LookRotation(CameraDirection(movementDirection), Vector3.up);
+            //transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotate, turnSpeed * Time.deltaTime);
+
+            Quaternion toRotate = Quaternion.LookRotation(movementDirection, Vector3.up);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotate, turnSpeed * Time.deltaTime);
         }
     }
@@ -63,6 +66,7 @@ public class AnimalMovement : MonoBehaviour
     //Move the object
     private void MoveThePlayer()
     {
-        charController.Move(CameraDirection(movementDirection) * movementSpeed * Time.deltaTime);
+        //charController.Move(CameraDirection(moveDirection) * movementSpeed * Time.deltaTime);
+        charController.Move(movementDirection * movementSpeed * Time.deltaTime);
     }
 }
