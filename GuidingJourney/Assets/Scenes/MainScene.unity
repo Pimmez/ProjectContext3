@@ -6414,7 +6414,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -260, y: 25}
+  m_AnchoredPosition: {x: -260, y: -77}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &516437506
@@ -8408,7 +8408,9 @@ MonoBehaviour:
   scrollObject: {fileID: 1073805624}
   pauseObject: {fileID: 52785646}
   mainMixer: {fileID: 24100000, guid: 59334c5fe10ddc84a93c35e1d2087e4e, type: 2}
-  audioSlider: {fileID: 0}
+  allVolumeSlider: {fileID: 2030632303}
+  backgroundVolumeSlider: {fileID: 157696266}
+  sfxVolumeSlider: {fileID: 1946336387}
 --- !u!1 &1274028203
 GameObject:
   m_ObjectHideFlags: 0
@@ -9999,7 +10001,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -260, y: -75}
+  m_AnchoredPosition: {x: -260, y: 25}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1989307140
