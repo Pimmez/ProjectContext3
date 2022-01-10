@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class AnimalHandlerScriptableObject : ScriptableObject
 {
     public string prefabName;
-    public Image prefabImage;
-    public Image prefabIcon;
-    public string PrefabSkill;
+    public GameObject holdItemTransform;
+    public GameObject parentTransform;
+    public string animalTag;
 }
