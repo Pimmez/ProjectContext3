@@ -11,13 +11,16 @@ public class PlayerController : MonoBehaviour
 
     //Action Events
     public static Action OnGrabEvent;
+    public static Action<int> OnStickGrabEvent;
     public static Action<int> OnCrawlEvent;
     public static Action TestButtonEvent;
 
     //Privates
     private bool isCrawling = false;
     private bool isGrabable = false;
+    private bool isStickGrabable = false;
     private int caveType;
+    private int blockadeType;
     
     //[SerializeField] private CrawlableObject crawlable;
 
@@ -39,6 +42,13 @@ public class PlayerController : MonoBehaviour
             if(OnGrabEvent != null)
             {
                 OnGrabEvent();
+            }
+        }
+        else if(value.started && isStickGrabable)
+        {
+            if(OnStickGrabEvent != null)
+            {
+                OnStickGrabEvent(blockadeType);
             }
         }
     }
@@ -119,6 +129,12 @@ public class PlayerController : MonoBehaviour
         isGrabable = _isGrabable;
     }
 
+    private void CanStickGrab(bool _isStickGrabable, int _blockadeNumber)
+    {
+        isStickGrabable = _isStickGrabable;
+        blockadeType = _blockadeNumber;
+    }
+
     //Gamemanager set input true or false
     public void SetInputActiveState()
     {
@@ -137,12 +153,14 @@ public class PlayerController : MonoBehaviour
     private void OnEnable()
     {
         CrawlableObject.CanCrawl += CanCrawl;
+        GrabStick.CanGrabStickEvent += CanStickGrab;
         Item.CanGrabEvent += CanGrab;
     }
 
     private void OnDisable()
     {
         CrawlableObject.CanCrawl -= CanCrawl;
+        GrabStick.CanGrabStickEvent -= CanStickGrab;
         Item.CanGrabEvent -= CanGrab;
     }
 }
