@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -22,8 +21,6 @@ public class PlayerController : MonoBehaviour
     private int caveType;
     private int blockadeType;
     
-    //[SerializeField] private CrawlableObject crawlable;
-
     [Header("Input Settings")]
     [SerializeField] private float movementSmoothingSpeed = 1f;
     private Vector3 rawInputMovement = Vector3.zero;

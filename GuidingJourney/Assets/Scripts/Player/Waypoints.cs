@@ -11,17 +11,18 @@ public class Waypoints : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private float speed = 300f;
     [SerializeField] private float radius = 250f;
+    [SerializeField] private bool canMove = false;
 
     [Header("Readable Route")]
     [SerializeField] private GameObject activeRoute = null;
     [SerializeField] private int routeCounter = 0;
 
+    //Privates
     private List<Transform> childRoutes = new List<Transform>();
     private Transform targetNode;
     private int childCounter = 0;
     private int childNodes;
 
-    [SerializeField] private bool canMove = false;
 
     private void Awake()
     {
@@ -31,14 +32,11 @@ public class Waypoints : MonoBehaviour
         CheckWaypointsRoute(routeCounter);
     }
 
-
-
     private void MoveToWaypoint()
     {
         if (transform.position == targetNode.position)
         {
             childCounter++;
-
 
             if (childCounter != childNodes)
             {

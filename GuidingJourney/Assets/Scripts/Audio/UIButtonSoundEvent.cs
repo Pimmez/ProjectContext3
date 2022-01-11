@@ -1,19 +1,18 @@
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using System.Collections;
 
 public class UIButtonSoundEvent : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler
 {
+    [Header("Audio References")]
     [SerializeField] private AudioClip hoverSound = null;
     [SerializeField] private AudioClip clickSound = null;
 
-    public void OnPointerEnter(PointerEventData ped)
+    public void OnPointerEnter(PointerEventData _ped)
     {
         SoundManager.Instance.Play(hoverSound);
     }
 
-    public void OnPointerDown(PointerEventData ped)
+    public void OnPointerDown(PointerEventData _ped)
     {
         SoundManager.Instance.Play(clickSound);
     }

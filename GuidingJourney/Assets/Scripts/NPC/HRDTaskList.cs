@@ -3,6 +3,14 @@ using System;
 
 public class HRDTaskList : MonoBehaviour
 {
+    [Header("Component References")]
+    [SerializeField] private GameObject targetObject = null;
+    [SerializeField] private AudioClip sfxClip = null;
+
+    [Header("Range Value")]
+    [SerializeField] private float minRange = 200f;
+    
+    //Action Events
     public static Action<bool> GrabbedItemEvent;
     public static Action<bool> AfterCaveTalkEvent;
     public static Action<bool> Task3AEvent;
@@ -10,9 +18,7 @@ public class HRDTaskList : MonoBehaviour
     public static Action<bool> Task3CEvent;
     public static Action<bool> CampSiteEvent;
 
-    [SerializeField] private GameObject targetObject = null;
-    [SerializeField] private float minRange = 200f;
-    [SerializeField] private AudioClip sfxClip = null;
+    //Privates
     private bool completedTask = false;
 
     // Update is called once per frame

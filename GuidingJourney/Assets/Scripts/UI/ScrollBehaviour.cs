@@ -1,15 +1,17 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ScrollBehaviour : MonoBehaviour
 {
-    public static Action<int> OnAnimalChangeEvent;
+    [Header("Component References")]
     [SerializeField] private Sprite scrollClosedImage, scrollOpenImage;
-    [SerializeField] private GameObject scroll;
+    [SerializeField] private GameObject scroll = null;
 
+    //Action Events
+    public static Action<int> OnAnimalChangeEvent;
+
+    //Privates
     private bool isScrollActive = false;
     private Image scrollImage;
 

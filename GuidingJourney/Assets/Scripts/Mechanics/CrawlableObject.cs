@@ -3,18 +3,22 @@ using UnityEngine;
 
 public class CrawlableObject : MonoBehaviour
 {
+
+    [Header("Crawlobject & Cavenumber values")]
+    [SerializeField] private int crawlObject;
+    [SerializeField] private int caveNumber;
+
+    //Action Events
     public static Action<bool, int> CanCrawl;
     public static Action<Transform> SendLocationEvent;
 
-    public int crawlObject;
-    public int caveNumber;
-
+    //Privates
     private Transform otherLocation = null;
     private bool isTriggered = false;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider _other)
     {
-        if (other.gameObject.tag == Tags.PLAYER && GameManager.Instance.isFoxActive.activeSelf)
+        if (_other.gameObject.tag == Tags.PLAYER && GameManager.Instance.isFoxActive.activeSelf)
         {
             isTriggered = true;
         }
@@ -29,7 +33,7 @@ public class CrawlableObject : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerStay(Collider _other)
     {
         if (GameManager.Instance.isDoveActive.activeSelf)
         {
@@ -38,9 +42,9 @@ public class CrawlableObject : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider _other)
     {
-        if (other.gameObject.tag == Tags.PLAYER)
+        if (_other.gameObject.tag == Tags.PLAYER)
         {
             isTriggered = false;
         }
