@@ -8,7 +8,14 @@ public class GrabStick : MonoBehaviour
     public static Action<int> GrabbedStickEvent;
     public static Action<bool, int> CanGrabStickEvent;
     [SerializeField] private int blockadeNumber;
+    public int blockadeType;
+
     private bool isTriggered = false;
+    [SerializeField] private GameObject blockade;
+
+
+    public static Action<int> ActivateTaskEvent;
+    [SerializeField] private int taskNumber;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -38,10 +45,15 @@ public class GrabStick : MonoBehaviour
 
     private void RemoveStick(int _blockadeType)
     {
-        Destroy(this.gameObject);
-        if (GrabbedStickEvent != null && blockadeNumber == _blockadeType)
+        if (blockadeType == _blockadeType)
         {
-            GrabbedStickEvent(blockadeNumber);
+            Debug.Log("activeself woodenblocakde gone");
+            if (ActivateTaskEvent != null)
+            {
+                ActivateTaskEvent(taskNumber);
+            }
+            Destroy(this.gameObject);
+            Destroy(blockade);
         }
     }
 

@@ -1,25 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class WoodenBlockade : MonoBehaviour
 {
-    [SerializeField] private int thisBlockadeNumber;
-    private void RemovedKeyComponent(int _blockadeNumber)
+    public static Action<int> ActivateTaskEvent;
+    [SerializeField] private int taskNumber;
+
+    private void Update()
     {
-        if(_blockadeNumber == thisBlockadeNumber)
+        if(this.gameObject == null)
         {
-            Destroy(this.gameObject);
+            Debug.Log("activeself woodenblocakde gone");
+            if(ActivateTaskEvent != null)
+            {
+                ActivateTaskEvent(taskNumber);
+            }
         }
-    }
-
-    private void OnEnable()
-    {
-        GrabStick.GrabbedStickEvent += RemovedKeyComponent;
-    }
-
-    private void OnDisable()
-    {
-        GrabStick.GrabbedStickEvent -= RemovedKeyComponent;
     }
 }

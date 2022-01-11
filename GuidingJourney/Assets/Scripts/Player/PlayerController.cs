@@ -44,7 +44,8 @@ public class PlayerController : MonoBehaviour
                 OnGrabEvent();
             }
         }
-        else if(value.started && isStickGrabable)
+        
+        if(value.started && isStickGrabable)
         {
             if(OnStickGrabEvent != null)
             {

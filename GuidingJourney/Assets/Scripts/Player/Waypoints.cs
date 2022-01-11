@@ -54,6 +54,7 @@ public class Waypoints : MonoBehaviour
                 //Make bool to let HRD wait
                 //After bool/task complete go to next route section with new waypoints.
                 canMove = false;
+                //Check if bool, int already is completed if so move on otherwise wait here
 
 
                 routeCounter++;
@@ -134,11 +135,19 @@ public class Waypoints : MonoBehaviour
 
     private void OnEnable()
     {
-        HumanRightsDefenderNPC.GrabbedItemEvent += SetMovement;
+        HRDTaskList.GrabbedItemEvent += SetMovement;
+        HRDTaskList.Task3AEvent += SetMovement;
+        HRDTaskList.Task3BEvent += SetMovement;
+        HRDTaskList.Task3CEvent += SetMovement;
+        HRDTaskList.CampSiteEvent += SetMovement;
     }
 
     private void OnDisable()
     {
-        HumanRightsDefenderNPC.GrabbedItemEvent -= SetMovement;
+        HRDTaskList.GrabbedItemEvent -= SetMovement;
+        HRDTaskList.Task3AEvent -= SetMovement;
+        HRDTaskList.Task3BEvent -= SetMovement;
+        HRDTaskList.Task3CEvent -= SetMovement;
+        HRDTaskList.CampSiteEvent -= SetMovement;
     }
 }
