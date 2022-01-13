@@ -11,17 +11,18 @@ public class Waypoints : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private float speed = 300f;
     [SerializeField] private float radius = 250f;
+    [SerializeField] private bool canMove = false;
 
     [Header("Readable Route")]
     [SerializeField] private GameObject activeRoute = null;
     [SerializeField] private int routeCounter = 0;
 
+    //Privates
     private List<Transform> childRoutes = new List<Transform>();
     private Transform targetNode;
     private int childCounter = 0;
     private int childNodes;
 
-    [SerializeField] private bool canMove = false;
 
     private void Awake()
     {
@@ -31,14 +32,11 @@ public class Waypoints : MonoBehaviour
         CheckWaypointsRoute(routeCounter);
     }
 
-
-
     private void MoveToWaypoint()
     {
         if (transform.position == targetNode.position)
         {
             childCounter++;
-
 
             if (childCounter != childNodes)
             {
@@ -54,6 +52,7 @@ public class Waypoints : MonoBehaviour
                 //Make bool to let HRD wait
                 //After bool/task complete go to next route section with new waypoints.
                 canMove = false;
+                //Check if bool, int already is completed if so move on otherwise wait here
 
 
                 routeCounter++;
@@ -134,11 +133,19 @@ public class Waypoints : MonoBehaviour
 
     private void OnEnable()
     {
-        HumanRightsDefenderNPC.GrabbedItemEvent += SetMovement;
+        HRDTaskList.GrabbedItemEvent += SetMovement;
+        HRDTaskList.Task3AEvent += SetMovement;
+        HRDTaskList.Task3BEvent += SetMovement;
+        HRDTaskList.Task3CEvent += SetMovement;
+        HRDTaskList.CampSiteEvent += SetMovement;
     }
 
     private void OnDisable()
     {
-        HumanRightsDefenderNPC.GrabbedItemEvent -= SetMovement;
+        HRDTaskList.GrabbedItemEvent -= SetMovement;
+        HRDTaskList.Task3AEvent -= SetMovement;
+        HRDTaskList.Task3BEvent -= SetMovement;
+        HRDTaskList.Task3CEvent -= SetMovement;
+        HRDTaskList.CampSiteEvent -= SetMovement;
     }
 }

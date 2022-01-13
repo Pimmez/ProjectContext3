@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
@@ -7,14 +5,17 @@ using UnityEngine.UI;
 
 public class PauseGame : MonoBehaviour
 {
+    [Header("Component References")]
     [SerializeField] private GameObject scrollObject;
     [SerializeField] private GameObject pauseObject;
-    [SerializeField] private AudioMixer mainMixer;
 
+    [Header("Audio References")]
+    [SerializeField] private AudioMixer mainMixer;
     [SerializeField] private Slider allVolumeSlider;
     [SerializeField] private Slider backgroundVolumeSlider;
     [SerializeField] private Slider sfxVolumeSlider;
 
+    //Privates
     private bool isPaused = false;
 
     private void Awake()

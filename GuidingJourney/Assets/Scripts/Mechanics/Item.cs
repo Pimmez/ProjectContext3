@@ -1,24 +1,27 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    public static Action<bool> CanGrabEvent;
-
     [Header("Component References")]
     [SerializeField] private Transform parentTransform;
     [SerializeField] private Transform foxHoldTransform;
     [SerializeField] private Transform doveHoldTransform;
+    
+    [Header("Item Values")]
+    [SerializeField] private float itemDropHeight = 25f;
 
+    //Action Events
+    public static Action<bool> CanGrabEvent;
+
+    //Privates
     private bool isHoldingItem = false;
     private bool isTriggered = false;
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider _other)
     {
-        if (other.gameObject.tag == Tags.PLAYER)
+        if (_other.gameObject.tag == Tags.PLAYER)
         {
             isTriggered = true;
         }
@@ -29,9 +32,9 @@ public class Item : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit(Collider _other)
     {
-        if (other.gameObject.tag == Tags.PLAYER)
+        if (_other.gameObject.tag == Tags.PLAYER)
         {
             isTriggered = false;
         }
@@ -79,7 +82,7 @@ public class Item : MonoBehaviour
             this.transform.parent = null;
 
             //Set item to the ground
-            this.transform.position = new Vector3(this.transform.position.x, 43, this.transform.position.z);
+            this.transform.position = new Vector3(this.transform.position.x, itemDropHeight, this.transform.position.z);
 
             isHoldingItem = false;
         }

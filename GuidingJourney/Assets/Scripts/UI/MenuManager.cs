@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
@@ -7,16 +5,16 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
+    [Header("Component References")]
     [SerializeField] private GameObject MenuHUD = null;
     [SerializeField] private GameObject SettingsHUD = null;
     [SerializeField] private GameObject CreditsHUD = null;
 
+    [Header("Audio References")]
     [SerializeField] private AudioMixer mainMixer;
-
     [SerializeField] private Slider allVolumeSlider;
     [SerializeField] private Slider backgroundVolumeSlider;
     [SerializeField] private Slider sfxVolumeSlider;
-
 
     private void Start()
     {
