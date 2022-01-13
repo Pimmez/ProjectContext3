@@ -15,7 +15,8 @@ public class ElinahDialogue : MonoBehaviour
         //INTRO CUTSCENE
 
         dialogTexts.Add(new DialogData("Today is the day of my big journey.", "Elinah"));
-        dialogTexts.Add(new DialogData("The Peace Brigades International organization said it’d be very risky to go to the event, but this is too important. I have to get there for everyone who’s counting on me.", "Elinah"));
+        dialogTexts.Add(new DialogData("The Peace Brigades International organization said it’d be very risky to go to the event, but this is too important.", "Elinah"));
+        dialogTexts.Add(new DialogData("I have to get there for everyone who’s counting on me.", "Elinah"));
         dialogTexts.Add(new DialogData("The organization agreed with me, on the condition that they can send a guide. Protection so that nothing bad can happen to me on my way to the event.", "Elinah"));
         dialogTexts.Add(new DialogData("They told me a guiding figure could help me. But I don’t know what exactly they meant with that…", "Elinah"));
 
