@@ -6772,7 +6772,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 383865422}
   m_LocalRotation: {x: 0.23911765, y: 0.3696438, z: -0.09904577, w: 0.89239913}
-  m_LocalPosition: {x: 15265, y: 1861, z: -328}
+  m_LocalPosition: {x: -457, y: 1861, z: 986}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -39679,7 +39679,7 @@ ParticleSystem:
         serializedVersion: 2
         key0: {r: 1, g: 0.8499466, b: 0, a: 0.050980393}
         key1: {r: 0.990566, g: 0.52827716, b: 0.34015658, a: 1}
-        key2: {r: 0.41509432, g: 0.13862582, b: 0.13862582, a: 0}
+        key2: {r: 0.7735849, g: 0.33205768, b: 0.33205768, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
@@ -39687,7 +39687,7 @@ ParticleSystem:
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 6554
         ctime1: 36815
-        ctime2: 53006
+        ctime2: 60138
         ctime3: 0
         ctime4: 0
         ctime5: 0
@@ -43132,7 +43132,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2863005334074892745}
   m_LocalRotation: {x: -0.7071068, y: -0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 17465.4, y: 0.00024414062, z: 1733.1}
+  m_LocalPosition: {x: 17466, y: 0.00024414062, z: 1712.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2863005333490138019}
