@@ -14,12 +14,20 @@ public class GameManager : GenericSingleton<GameManager, GameManager>
     public GameObject isFoxActive;
     public GameObject isDoveActive;
 
+    [SerializeField] private AudioClip backgroundMusic = null;
+
+
 
     [Header("Settings")]
     [SerializeField] private List<GameObject> ChangeableModels = new List<GameObject>();
     public bool isHoldingObject = false;
     public bool isCrawling = false;
-    public bool isGamePaused; 
+    public bool isGamePaused;
+
+    private void Start()
+    {
+        SoundManager.Instance.PlayMusic(backgroundMusic);
+    }
 
     public void CheckAnimalActiveState()
     {

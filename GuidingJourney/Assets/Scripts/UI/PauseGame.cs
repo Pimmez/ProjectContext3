@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
@@ -7,18 +5,23 @@ using UnityEngine.UI;
 
 public class PauseGame : MonoBehaviour
 {
+    [Header("Component References")]
     [SerializeField] private GameObject scrollObject;
     [SerializeField] private GameObject pauseObject;
-    [SerializeField] private AudioMixer mainMixer;
+    [SerializeField] private GameObject confirmationObject;
 
+    [Header("Audio References")]
+    [SerializeField] private AudioMixer mainMixer;
     [SerializeField] private Slider allVolumeSlider;
     [SerializeField] private Slider backgroundVolumeSlider;
     [SerializeField] private Slider sfxVolumeSlider;
 
+    //Privates
     private bool isPaused = false;
 
     private void Awake()
     {
+        LoadQualityValues();
         LoadAudioValues();
     }
 
@@ -43,6 +46,48 @@ public class PauseGame : MonoBehaviour
         Time.timeScale = 1;
 
         SceneManager.LoadScene(_scene);
+    }
+
+    public void ConfirmToMenu()
+    {
+        pauseObject.SetActive(false);
+        confirmationObject.SetActive(true);
+    }
+
+    public void CloseConfirmPanel()
+    {
+        pauseObject.SetActive(true);
+        confirmationObject.SetActive(false);
+    }
+
+    public void SetQualityLow(bool _qualityIndex)
+    {
+        if (_qualityIndex)
+        {
+            QualitySettings.SetQualityLevel(0);
+            PlayerPrefs.SetInt("QualitySettings", 0);
+            LoadQualityValues();
+        }
+    }
+
+    public void SetQualityMedium(bool _qualityIndex)
+    {
+        if (_qualityIndex)
+        {
+            QualitySettings.SetQualityLevel(1);
+            PlayerPrefs.SetInt("QualitySettings", 1);
+            LoadQualityValues();
+        }
+    }
+
+    public void SetQualityHigh(bool _qualityIndex)
+    {
+        if (_qualityIndex)
+        {
+            QualitySettings.SetQualityLevel(2);
+            PlayerPrefs.SetInt("QualitySettings", 2);
+            LoadQualityValues();
+        }
     }
 
     public void AllAudioSettings(float _volume)
@@ -76,5 +121,11 @@ public class PauseGame : MonoBehaviour
 
         float sfxVolumeValue = PlayerPrefs.GetFloat("SFXVolume");
         sfxVolumeSlider.value = sfxVolumeValue;
+    }
+
+    private void LoadQualityValues()
+    {
+        int qualityValue = PlayerPrefs.GetInt("QualitySettings");
+        QualitySettings.SetQualityLevel(qualityValue);
     }
 }
