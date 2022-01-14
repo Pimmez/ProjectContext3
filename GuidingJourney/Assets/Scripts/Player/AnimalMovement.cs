@@ -5,6 +5,7 @@ public class AnimalMovement : MonoBehaviour
     [Header("Component References")]
     [SerializeField] private CharacterController charController = null;
     [SerializeField] private Camera mainCamera = null;
+    public Animator anim;
 
     [Header("Movement Settings")]
     [SerializeField] private float movementSpeed = 500f;
@@ -68,5 +69,14 @@ public class AnimalMovement : MonoBehaviour
     {
         //charController.Move(CameraDirection(moveDirection) * movementSpeed * Time.deltaTime);
         charController.Move(movementDirection * movementSpeed * Time.deltaTime);
+
+        if(movementDirection != Vector3.zero)
+        {
+            anim.SetBool("isWalking", true);
+        }
+        else
+        {
+            anim.SetBool("isWalking", false);
+        }
     }
 }

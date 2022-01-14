@@ -1,15 +1,17 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerInteractions : MonoBehaviour
 {
+    [Header("Component References")]
+    [SerializeField] CharacterController characterController;
+    [SerializeField] private Animator anim;
+    
+    //Action Events
     public static Action StartFadeEvent;
     public static Action EndFadeEvent;
 
-    [SerializeField] CharacterController characterController;
-    [SerializeField] private Animator anim;
+    //Privates
     private Transform crawlToLocation = null;
 
     private void Start()
