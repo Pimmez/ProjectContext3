@@ -174,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d34dca18e13858409e09ac6aeb3db86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSound: {fileID: 8300000, guid: f2639f14cbc736245a3d7ade3a778789, type: 3}
+  hoverSound: {fileID: 0}
   clickSound: {fileID: 8300000, guid: 59dccb6baf9fed24f8f2af0555d50576, type: 3}
 --- !u!114 &40604132
 MonoBehaviour:
@@ -195,10 +195,10 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1100,7 +1100,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 60545048}
   m_HandleRect: {fileID: 534283862}
   m_Direction: 0
-  m_MinValue: -80
+  m_MinValue: -40
   m_MaxValue: 0
   m_WholeNumbers: 1
   m_Value: 0
@@ -3287,10 +3287,10 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -3344,7 +3344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d34dca18e13858409e09ac6aeb3db86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSound: {fileID: 8300000, guid: f2639f14cbc736245a3d7ade3a778789, type: 3}
+  hoverSound: {fileID: 0}
   clickSound: {fileID: 8300000, guid: 59dccb6baf9fed24f8f2af0555d50576, type: 3}
 --- !u!1 &1325575051
 GameObject:
@@ -3810,10 +3810,10 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -3867,7 +3867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d34dca18e13858409e09ac6aeb3db86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSound: {fileID: 8300000, guid: f2639f14cbc736245a3d7ade3a778789, type: 3}
+  hoverSound: {fileID: 0}
   clickSound: {fileID: 8300000, guid: 59dccb6baf9fed24f8f2af0555d50576, type: 3}
 --- !u!114 &1425140907
 MonoBehaviour:
@@ -4178,7 +4178,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 2018633304}
   m_HandleRect: {fileID: 2111071103}
   m_Direction: 0
-  m_MinValue: -80
+  m_MinValue: -40
   m_MaxValue: 0
   m_WholeNumbers: 1
   m_Value: 0
@@ -4756,10 +4756,10 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -4813,7 +4813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d34dca18e13858409e09ac6aeb3db86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverSound: {fileID: 8300000, guid: f2639f14cbc736245a3d7ade3a778789, type: 3}
+  hoverSound: {fileID: 0}
   clickSound: {fileID: 8300000, guid: 59dccb6baf9fed24f8f2af0555d50576, type: 3}
 --- !u!1 &1809146457
 GameObject:
@@ -5245,7 +5245,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 1762207410}
   m_HandleRect: {fileID: 2097500720}
   m_Direction: 0
-  m_MinValue: -80
+  m_MinValue: -40
   m_MaxValue: 0
   m_WholeNumbers: 1
   m_Value: 0
