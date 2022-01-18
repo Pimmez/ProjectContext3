@@ -7,6 +7,7 @@ public class Item : MonoBehaviour
     [SerializeField] private Transform parentTransform;
     [SerializeField] private Transform foxHoldTransform;
     [SerializeField] private Transform doveHoldTransform;
+    [SerializeField] private GameObject image;
     
     [Header("Item Values")]
     [SerializeField] private float itemDropHeight = 25f;
@@ -24,6 +25,7 @@ public class Item : MonoBehaviour
         if (_other.gameObject.tag == Tags.PLAYER)
         {
             isTriggered = true;
+            image.SetActive(true);
         }
 
         if (CanGrabEvent != null)
@@ -37,6 +39,7 @@ public class Item : MonoBehaviour
         if (_other.gameObject.tag == Tags.PLAYER)
         {
             isTriggered = false;
+            image.SetActive(false);
         }
 
         if (CanGrabEvent != null)
@@ -45,18 +48,27 @@ public class Item : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if(isHoldingItem == true)
+        {
+            this.transform.position = foxHoldTransform.position;
+        }
+    }
+
     //Activated by Action event from PlayerController
     private void GrabObjects()
     {
         if (GameManager.Instance.isFoxActive.activeSelf && !isHoldingItem)
         {
+            image.SetActive(false);
+
             //Grab item 
             GameManager.Instance.isHoldingObject = true;
             //Set item to specific parent
             this.transform.parent = parentTransform;
 
             //Set item to specific location
-            this.transform.position = foxHoldTransform.position;
 
             isHoldingItem = true;
         }
@@ -75,6 +87,8 @@ public class Item : MonoBehaviour
         }
         else if (isHoldingItem)
         {
+            image.SetActive(false);
+
             //Drop item
             GameManager.Instance.isHoldingObject = false;
 

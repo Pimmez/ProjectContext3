@@ -3019,6 +3019,8 @@ MonoBehaviour:
   allVolumeSlider: {fileID: 1974131774}
   backgroundVolumeSlider: {fileID: 286250901}
   sfxVolumeSlider: {fileID: 1644158753}
+  sfxSource: {fileID: 872345625}
+  backgroundSource: {fileID: 872345626}
 --- !u!1 &1125670456
 GameObject:
   m_ObjectHideFlags: 0

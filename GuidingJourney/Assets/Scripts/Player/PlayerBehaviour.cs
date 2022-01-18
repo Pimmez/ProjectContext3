@@ -9,12 +9,23 @@ public class PlayerBehaviour : MonoBehaviour
 
     private void ChangeAnimalForm(int _range)
     {
+        if (GameManager.Instance.isFoxActive.activeSelf && _range == 1 || GameManager.Instance.isDoveActive.activeSelf && _range == 0)
+        {
+            CheckAudio();
+        }
+
         for (int i = 0; i < allPlayerModels.Count; i++)
         {
             allPlayerModels[i].SetActive(false);
             allPlayerModels[_range].SetActive(true);
         }
         GameManager.Instance.CheckAnimalActiveState();
+
+        
+    }
+
+    private void CheckAudio()
+    {
         SoundManager.Instance.Play(sfxClip);
     }
 
