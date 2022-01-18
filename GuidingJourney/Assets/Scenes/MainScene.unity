@@ -214,7 +214,6 @@ MonoBehaviour:
   crawlObject: 0
   caveNumber: 0
   image: {fileID: 981411120}
-  optionalimage: {fileID: 0}
 --- !u!1 &20174924
 GameObject:
   m_ObjectHideFlags: 0
@@ -1803,7 +1802,6 @@ MonoBehaviour:
   crawlObject: 4
   caveNumber: 4
   image: {fileID: 981411120}
-  optionalimage: {fileID: 0}
 --- !u!65 &316309906
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6913,6 +6911,7 @@ MonoBehaviour:
   foxHoldTransform: {fileID: 985156939}
   doveHoldTransform: {fileID: 932906953}
   image: {fileID: 977196508}
+  anim: {fileID: 1867420174}
   itemDropHeight: 25
 --- !u!23 &442126376
 MeshRenderer:
@@ -6971,7 +6970,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442126374}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3734, y: 25, z: -3567}
+  m_LocalPosition: {x: 3421, y: 25, z: -3269}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children:
   - {fileID: 316712788}
@@ -9587,7 +9586,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977650407}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2088.7937, y: 3178.208, z: 2715.2104}
+  m_LocalPosition: {x: -1669.4792, y: 1606.6628, z: -6.7854004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 975105749}
@@ -10507,7 +10506,6 @@ MonoBehaviour:
   crawlObject: 3
   caveNumber: 3
   image: {fileID: 981411120}
-  optionalimage: {fileID: 0}
 --- !u!65 &1266132493
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11285,7 +11283,6 @@ MonoBehaviour:
   crawlObject: 2
   caveNumber: 2
   image: {fileID: 981411120}
-  optionalimage: {fileID: 0}
 --- !u!65 &1354346812
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11884,7 +11881,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686139599}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2088.7937, y: 3178.208, z: 2715.2104}
+  m_LocalPosition: {x: -1669.4792, y: 1606.6628, z: -6.7854004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1094162922}
@@ -12149,7 +12146,6 @@ MonoBehaviour:
   crawlObject: 1
   caveNumber: 1
   image: {fileID: 981411120}
-  optionalimage: {fileID: 977196508}
 --- !u!65 &1736278674
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12368,6 +12364,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 442126375}
+        m_TargetAssemblyTypeName: Item, Assembly-CSharp
+        m_MethodName: AnimationEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1875350818
 GameObject:
   m_ObjectHideFlags: 0
@@ -12570,7 +12580,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903614076}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 5919, y: 43, z: 2965}
+  m_LocalPosition: {x: 1039, y: 43, z: 3400}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1867420172}

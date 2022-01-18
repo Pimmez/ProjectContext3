@@ -8,6 +8,7 @@ public class Item : MonoBehaviour
     [SerializeField] private Transform foxHoldTransform;
     [SerializeField] private Transform doveHoldTransform;
     [SerializeField] private GameObject image;
+    [SerializeField] private Animator anim;
     
     [Header("Item Values")]
     [SerializeField] private float itemDropHeight = 25f;
@@ -56,21 +57,29 @@ public class Item : MonoBehaviour
         }
     }
 
+    public void AnimationEvent()
+    {
+        this.transform.parent = parentTransform;
+        isHoldingItem = true;
+    }
+
     //Activated by Action event from PlayerController
     private void GrabObjects()
     {
         if (GameManager.Instance.isFoxActive.activeSelf && !isHoldingItem)
         {
+            anim.SetTrigger("isGrabbing");
+
             image.SetActive(false);
 
             //Grab item 
             GameManager.Instance.isHoldingObject = true;
             //Set item to specific parent
-            this.transform.parent = parentTransform;
+            
 
             //Set item to specific location
 
-            isHoldingItem = true;
+
         }
         else if (GameManager.Instance.isDoveActive.activeSelf && !isHoldingItem)
         {
@@ -99,6 +108,8 @@ public class Item : MonoBehaviour
             this.transform.position = new Vector3(this.transform.position.x, itemDropHeight, this.transform.position.z);
 
             isHoldingItem = false;
+            anim.SetTrigger("isIdle");
+
         }
     }
 
