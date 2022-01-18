@@ -28,6 +28,11 @@ public class PauseGame : MonoBehaviour
         LoadAudioValues();
     }
 
+    public void OpenURL()
+    {
+        Application.OpenURL("https://www.peacebrigades.nl/");
+    }
+
     public void PauseOnOff()
     {
         isPaused = !isPaused;
