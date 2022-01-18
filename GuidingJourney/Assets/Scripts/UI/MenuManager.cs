@@ -17,9 +17,11 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private Slider sfxVolumeSlider;
     [SerializeField] private AudioSource sfxSource;
     [SerializeField] private AudioSource backgroundSource;
+    [SerializeField] private AudioClip backgroundClip;
 
     private void Start()
     {
+        SoundManager.Instance.PlayMusic(backgroundClip);
         LoadAudioValues();
         LoadQualityValues();
     }
