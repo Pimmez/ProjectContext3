@@ -15,9 +15,13 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private Slider allVolumeSlider;
     [SerializeField] private Slider backgroundVolumeSlider;
     [SerializeField] private Slider sfxVolumeSlider;
+    [SerializeField] private AudioSource sfxSource;
+    [SerializeField] private AudioSource backgroundSource;
+    [SerializeField] private AudioClip backgroundClip;
 
     private void Start()
     {
+        SoundManager.Instance.PlayMusic(backgroundClip);
         LoadAudioValues();
         LoadQualityValues();
     }
@@ -53,7 +57,7 @@ public class MenuManager : MonoBehaviour
 
     public void SetQualityLow(bool _qualityIndex)
     {
-        if(_qualityIndex)
+        if (_qualityIndex)
         {
             QualitySettings.SetQualityLevel(0);
             PlayerPrefs.SetInt("QualitySettings", 0);
@@ -83,6 +87,17 @@ public class MenuManager : MonoBehaviour
 
     public void AllAudioSettings(float _volume)
     {
+        if (_volume <= -39f)
+        {
+            sfxSource.mute = true;
+            backgroundSource.mute = true;
+        }
+        else
+        {
+            sfxSource.mute = false;
+            backgroundSource.mute = false;
+        }
+
         mainMixer.SetFloat("AllVolume", _volume);
         PlayerPrefs.SetFloat("MainVolume", _volume);
         LoadAudioValues();
@@ -90,6 +105,15 @@ public class MenuManager : MonoBehaviour
 
     public void SoundSettings(float _volume)
     {
+        if (_volume <= -39f)
+        {
+            backgroundSource.mute = true;
+        }
+        else
+        {
+            backgroundSource.mute = false;
+        }
+
         mainMixer.SetFloat("MainVolume", _volume);
         PlayerPrefs.SetFloat("BackgroundVolume", _volume);
         LoadAudioValues();
@@ -97,6 +121,15 @@ public class MenuManager : MonoBehaviour
 
     public void SFXSettings(float _volume)
     {
+        if (_volume <= -39f)
+        {
+            sfxSource.mute = true;
+        }
+        else
+        {
+            sfxSource.mute = false;
+        }
+
         mainMixer.SetFloat("SFXVolume", _volume);
         PlayerPrefs.SetFloat("SFXVolume", _volume);
         LoadAudioValues();

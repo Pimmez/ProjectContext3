@@ -7,6 +7,7 @@ public class Waypoints : MonoBehaviour
     [Header("Component References")]
     [SerializeField] private List<Transform> routes = new List<Transform>();
     [SerializeField] private GameObject player = null;
+    [SerializeField] private Animator anim;
 
     [Header("Settings")]
     [SerializeField] private float speed = 300f;
@@ -52,6 +53,7 @@ public class Waypoints : MonoBehaviour
                 //Make bool to let HRD wait
                 //After bool/task complete go to next route section with new waypoints.
                 canMove = false;
+                anim.SetBool("isMoving", false);
                 //Check if bool, int already is completed if so move on otherwise wait here
 
 
@@ -91,14 +93,26 @@ public class Waypoints : MonoBehaviour
             if (canMove)
             {
                 WalkAround();
+                anim.SetBool("isMoving", true);
             }
+        }
+        else
+        {
+            anim.SetBool("isMoving", false);
         }
     }
 
     //Let the HRD walk || NEED TO GO TO OWN HRD CLASS
     private void WalkAround()
     {
-        transform.forward = Vector3.RotateTowards(transform.forward, targetNode.position - transform.position, speed * Time.deltaTime, 0.0f);
+
+        //transform.forward = Vector3.RotateTowards(transform.forward, targetNode.position - transform.position, speed * Time.deltaTime, 1);
+        //transform.rotation =  Quaternion.RotateTowards(transform.rotation, targetNode.rotation, speed * Time.deltaTime);
+
+        Vector3 direction = targetNode.position - transform.position;
+        Quaternion rot = Quaternion.LookRotation(direction);
+
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, rot, speed * Time.deltaTime);
 
         transform.position = Vector3.MoveTowards(transform.position, targetNode.position, speed * Time.deltaTime);
     }
