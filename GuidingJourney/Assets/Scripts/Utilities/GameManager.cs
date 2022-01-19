@@ -9,10 +9,21 @@ public class GameManager : GenericSingleton<GameManager, GameManager>
     [Header("Component References")]
     [SerializeField] private GameObject fox;
     [SerializeField] private GameObject dove;
+    [SerializeField] private GameObject pressToMove = null;
+    public GameObject dialogueManager = null;
     public GameObject settingsButton;
-
     public GameObject isFoxActive;
     public GameObject isDoveActive;
+
+    public bool isTutorialActive = false;
+    public bool isDialogueTutorialDone = false;
+    public bool isCaveActive = false;
+    public GameObject caveObject = null;
+    public bool isWoodenBlockadeActive = false;
+    public GameObject blockadeObject = null;
+    public bool isCampsiteActive = false;
+
+
 
     [SerializeField] private AudioClip backgroundMusic = null;
 
@@ -27,6 +38,18 @@ public class GameManager : GenericSingleton<GameManager, GameManager>
     private void Start()
     {
         SoundManager.Instance.PlayMusic(backgroundMusic);
+        isTutorialActive = false;
+        caveObject.SetActive(false);
+        blockadeObject.SetActive(false);
+        pressToMove.SetActive(true);
+    }
+
+    private void Update()
+    {
+        if(Input.anyKey)
+        {
+            pressToMove.SetActive(false);
+        }
     }
 
     public void CheckAnimalActiveState()

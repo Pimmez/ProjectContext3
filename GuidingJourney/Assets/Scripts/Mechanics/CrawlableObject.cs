@@ -22,7 +22,7 @@ public class CrawlableObject : MonoBehaviour
 
     private void OnTriggerEnter(Collider _other)
     {
-        if (_other.gameObject.tag == Tags.PLAYER && GameManager.Instance.isFoxActive.activeSelf)
+        if (_other.gameObject.tag == Tags.PLAYER && GameManager.Instance.isFoxActive.activeSelf && GameManager.Instance.isCaveActive)
         {
             isTriggered = true;
             image.SetActive(true);

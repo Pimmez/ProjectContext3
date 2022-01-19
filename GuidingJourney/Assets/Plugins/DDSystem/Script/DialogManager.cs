@@ -51,9 +51,9 @@ namespace Doublsb.Dialog
         public float Delay = 0.1f;
 
         [Header("Selector")]
-        public GameObject Selector;
-        public GameObject SelectorItem;
-        public Text SelectorItemText;
+        public GameObject Selector = null;
+        public GameObject SelectorItem = null;
+        public Text SelectorItemText = null;
 
         [HideInInspector]
         public State state;

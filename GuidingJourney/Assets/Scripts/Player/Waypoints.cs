@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class Waypoints : MonoBehaviour
 {
@@ -18,6 +19,9 @@ public class Waypoints : MonoBehaviour
     [SerializeField] private GameObject activeRoute = null;
     [SerializeField] private int routeCounter = 0;
 
+    //ActionEvents
+    public static Action TutorialTextElinahEvent;
+
     //Privates
     private List<Transform> childRoutes = new List<Transform>();
     private Transform targetNode;
@@ -27,7 +31,6 @@ public class Waypoints : MonoBehaviour
 
     private void Awake()
     {
-        canMove = true;
         routeCounter = 0;
         childCounter = 0;
         CheckWaypointsRoute(routeCounter);
@@ -80,8 +83,26 @@ public class Waypoints : MonoBehaviour
     //Update code loop
     private void Update()
     {
+        if (GameManager.Instance.isDialogueTutorialDone)
+        {
+            //GameManager.Instance.isGamePaused = false;
+            canMove = true;
+        }
+
         if (Vector3.Distance(transform.position, player.transform.position) < radius && childCounter < childNodes)
         {
+            if (GameManager.Instance.isTutorialActive == false)
+            {
+                if(TutorialTextElinahEvent != null)
+                {
+                    TutorialTextElinahEvent();
+                }
+
+                GameManager.Instance.dialogueManager.SetActive(true);
+                //GameManager.Instance.isGamePaused = true;
+                GameManager.Instance.isTutorialActive = true;
+            }
+
             if (targetNode == null)
             {
                 targetNode = childRoutes[childCounter];
