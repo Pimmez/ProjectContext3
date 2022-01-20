@@ -14,20 +14,7 @@ public class GameManager : GenericSingleton<GameManager, GameManager>
     public GameObject settingsButton;
     public GameObject isFoxActive;
     public GameObject isDoveActive;
-
-    public bool isTutorialActive = false;
-    public bool isDialogueTutorialDone = false;
-    public bool isCaveActive = false;
-    public GameObject caveObject = null;
-    public bool isWoodenBlockadeActive = false;
-    public GameObject blockadeObject = null;
-    public bool isCampsiteActive = false;
-
-
-
     [SerializeField] private AudioClip backgroundMusic = null;
-
-
 
     [Header("Settings")]
     [SerializeField] private List<GameObject> ChangeableModels = new List<GameObject>();
@@ -38,9 +25,6 @@ public class GameManager : GenericSingleton<GameManager, GameManager>
     private void Start()
     {
         SoundManager.Instance.PlayMusic(backgroundMusic);
-        isTutorialActive = false;
-        caveObject.SetActive(false);
-        blockadeObject.SetActive(false);
         pressToMove.SetActive(true);
     }
 

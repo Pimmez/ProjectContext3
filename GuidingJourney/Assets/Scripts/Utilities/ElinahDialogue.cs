@@ -122,38 +122,4 @@ public class ElinahDialogue : MonoBehaviour
 
 
     }
-
-    private void TutorialTextELinah()
-    {
-        if(GameManager.Instance.isTutorialActive)
-        {
-            Debug.Log("Text Elinah Speaking");
-
-            DialogManager.Show(dialogTextCutsceneIntro);
-            Debug.Log("dialogue: " + dialogTextCutsceneIntro.Count);
-
-            /*
-            for (int i = 0; i < dialogTextPuzzle1.Count; i++)
-            {
-                if(dialogTextPuzzle1.Count == i)
-                {
-                    GameManager.Instance.isDialogueTutorialDone = true;
-                    GameManager.Instance.dialogueManager.SetActive(false);
-
-                }
-            }
-            */
-        }
-    }
-
-    private void OnEnable()
-    {
-        Waypoints.TutorialTextElinahEvent += TutorialTextELinah;
-    }
-
-    private void OnDisable()
-    {
-        Waypoints.TutorialTextElinahEvent -= TutorialTextELinah;
-
-    }
 }
