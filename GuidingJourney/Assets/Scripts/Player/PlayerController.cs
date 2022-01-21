@@ -56,8 +56,12 @@ public class PlayerController : MonoBehaviour
     {      
         if (value.started && isCrawling)
         {
-            if(OnCrawlEvent != null)
+            Debug.Log("crawl pressed");
+
+            if (OnCrawlEvent != null)
             {
+                Debug.Log("crawl pressed shootinge event");
+
                 OnCrawlEvent(caveType);
             }
 
