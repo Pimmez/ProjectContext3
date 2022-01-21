@@ -376,7 +376,7 @@ PrefabInstance:
     - target: {fileID: 8206358605457009699, guid: b1e781a67c6f97f4d9cfb50a61f30655, type: 3}
       propertyPath: ChatSE.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: d89cdede0011f994b82b7318c712a9df, type: 3}
+      objectReference: {fileID: 8300000, guid: 8e3b7cda214c85748a146a0c5483fd88, type: 3}
     - target: {fileID: 8206358605457009699, guid: b1e781a67c6f97f4d9cfb50a61f30655, type: 3}
       propertyPath: Emotion._sprite.Array.data[0]
       value: 
@@ -445,7 +445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.07058824, g: 0.3254902, b: 0.3647059, a: 1}
+  m_Color: {r: 0.09211463, g: 0.1597859, b: 0.16981131, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1703,7 +1703,7 @@ MonoBehaviour:
   Printer_Text: {fileID: 818689470}
   SEAudio: {fileID: 4094011683524534013}
   CallAudio: {fileID: 4094011683524534014}
-  Delay: 0.05
+  Delay: 0.03
   Selector: {fileID: 1347563849103011349}
   SelectorItem: {fileID: 6424157164419253257}
   SelectorItemText: {fileID: 6286582589267607650}
