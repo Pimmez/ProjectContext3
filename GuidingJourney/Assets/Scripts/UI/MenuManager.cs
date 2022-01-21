@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
-using UnityEngine.UIElements;
+using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
@@ -29,6 +29,11 @@ public class MenuManager : MonoBehaviour
     public void SceneChanger(string _scene)
     {
         SceneManager.LoadScene(_scene);
+    }
+
+    public void OnQuitGame()
+    {
+        Application.Quit();
     }
 
     public void Settings()
