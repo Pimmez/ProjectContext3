@@ -50,8 +50,6 @@ public class ElinahDialogue : MonoBehaviour
         weirdVoicesData.Callback = () => DoSomething();
         
 
-
-        
         forestDialogue.Add(new DialogData("I’m not as small as you are, fox. I can’t move through the forest as easily.", "Elinah"));
         forestDialogue.Add(new DialogData("You're much smaller. Perhaps you could crawl your way through these piles?", "Elinah"));
         forestDialogue.Add(new DialogData("Fox, is there anything you can do on the other side that would allow me to pass as well?", "Elinah"));
