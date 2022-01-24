@@ -18,7 +18,6 @@ public class Item : MonoBehaviour
     public static Action<bool> CanGrabEvent;
 
     //Privates
-    private bool isHoldingItem = false;
     private bool isTriggered = false;
     private bool isDoingOnceImage = false;
 

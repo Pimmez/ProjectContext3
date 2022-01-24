@@ -32,11 +32,8 @@ public class CrawlableObject : MonoBehaviour
                 isDoingOnceImage = true;
             }
         }
-        Debug.Log("Crawl baby crawl");
         if (CanCrawl != null)
         {
-            Debug.Log("Event shooting");
-
             CanCrawl(isTriggered, crawlObject);
         }
     }

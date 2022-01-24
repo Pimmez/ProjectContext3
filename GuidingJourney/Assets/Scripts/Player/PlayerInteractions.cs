@@ -47,13 +47,10 @@ public class PlayerInteractions : MonoBehaviour
     public void EndCrawlingAnimation()
     {
         anim.SetBool("iscrawling", false);
-        Debug.Log(anim.GetBool("iscrawling"));
     }
 
     private void Interact(Transform _location)
     {
-        Debug.Log("Interaction to interaction time to start crawl animation");
-
         characterController.enabled = false;
         crawlToLocation = _location;
 

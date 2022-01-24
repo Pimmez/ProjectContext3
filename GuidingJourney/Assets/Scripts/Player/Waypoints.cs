@@ -60,6 +60,11 @@ public class Waypoints : MonoBehaviour
                 anim.SetBool("isMoving", false);
                 //Check if bool, int already is completed if so move on otherwise wait here
 
+                if(HRDTaskList.Instance.SetTutorialTextActive && HRDTaskList.Instance.SetCaveTextActive == false)
+                {
+                    HRDTaskList.Instance.dialogueElinah.BeforeCaveDialogue();
+                    HRDTaskList.Instance.SetCaveTextActive = true;
+                }
 
                 routeCounter++;
 
@@ -86,6 +91,13 @@ public class Waypoints : MonoBehaviour
     {
         if (Vector3.Distance(transform.position, player.transform.position) < radius && childCounter < childNodes)
         {
+            if(HRDTaskList.Instance.SetTutorialTextActive == false)
+            {
+                HRDTaskList.Instance.DialogueManager.SetActive(true);
+                HRDTaskList.Instance.dialogueElinah.TutorialDialogue();
+                HRDTaskList.Instance.SetTutorialTextActive = true;
+            }
+
             if (targetNode == null)
             {
                 targetNode = childRoutes[childCounter];
