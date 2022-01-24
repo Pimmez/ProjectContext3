@@ -47,7 +47,7 @@ public class HRDTaskList : GenericSingleton<HRDTaskList, HRDTaskList>
                 completedTaskBag = true;
                 Destroy(targetObject);
                 SoundManager.Instance.Play(sfxClip);
-          
+                GameManager.Instance.isHoldingObject = false;
                 if (completedTaskBag)
                 {
                     dialogueElinah.AfterCaveDialogue();
