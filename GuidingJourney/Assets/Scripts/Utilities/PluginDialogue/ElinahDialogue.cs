@@ -2,14 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Doublsb.Dialog;
+using System;
 
 public class ElinahDialogue : MonoBehaviour
 {
     public DialogManager DialogManager;
 
+    public static Action<bool> WeirdVoicesEvent;
+    
     public List<DialogData> tutorialDialogue = new List<DialogData>();
     public List<DialogData> beforeCaveDialogue = new List<DialogData>();
     public List<DialogData> afterCaveDialogue = new List<DialogData>();
+    public List<DialogData> weirdVoicesDialogue = new List<DialogData>();
+    public List<DialogData> forestDialogue = new List<DialogData>();
 
     // Start is called before the first frame update
     void Awake()
@@ -34,7 +39,26 @@ public class ElinahDialogue : MonoBehaviour
         afterCaveDialogue.Add(new DialogData("I brought some flyers and banners for the protest we're heading to.", "Elinah"));
         afterCaveDialogue.Add(new DialogData("But also things like make-up, because I do want to look good!", "Elinah"));
 
+        weirdVoicesDialogue.Add(new DialogData("The human rights defender should be passing this road. Let's make sure she can't reach the city!", "Voice1"));
+        weirdVoicesDialogue.Add(new DialogData("Hold up, it's a woman? Well, that should make this easy", "Voice2"));
+        weirdVoicesDialogue.Add(new DialogData("Oh no, do you hear that? They will try to block me on the road ahead.", "Elinah"));
+        weirdVoicesDialogue.Add(new DialogData("The PBI handbook says we should find an alternate escape route, so we can avoid a dangerous situation.", "Elinah"));
+        weirdVoicesDialogue.Add(new DialogData("This forest? Well, it's a pretty dense forest, so it might be difficult for me to navigate.", "Elinah"));
+        weirdVoicesDialogue.Add(new DialogData("But it does provide an alternative route to the campsite! Great thinking, fox!.", "Elinah"));
+        DialogData weirdVoicesData = new DialogData("But it does provide an alternative route to the campsite! Great thinking, fox!.", "Elinah");
+        weirdVoicesDialogue.Add(weirdVoicesData);
+        weirdVoicesData.Callback = () => DoSomething();
+        
 
+
+        
+        forestDialogue.Add(new DialogData("I’m not as small as you are, fox. I can’t move through the forest as easily.", "Elinah"));
+        forestDialogue.Add(new DialogData("You're much smaller. Perhaps you could crawl your way through these piles?", "Elinah"));
+        forestDialogue.Add(new DialogData("Fox, is there anything you can do on the other side that would allow me to pass as well?", "Elinah"));
+        
+        //forestDialogue.Add(new DialogData("Wait before you go on, I'm still stuck here!", "Elinah"));
+        //forestDialogue.Add(new DialogData("It worked! Let's continue.", "Elinah"));
+        //forestDialogue.Add(new DialogData("We can't go there, it's too dangerous. We'll go through the forest.", "Elinah"));
 
 
         //INTRO CUTSCENE
@@ -80,17 +104,19 @@ public class ElinahDialogue : MonoBehaviour
         dialogTexts.Add(new DialogData("Yes, that's my bag! Thank you for retrieving it!", "Elinah"));
         dialogTexts.Add(new DialogData("I needed this bag, because there's a lot of stuff in it. I brought some flyers and banners for the protest we're heading to", "Elinah"));
         dialogTexts.Add(new DialogData("But also things like make-up, because I do want to look good!", "Elinah"));
-        */
+        
 
         //Puzzle Three
-
+        //WeirdVoices Dialogue
         dialogTexts.Add(new DialogData("The human rights defender should be passing this road. Let's make sure she can't reach the city!", "Voice1"));
         
         dialogTexts.Add(new DialogData("Hold up, it's a woman? Well, that should make this easy", "Voice2"));
 
         dialogTexts.Add(new DialogData("Oh no, do you hear that? They will try to block me on the road ahead.", "Voice2"));
         dialogTexts.Add(new DialogData("The PBI handbook says we should find an alternate escape route, so we can avoid a dangerous situation.", "Elinah"));
+        */
 
+        //Forest part
         dialogTexts.Add(new DialogData("This forest? Well, it's a pretty dense forest, so it might be difficult for me to navigate.", "Elinah"));
         dialogTexts.Add(new DialogData("But it does provide an alternative route to the campsite! Great thinking, fox!.", "Elinah"));
 
@@ -180,11 +206,18 @@ public class ElinahDialogue : MonoBehaviour
     }
     public void WeirdVoicesDialogue()
     {
-
+        DialogManager.Show(weirdVoicesDialogue);
     }
     public void ForestBlockadeDialogue()
     {
-
+        DialogManager.Show(forestDialogue);
     }
-
+    private void DoSomething()
+    {
+        HRDTaskList.Instance.ForestTextActive = true;
+        if(WeirdVoicesEvent != null)
+        {
+            WeirdVoicesEvent(true);
+        }
+    }
 }
