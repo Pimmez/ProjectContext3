@@ -19,6 +19,9 @@ public class VideoPlayerScript : MonoBehaviour
     private void Awake()
     {
         firstTimeCheck = PlayerPrefs.GetInt("FirstTimeCheck");
+
+        vid.url = System.IO.Path.Combine(Application.streamingAssetsPath, "cutscene1_test1.mp4");
+        vid.Play();
     }
 
     private void Start()
