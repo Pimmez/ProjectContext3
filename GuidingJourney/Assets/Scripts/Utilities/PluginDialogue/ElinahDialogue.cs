@@ -44,16 +44,17 @@ public class ElinahDialogue : MonoBehaviour
         weirdVoicesDialogue.Add(new DialogData("Oh no, do you hear that? They will try to block me on the road ahead.", "Elinah"));
         weirdVoicesDialogue.Add(new DialogData("The PBI handbook says we should find an alternate escape route, so we can avoid a dangerous situation.", "Elinah"));
         weirdVoicesDialogue.Add(new DialogData("This forest? Well, it's a pretty dense forest, so it might be difficult for me to navigate.", "Elinah"));
-        weirdVoicesDialogue.Add(new DialogData("But it does provide an alternative route to the campsite! Great thinking, fox!.", "Elinah"));
         DialogData weirdVoicesData = new DialogData("But it does provide an alternative route to the campsite! Great thinking, fox!.", "Elinah");
         weirdVoicesDialogue.Add(weirdVoicesData);
-        weirdVoicesData.Callback = () => DoSomething();
+        weirdVoicesData.Callback = () => WeirdVoiceCallBackFunction();
         
 
         forestDialogue.Add(new DialogData("I’m not as small as you are, fox. I can’t move through the forest as easily.", "Elinah"));
         forestDialogue.Add(new DialogData("You're much smaller. Perhaps you could crawl your way through these piles?", "Elinah"));
         forestDialogue.Add(new DialogData("Fox, is there anything you can do on the other side that would allow me to pass as well?", "Elinah"));
-        
+        DialogData forestDialogueData = new DialogData("Fox, is there anything you can do on the other side that would allow me to pass as well?", "Elinah");
+        forestDialogue.Add(forestDialogueData);
+        forestDialogueData.Callback = () => ForestCallBackFunction();
         //forestDialogue.Add(new DialogData("Wait before you go on, I'm still stuck here!", "Elinah"));
         //forestDialogue.Add(new DialogData("It worked! Let's continue.", "Elinah"));
         //forestDialogue.Add(new DialogData("We can't go there, it's too dangerous. We'll go through the forest.", "Elinah"));
@@ -112,7 +113,7 @@ public class ElinahDialogue : MonoBehaviour
 
         dialogTexts.Add(new DialogData("Oh no, do you hear that? They will try to block me on the road ahead.", "Voice2"));
         dialogTexts.Add(new DialogData("The PBI handbook says we should find an alternate escape route, so we can avoid a dangerous situation.", "Elinah"));
-        */
+        
 
         //Forest part
         dialogTexts.Add(new DialogData("This forest? Well, it's a pretty dense forest, so it might be difficult for me to navigate.", "Elinah"));
@@ -130,7 +131,7 @@ public class ElinahDialogue : MonoBehaviour
 
         dialogTexts.Add(new DialogData("We can't go there, it's too dangerous. We'll go through the forest.", "Elinah"));
 
-
+        */
         //Puzzle Four
 
         dialogTexts.Add(new DialogData("That letter is my protest permit, so it's very important. Can you see it from that height?", "Elinah"));
@@ -210,12 +211,17 @@ public class ElinahDialogue : MonoBehaviour
     {
         DialogManager.Show(forestDialogue);
     }
-    private void DoSomething()
+    private void WeirdVoiceCallBackFunction()
     {
         HRDTaskList.Instance.ForestTextActive = true;
         if(WeirdVoicesEvent != null)
         {
             WeirdVoicesEvent(true);
         }
+    }
+
+    private void ForestCallBackFunction()
+    {
+        HRDTaskList.Instance.DoForestTextOnce = false;
     }
 }

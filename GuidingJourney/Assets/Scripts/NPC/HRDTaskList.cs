@@ -7,7 +7,7 @@ public class HRDTaskList : GenericSingleton<HRDTaskList, HRDTaskList>
     [Header("Component References")]
     [SerializeField] private GameObject targetObject = null;
     [SerializeField] private AudioClip sfxClip = null;
-    
+    [SerializeField] private GameObject backpack = null;
 
     [Header("Range Value")]
     [SerializeField] private float minRange = 200f;
@@ -21,7 +21,7 @@ public class HRDTaskList : GenericSingleton<HRDTaskList, HRDTaskList>
     public bool SetCaveTextActive = false;
     public bool SetWeirdVoicesActive = false;
     public bool ForestTextActive = false;
-
+    public bool DoForestTextOnce = true;
     //Action Events
     public static Action<bool> GrabbedItemEvent;
     public static Action<bool> AfterCaveTalkEvent;
@@ -30,11 +30,13 @@ public class HRDTaskList : GenericSingleton<HRDTaskList, HRDTaskList>
     public static Action<bool> Task3CEvent;
     public static Action<bool> CampSiteEvent;
 
+
     //Privates
     private bool completedTaskBag = false;
 
     private void Start()
     {
+        backpack.SetActive(false);
         DialogueManager.SetActive(false);
     }
 
@@ -47,6 +49,7 @@ public class HRDTaskList : GenericSingleton<HRDTaskList, HRDTaskList>
             {
                 completedTaskBag = true;
                 Destroy(targetObject);
+                backpack.SetActive(true);
                 SoundManager.Instance.Play(sfxClip);
                 GameManager.Instance.isHoldingObject = false;
                 if (completedTaskBag)
