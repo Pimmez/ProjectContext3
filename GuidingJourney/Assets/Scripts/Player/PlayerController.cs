@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
     {      
         if (value.started && isCrawling)
         {
-            if(OnCrawlEvent != null)
+            if (OnCrawlEvent != null)
             {
                 OnCrawlEvent(caveType);
             }

@@ -9,14 +9,12 @@ public class GameManager : GenericSingleton<GameManager, GameManager>
     [Header("Component References")]
     [SerializeField] private GameObject fox;
     [SerializeField] private GameObject dove;
+    [SerializeField] private GameObject pressToMove = null;
+    public GameObject dialogueManager = null;
     public GameObject settingsButton;
-
     public GameObject isFoxActive;
     public GameObject isDoveActive;
-
     [SerializeField] private AudioClip backgroundMusic = null;
-
-
 
     [Header("Settings")]
     [SerializeField] private List<GameObject> ChangeableModels = new List<GameObject>();
@@ -27,6 +25,15 @@ public class GameManager : GenericSingleton<GameManager, GameManager>
     private void Start()
     {
         SoundManager.Instance.PlayMusic(backgroundMusic);
+        pressToMove.SetActive(true);
+    }
+
+    private void Update()
+    {
+        if(Input.anyKey)
+        {
+            pressToMove.SetActive(false);
+        }
     }
 
     public void CheckAnimalActiveState()

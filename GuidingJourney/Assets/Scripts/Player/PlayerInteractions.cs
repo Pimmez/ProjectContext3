@@ -32,7 +32,9 @@ public class PlayerInteractions : MonoBehaviour
         this.transform.position = new Vector3(crawlToLocation.position.x, 43, crawlToLocation.position.z);
         GameManager.Instance.isGamePaused = false;
 
-        anim.SetTrigger("isIdle");
+        anim.SetBool("iscrawling", false);
+
+        //anim.SetTrigger("isIdle");
 
         characterController.enabled = true;
         if (EndFadeEvent != null)
@@ -42,16 +44,22 @@ public class PlayerInteractions : MonoBehaviour
         }
     }
 
+    public void EndCrawlingAnimation()
+    {
+        anim.SetBool("iscrawling", false);
+    }
+
     private void Interact(Transform _location)
     {
+        characterController.enabled = false;
         crawlToLocation = _location;
 
         GameManager.Instance.isGamePaused = true;
 
-        characterController.enabled = false;
-
         //Do Fox Crawl Animation
-        anim.SetTrigger("isCrawling");
+        //anim.SetTrigger("isCrawling");
+
+        anim.SetBool("iscrawling", true);
     }
 
     private void OnEnable()
