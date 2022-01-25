@@ -1,15 +1,27 @@
+using Extensions.Generics.Singleton;
 using UnityEngine;
 using System;
 
-public class HRDTaskList : MonoBehaviour
+public class HRDTaskList : GenericSingleton<HRDTaskList, HRDTaskList>
 {
     [Header("Component References")]
     [SerializeField] private GameObject targetObject = null;
     [SerializeField] private AudioClip sfxClip = null;
+    
 
     [Header("Range Value")]
     [SerializeField] private float minRange = 200f;
-    
+
+    public GameObject DialogueManager = null;
+    public GameObject D_Character = null;
+    public GameObject D_Printer = null;
+
+    public ElinahDialogue dialogueElinah;
+    public bool SetTutorialTextActive = false;
+    public bool SetCaveTextActive = false;
+    public bool SetWeirdVoicesActive = false;
+    public bool ForestTextActive = false;
+
     //Action Events
     public static Action<bool> GrabbedItemEvent;
     public static Action<bool> AfterCaveTalkEvent;
@@ -19,29 +31,40 @@ public class HRDTaskList : MonoBehaviour
     public static Action<bool> CampSiteEvent;
 
     //Privates
-    private bool completedTask = false;
+    private bool completedTaskBag = false;
+
+    private void Start()
+    {
+        DialogueManager.SetActive(false);
+    }
 
     // Update is called once per frame
     private void Update()
     {
-        if(completedTask == false)
+        if (completedTaskBag == false)
         {
             if (Vector3.Distance(targetObject.transform.position, transform.position) < minRange)
             {
-                completedTask = true;
+                completedTaskBag = true;
                 Destroy(targetObject);
                 SoundManager.Instance.Play(sfxClip);
-                if (GrabbedItemEvent != null)
+                GameManager.Instance.isHoldingObject = false;
+                if (completedTaskBag)
                 {
-                    GrabbedItemEvent(true);
+                    dialogueElinah.AfterCaveDialogue();
+
+                    if (GrabbedItemEvent != null)
+                    {
+                        GrabbedItemEvent(true);
+                    }
                 }
             }
-        } 
+        }
     }
 
     private void AfterCaveTalk()
     {
-        if(AfterCaveTalkEvent != null)
+        if (AfterCaveTalkEvent != null)
         {
             AfterCaveTalkEvent(true);
         }
@@ -49,10 +72,10 @@ public class HRDTaskList : MonoBehaviour
 
     private void Task3AComplete(int _taskType)
     {
-        if(Task3AEvent != null && _taskType == 0)
+        if (Task3AEvent != null && _taskType == 0)
         {
             Task3AEvent(true);
-        }    
+        }
     }
 
     private void Task3BComplete(int _taskType)

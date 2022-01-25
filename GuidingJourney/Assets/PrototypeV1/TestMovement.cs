@@ -10,7 +10,6 @@ public class TestMovement : MonoBehaviour
     [SerializeField] private Camera mainCamera;
 
     private Vector3 forward, right, movement;
-    private bool moving = false;
 
     private void Awake()
     {
