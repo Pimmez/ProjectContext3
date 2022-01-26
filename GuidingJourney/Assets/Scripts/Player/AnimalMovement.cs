@@ -69,7 +69,6 @@ public class AnimalMovement : MonoBehaviour
     {
         //charController.Move(CameraDirection(moveDirection) * movementSpeed * Time.deltaTime);
         charController.Move(movementDirection * movementSpeed * Time.deltaTime);
-
         if(movementDirection != Vector3.zero)
         {
             anim.SetBool("isWalking", true);
