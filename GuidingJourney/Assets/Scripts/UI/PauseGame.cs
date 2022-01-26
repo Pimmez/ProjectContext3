@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using UnityEngine.Rendering;
 
 public class PauseGame : MonoBehaviour
 {
@@ -17,15 +18,25 @@ public class PauseGame : MonoBehaviour
     [SerializeField] private Slider sfxVolumeSlider;
     [SerializeField] private AudioSource sfxSource;
     [SerializeField] private AudioSource backgroundSource;
-
-
+    
+    public RenderPipelineAsset[] qualitylevels;
+    public Dropdown dropdown;
+    
     //Privates
     private bool isPaused = false;
 
+   
+
     private void Awake()
     {
-        LoadQualityValues();
+        dropdown.value = QualitySettings.GetQualityLevel();
+        //LoadQualityValues();
         LoadAudioValues();
+    }
+    public void ChangeQualityLevels(int value)
+    {
+        QualitySettings.SetQualityLevel(value);
+        QualitySettings.renderPipeline = qualitylevels[value];
     }
 
     public void OpenURL()
