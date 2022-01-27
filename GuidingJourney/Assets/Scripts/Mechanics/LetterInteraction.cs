@@ -64,7 +64,7 @@ public class LetterInteraction : MonoBehaviour
             //Grab item 
             //GameManager.Instance.isHoldingObject = true;
             //Set item to specific parent
-
+            GameManager.Instance.isLetterFound = true;
 
             //Set item to specific location
         }

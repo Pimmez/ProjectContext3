@@ -8,7 +8,6 @@ public class GlobalVideoPlayer : GenericSingleton<GlobalVideoPlayer, GlobalVideo
 {
     public VideoPlayer vid;
     public GameObject vidCanvas;
-    public List<VideoClip> clips = new List<VideoClip>();
 
     public void PlayVideo(string _streamingAssetFile, bool _checkAfterPlaying)
     {
@@ -28,6 +27,7 @@ public class GlobalVideoPlayer : GenericSingleton<GlobalVideoPlayer, GlobalVideo
     private void AfterPlaying(UnityEngine.Video.VideoPlayer vp)
     {
         GameManager.Instance.isGamePaused = false;
+        vid.clip = null;
         vidCanvas.SetActive(false);
 
         //Debug.Log("Video Is Over");

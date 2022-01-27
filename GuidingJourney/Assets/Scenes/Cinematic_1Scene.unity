@@ -320,7 +320,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vid: {fileID: 273373869}
   isLonelyScene: 1
+  nextVideo: 0
   sceneName: MainScene
+  cutsceneName: Cutscene1.mp4
+  cutsceneNameExtra: 
   firstTimeCheck: 0
 --- !u!1 &851508874
 GameObject:

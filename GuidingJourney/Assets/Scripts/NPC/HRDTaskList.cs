@@ -1,11 +1,17 @@
 using Extensions.Generics.Singleton;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class HRDTaskList : GenericSingleton<HRDTaskList, HRDTaskList>
 {
     [Header("Component References")]
+    [SerializeField] private GameObject backpackObject = null;
     [SerializeField] private GameObject targetObject = null;
+    //[SerializeField] private VideoPlayer vid;
+    //[SerializeField] private GameObject vidCanvas;
+
+
     [SerializeField] private AudioClip sfxClip = null;
     [SerializeField] private GameObject backpack = null;
 
@@ -22,6 +28,7 @@ public class HRDTaskList : GenericSingleton<HRDTaskList, HRDTaskList>
     public bool SetWeirdVoicesActive = false;
     public bool ForestTextActive = false;
     public bool DoForestTextOnce = true;
+    
     //Action Events
     public static Action<bool> GrabbedItemEvent;
     public static Action<bool> AfterCaveTalkEvent;
@@ -29,7 +36,6 @@ public class HRDTaskList : GenericSingleton<HRDTaskList, HRDTaskList>
     public static Action<bool> Task3BEvent;
     public static Action<bool> Task3CEvent;
     public static Action<bool> CampSiteEvent;
-
 
     //Privates
     private bool completedTaskBag = false;
@@ -45,10 +51,10 @@ public class HRDTaskList : GenericSingleton<HRDTaskList, HRDTaskList>
     {
         if (completedTaskBag == false)
         {
-            if (Vector3.Distance(targetObject.transform.position, transform.position) < minRange)
+            if (Vector3.Distance(backpackObject.transform.position, transform.position) < minRange)
             {
                 completedTaskBag = true;
-                Destroy(targetObject);
+                backpackObject.SetActive(false);
                 backpack.SetActive(true);
                 SoundManager.Instance.Play(sfxClip);
                 GameManager.Instance.isHoldingObject = false;
@@ -63,7 +69,67 @@ public class HRDTaskList : GenericSingleton<HRDTaskList, HRDTaskList>
                 }
             }
         }
+
+        if (GameManager.Instance.isLetterFound == true)
+        {
+            if (Vector3.Distance(targetObject.transform.position, transform.position) < minRange)
+            {
+                SceneManager.LoadScene("Cinematic_2Scene");
+                /*
+                GameManager.Instance.isGamePaused = true;
+                
+                //Debug.Log("BEFORE VideoPlayer now playing: " + vid.clip.name.);
+                //Debug.Log("BEFORE vidcanvas active?: " + vidCanvas.activeSelf);
+                //Debug.Log("BEFORE Videoplayer active?" + vid.enabled);
+                //Debug.Log("BEFORE StreamingAsset Path: " + Application.streamingAssetsPath);
+
+                SoundManager.Instance.Play(sfxClip);
+                GameManager.Instance.isHoldingObject = false;
+
+                vidCanvas.SetActive(true);
+                vid.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene4.mp4");
+
+                Debug.Log("COME ON VIDEO JUST PLAY");
+                vid.Play();
+
+                //Debug.Log("VideoPlayer now playing: " + vid.clip.name);
+                //Debug.Log("vidcanvas active?: " + vidCanvas.activeSelf);
+                //Debug.Log("Videoplayer active?" + vid.enabled);
+                //Debug.Log("StreamingAsset Path: " + Application.streamingAssetsPath);
+
+
+                //Debug.Log("playing cutscene 4");
+
+                vid.loopPointReached += NextVideo;
+                */
+            }
+        }
     }
+
+    /*
+    private void NextVideo(UnityEngine.Video.VideoPlayer vp)
+    {
+        vid.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene5.mp4");
+        vid.Play();
+        Debug.Log("playing cutscene 5");
+
+        vid.loopPointReached += EndGame;
+
+        //Debug.Log("Video Is Over");
+    }
+
+    private void EndGame(UnityEngine.Video.VideoPlayer vp)
+    {
+        Debug.Log("clear, go to menu scene");
+
+        GameManager.Instance.isGamePaused = false;
+        GlobalVideoPlayer.Instance.vid.clip = null;
+        vidCanvas.SetActive(false);
+
+        SceneManager.LoadScene("Menuscene"); 
+        //Debug.Log("Video Is Over");
+    }
+    */
 
     private void AfterCaveTalk()
     {

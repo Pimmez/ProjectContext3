@@ -11,7 +11,11 @@ public class VideoPlayerScript : MonoBehaviour
 
     [Header("Settings")]
     [SerializeField] private bool isLonelyScene = false;
+    [SerializeField] private bool nextVideo = false;
+
     [SerializeField] private string sceneName;
+    [SerializeField] private string cutsceneName;
+    [SerializeField] private string cutsceneNameExtra;
 
     [Header("EDITOR VALUE")]
     [SerializeField] private int firstTimeCheck = 0;
@@ -19,8 +23,7 @@ public class VideoPlayerScript : MonoBehaviour
     private void Awake()
     {
         firstTimeCheck = PlayerPrefs.GetInt("FirstTimeCheck");
-
-        vid.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene1.mp4");
+        vid.url = System.IO.Path.Combine(Application.streamingAssetsPath, cutsceneName);
         vid.Play();
     }
 
@@ -38,7 +41,18 @@ public class VideoPlayerScript : MonoBehaviour
         {
             SceneManager.LoadScene(sceneName);
         }
+
+        if(nextVideo)
+        {
+            NextVideo();
+        }
         //Debug.Log("Video Is Over");
+    }
+
+    private void NextVideo()
+    {
+        vid.url = System.IO.Path.Combine(Application.streamingAssetsPath, cutsceneNameExtra);
+        vid.Play();
     }
 
     private void Update()
