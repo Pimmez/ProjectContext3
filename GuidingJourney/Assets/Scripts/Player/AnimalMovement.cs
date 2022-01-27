@@ -5,7 +5,8 @@ public class AnimalMovement : MonoBehaviour
     [Header("Component References")]
     [SerializeField] private CharacterController charController = null;
     [SerializeField] private Camera mainCamera = null;
-    public Animator anim;
+    public Animator animfox = null;
+    public Animator animdove = null;
 
     [Header("Movement Settings")]
     [SerializeField] private float movementSpeed = 500f;
@@ -69,14 +70,29 @@ public class AnimalMovement : MonoBehaviour
     {
         //charController.Move(CameraDirection(moveDirection) * movementSpeed * Time.deltaTime);
         charController.Move(movementDirection * movementSpeed * Time.deltaTime);
+       
+        if(GameManager.Instance.isDoveActive.activeSelf)
+        {
+            if (movementDirection != Vector3.zero)
+            {
+                animdove.SetBool("isWalking", true);
+            }
+            else
+            {
+                animdove.SetBool("isWalking", false);
+            }
+        }
 
-        if(movementDirection != Vector3.zero)
+        if (GameManager.Instance.isFoxActive.activeSelf)
         {
-            anim.SetBool("isWalking", true);
-        }
-        else
-        {
-            anim.SetBool("isWalking", false);
-        }
+            if (movementDirection != Vector3.zero)
+            {
+                animfox.SetBool("isWalking", true);
+            }
+            else
+            {
+                animfox.SetBool("isWalking", false);
+            }
+        }       
     }
 }

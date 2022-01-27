@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Rendering;
 
 public class MenuManager : MonoBehaviour
 {
@@ -9,7 +10,9 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject MenuHUD = null;
     [SerializeField] private GameObject SettingsHUD = null;
     [SerializeField] private GameObject CreditsHUD = null;
-
+    public RenderPipelineAsset[] qualitylevels;
+    public Dropdown dropdown;
+    
     [Header("Audio References")]
     [SerializeField] private AudioMixer mainMixer;
     [SerializeField] private Slider allVolumeSlider;
@@ -21,14 +24,25 @@ public class MenuManager : MonoBehaviour
 
     private void Start()
     {
+        dropdown.value = QualitySettings.GetQualityLevel();
         SoundManager.Instance.PlayMusic(backgroundClip);
         LoadAudioValues();
-        LoadQualityValues();
+        //LoadQualityValues();
+    }
+    public void ChangeQualityLevels(int value)
+    {
+        QualitySettings.SetQualityLevel(value);
+        QualitySettings.renderPipeline = qualitylevels[value];
     }
 
     public void SceneChanger(string _scene)
     {
         SceneManager.LoadScene(_scene);
+    }
+
+    public void OnQuitGame()
+    {
+        Application.Quit();
     }
 
     public void Settings()
