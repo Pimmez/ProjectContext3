@@ -20,7 +20,7 @@ public class VideoPlayerScript : MonoBehaviour
     {
         firstTimeCheck = PlayerPrefs.GetInt("FirstTimeCheck");
 
-        vid.url = System.IO.Path.Combine(Application.streamingAssetsPath, "cutscene1_test1.mp4");
+        vid.url = System.IO.Path.Combine(Application.streamingAssetsPath, "Cutscene1.mp4");
         vid.Play();
     }
 
