@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public static Action<int> OnStickGrabEvent;
     public static Action<int> OnCrawlEvent;
     public static Action TestButtonEvent;
+    public static Action OnDoveGrabEvent;
 
     //Privates
     private bool isCrawling = false;
@@ -20,12 +21,12 @@ public class PlayerController : MonoBehaviour
     private bool isStickGrabable = false;
     private int caveType;
     private int blockadeType;
-    
+
     [Header("Input Settings")]
     [SerializeField] private float movementSmoothingSpeed = 1f;
     private Vector3 rawInputMovement = Vector3.zero;
     private Vector3 smoothInputMovement = Vector3.zero;
-    
+
     //Getters & Setters
     public bool IsSmoothMovement { get { return isSmoothMovement; } set { isSmoothMovement = value; } }
     private bool isSmoothMovement = false;
@@ -33,18 +34,27 @@ public class PlayerController : MonoBehaviour
     //Event to get the OnGrab Keyinput
     public void OnGrab(InputAction.CallbackContext value)
     {
-        if (value.started && isGrabable)
+        if (value.started && isGrabable && GameManager.Instance.isDoveActive.activeSelf)
+        {
+            if(OnDoveGrabEvent != null)
+            {
+                OnDoveGrabEvent();
+            }
+        }
+
+        if (value.started && isGrabable && GameManager.Instance.isFoxActive.activeSelf)
         {
             //Interaction Action/Invoke
-            if(OnGrabEvent != null)
+            if (OnGrabEvent != null)
             {
                 OnGrabEvent();
             }
         }
-        
-        if(value.started && isStickGrabable)
+
+
+        if (value.started && isStickGrabable && GameManager.Instance.isFoxActive.activeSelf)
         {
-            if(OnStickGrabEvent != null)
+            if (OnStickGrabEvent != null)
             {
                 OnStickGrabEvent(blockadeType);
             }
@@ -53,8 +63,8 @@ public class PlayerController : MonoBehaviour
 
     //Event to get the OnCrawl Keyinput
     public void OnCrawl(InputAction.CallbackContext value)
-    {      
-        if (value.started && isCrawling)
+    {
+        if (value.started && isCrawling && GameManager.Instance.isFoxActive.activeSelf)
         {
             if (OnCrawlEvent != null)
             {
@@ -93,12 +103,12 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         SetInputActiveState();
-        if(GameManager.Instance.isDoveActive.activeSelf)
+        if (GameManager.Instance.isDoveActive.activeSelf)
         {
             CalculateMovementInputSmoothing();
             UpdatePlayerMovement(smoothInputMovement);
         }
-        else if(GameManager.Instance.isFoxActive.activeSelf)
+        else if (GameManager.Instance.isFoxActive.activeSelf)
         {
             UpdatePlayerMovement(rawInputMovement);
         }
@@ -153,6 +163,7 @@ public class PlayerController : MonoBehaviour
         CrawlableObject.CanCrawl += CanCrawl;
         GrabStick.CanGrabStickEvent += CanStickGrab;
         Item.CanGrabEvent += CanGrab;
+        LetterInteraction.DoveGrabEvent += CanGrab;
     }
 
     private void OnDisable()
@@ -160,5 +171,6 @@ public class PlayerController : MonoBehaviour
         CrawlableObject.CanCrawl -= CanCrawl;
         GrabStick.CanGrabStickEvent -= CanStickGrab;
         Item.CanGrabEvent -= CanGrab;
+        LetterInteraction.DoveGrabEvent -= CanGrab;
     }
 }
