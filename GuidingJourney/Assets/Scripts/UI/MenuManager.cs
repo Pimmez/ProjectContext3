@@ -68,6 +68,18 @@ public class MenuManager : MonoBehaviour
     {
         Application.OpenURL("https://www.peacebrigades.nl/");
     }
+    public void OpenFACEBOOK()
+    {
+        Application.OpenURL("https://www.facebook.com/PBINederland/");
+    }
+    public void OpenTWITTER()
+    {
+        Application.OpenURL("https://twitter.com/PBINederland");
+    }
+    public void OpenDONATION()
+    {
+        Application.OpenURL("https://www.peacebrigades.nl/doe-mee/doneren/");
+    }
 
     public void SetQualityLow(bool _qualityIndex)
     {

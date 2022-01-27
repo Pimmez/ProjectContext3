@@ -53,6 +53,15 @@ public class VideoPlayerScript : MonoBehaviour
     {
         vid.url = System.IO.Path.Combine(Application.streamingAssetsPath, cutsceneNameExtra);
         vid.Play();
+
+        vid.loopPointReached += GoToCredits;
+
+    }
+
+    private void GoToCredits(UnityEngine.Video.VideoPlayer vp)
+    {
+        SceneManager.LoadScene("CreditsScene");
+
     }
 
     private void Update()

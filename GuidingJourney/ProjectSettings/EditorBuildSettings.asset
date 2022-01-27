@@ -26,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cinematic_2Scene.unity
     guid: 65b3924e75f5e854b9831b22165acc89
+  - enabled: 1
+    path: Assets/Scenes/CreditsScene.unity
+    guid: 4cbe8cafe159e3446a215a0703112f93
+  - enabled: 1
+    path: Assets/Scenes/PBIScene.unity
+    guid: c7404b7b1801d5449b429faa2b100647
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
