@@ -11,6 +11,9 @@ public class HRDTaskList : GenericSingleton<HRDTaskList, HRDTaskList>
     //[SerializeField] private VideoPlayer vid;
     //[SerializeField] private GameObject vidCanvas;
 
+    [SerializeField] private GameObject digTrigger1;
+    [SerializeField] private GameObject digTrigger2;
+
 
     [SerializeField] private AudioClip sfxClip = null;
     [SerializeField] private GameObject backpack = null;
@@ -149,6 +152,7 @@ public class HRDTaskList : GenericSingleton<HRDTaskList, HRDTaskList>
 
     private void Task3BComplete(int _taskType)
     {
+        digTrigger1.SetActive(true);
         if (Task3BEvent != null && _taskType == 1)
         {
             Task3BEvent(true);
@@ -157,6 +161,7 @@ public class HRDTaskList : GenericSingleton<HRDTaskList, HRDTaskList>
 
     private void Task3CComplete(int _taskType)
     {
+        digTrigger2.SetActive(true);
         if (Task3CEvent != null && _taskType == 2)
         {
             Task3CEvent(true);

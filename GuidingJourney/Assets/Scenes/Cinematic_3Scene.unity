@@ -321,8 +321,8 @@ MonoBehaviour:
   vid: {fileID: 273373869}
   isLonelyScene: 1
   nextVideo: 0
-  sceneName: Cinematic_3Scene
-  cutsceneName: Cutscene4.mp4
+  sceneName: CreditsScene
+  cutsceneName: Cutscene5.mp4
   cutsceneNameExtra: Cutscene5.mp4
   firstTimeCheck: 0
 --- !u!1 &851508874

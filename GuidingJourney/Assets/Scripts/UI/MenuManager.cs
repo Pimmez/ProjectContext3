@@ -10,23 +10,31 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject MenuHUD = null;
     [SerializeField] private GameObject SettingsHUD = null;
     [SerializeField] private GameObject CreditsHUD = null;
-    public RenderPipelineAsset[] qualitylevels;
-    public Dropdown dropdown;
-    
+    public RenderPipelineAsset[] qualitylevels = null;
+    public Dropdown dropdown = null;
+
     [Header("Audio References")]
-    [SerializeField] private AudioMixer mainMixer;
-    [SerializeField] private Slider allVolumeSlider;
-    [SerializeField] private Slider backgroundVolumeSlider;
-    [SerializeField] private Slider sfxVolumeSlider;
-    [SerializeField] private AudioSource sfxSource;
-    [SerializeField] private AudioSource backgroundSource;
-    [SerializeField] private AudioClip backgroundClip;
+    [SerializeField] private AudioMixer mainMixer = null;
+    [SerializeField] private Slider allVolumeSlider = null;
+    [SerializeField] private Slider backgroundVolumeSlider = null;
+    [SerializeField] private Slider sfxVolumeSlider = null;
+    [SerializeField] private AudioSource sfxSource = null;
+    [SerializeField] private AudioSource backgroundSource = null;
+    [SerializeField] private AudioClip backgroundClip = null;
 
     private void Start()
     {
-        dropdown.value = QualitySettings.GetQualityLevel();
+        if(dropdown != null)
+        {
+            dropdown.value = QualitySettings.GetQualityLevel();
+        }
+
+        if(mainMixer != null)
+        {
+            LoadAudioValues();
+        }
+        
         SoundManager.Instance.PlayMusic(backgroundClip);
-        LoadAudioValues();
         //LoadQualityValues();
     }
     public void ChangeQualityLevels(int value)

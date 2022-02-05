@@ -23,6 +23,13 @@ public class AnimalMovement : MonoBehaviour
 
     private void Update()
     {
+        //float setPosY;
+        //setPosY = 50f;
+        //Vector3 charTrans = charController.transform.position;
+
+        //charTrans.y = setPosY;
+        //charController.Move(new Vector3(transform.position.x, 0, transform.position.z));
+
         MoveThePlayer();
         TurnThePlayer();
     }
@@ -68,8 +75,12 @@ public class AnimalMovement : MonoBehaviour
     //Move the object
     private void MoveThePlayer()
     {
+        Vector3 newmove = new Vector3(movementDirection.x * movementSpeed * Time.deltaTime, -1, movementDirection.z * movementSpeed * Time.deltaTime);
         //charController.Move(CameraDirection(moveDirection) * movementSpeed * Time.deltaTime);
-        charController.Move(movementDirection * movementSpeed * Time.deltaTime);
+        charController.Move(newmove);
+
+
+        //charController.Move(movementDirection * movementSpeed * Time.deltaTime);
        
         if(GameManager.Instance.isDoveActive.activeSelf)
         {

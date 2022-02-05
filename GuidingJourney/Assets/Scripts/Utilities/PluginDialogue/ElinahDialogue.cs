@@ -39,10 +39,12 @@ public class ElinahDialogue : MonoBehaviour
         afterCaveDialogue.Add(new DialogData("I brought some flyers and banners for the protest we're heading to.", "Elinah"));
         afterCaveDialogue.Add(new DialogData("But also things like make-up, because I do want to look good!", "Elinah"));
 
-        weirdVoicesDialogue.Add(new DialogData("The human rights defender should be passing this road. Let's make sure she can't reach the city!", "Voice1"));
+        weirdVoicesDialogue.Add(new DialogData("The human rights defender should be passing this road.", "Voice1"));
+        weirdVoicesDialogue.Add(new DialogData("Let's make sure she can't reach the city!", "Voice1"));
         weirdVoicesDialogue.Add(new DialogData("Hold up, it's a woman? Well, that should make this easy", "Voice2"));
         weirdVoicesDialogue.Add(new DialogData("Oh no, do you hear that? They will try to block me on the road ahead.", "Elinah"));
-        weirdVoicesDialogue.Add(new DialogData("The PBI handbook says we should find an alternate escape route, so we can avoid a dangerous situation.", "Elinah"));
+        weirdVoicesDialogue.Add(new DialogData("The PBI handbook says we should find an alternate escape route,", "Elinah"));
+        weirdVoicesDialogue.Add(new DialogData("so we can avoid a dangerous situation.", "Elinah"));
         weirdVoicesDialogue.Add(new DialogData("This forest? Well, it's a pretty dense forest, so it might be difficult for me to navigate.", "Elinah"));
         DialogData weirdVoicesData = new DialogData("But it does provide an alternative route to the campsite! Great thinking, fox!.", "Elinah");
         weirdVoicesDialogue.Add(weirdVoicesData);
@@ -51,7 +53,6 @@ public class ElinahDialogue : MonoBehaviour
 
         forestDialogue.Add(new DialogData("I’m not as small as you are, fox. I can’t move through the forest as easily.", "Elinah"));
         forestDialogue.Add(new DialogData("You're much smaller. Perhaps you could crawl your way through these piles?", "Elinah"));
-        forestDialogue.Add(new DialogData("Fox, is there anything you can do on the other side that would allow me to pass as well?", "Elinah"));
         DialogData forestDialogueData = new DialogData("Fox, is there anything you can do on the other side that would allow me to pass as well?", "Elinah");
         forestDialogue.Add(forestDialogueData);
         forestDialogueData.Callback = () => ForestCallBackFunction();
@@ -63,7 +64,8 @@ public class ElinahDialogue : MonoBehaviour
         //INTRO CUTSCENE
 
         dialogTexts.Add(new DialogData("Today is the day of my big journey.", "Elinah"));
-        dialogTexts.Add(new DialogData("The Peace Brigades International organization said it'd be very risky to go to the event, but this is too important.", "Elinah"));
+        dialogTexts.Add(new DialogData("The Peace Brigades International organization said it'd be very risky to go to the event,", "Elinah"));
+        dialogTexts.Add(new DialogData("but this is too important.", "Elinah"));
         dialogTexts.Add(new DialogData("I have to get there for everyone who's counting on me.", "Elinah"));
         dialogTexts.Add(new DialogData("The organization agreed with me, on the condition that they can send a guide.", "Elinah"));
         dialogTexts.Add(new DialogData("Protection so that nothing bad can happen to me on my way to the event.", "Elinah"));

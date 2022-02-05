@@ -793,7 +793,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &872345624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1032,7 +1032,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1078486132
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1059,7 +1059,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1078486131}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b607fec99cdee748bc46993a0b3e0e8, type: 3}
   m_Name: 
@@ -1069,7 +1069,7 @@ MonoBehaviour:
   CreditsHUD: {fileID: 0}
   qualitylevels: []
   dropdown: {fileID: 0}
-  mainMixer: {fileID: 24100000, guid: 59334c5fe10ddc84a93c35e1d2087e4e, type: 2}
+  mainMixer: {fileID: 0}
   allVolumeSlider: {fileID: 0}
   backgroundVolumeSlider: {fileID: 0}
   sfxVolumeSlider: {fileID: 0}
