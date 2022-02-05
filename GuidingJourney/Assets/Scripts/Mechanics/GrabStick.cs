@@ -9,10 +9,13 @@ public class GrabStick : MonoBehaviour
     public static Action<bool, int> CanGrabStickEvent;
     [SerializeField] private int blockadeNumber;
     public int blockadeType;
+    [SerializeField] private AudioClip sfxClip = null;
 
     private bool isTriggered = false;
     [SerializeField] private GameObject blockade;
+    private bool isDoingOnceImage = false;
 
+    [SerializeField] private GameObject image;
 
     public static Action<int> ActivateTaskEvent;
     [SerializeField] private int taskNumber;
@@ -22,6 +25,11 @@ public class GrabStick : MonoBehaviour
         if (other.gameObject.tag == Tags.PLAYER)
         {
             isTriggered = true;
+            if (!isDoingOnceImage)
+            {
+                image.SetActive(true);
+                isDoingOnceImage = true;
+            }
         }
 
         if (CanGrabStickEvent != null)
@@ -35,6 +43,8 @@ public class GrabStick : MonoBehaviour
         if (other.gameObject.tag == Tags.PLAYER)
         {
             isTriggered = false;
+            image.SetActive(false);
+
         }
 
         if (CanGrabStickEvent != null)
@@ -47,13 +57,16 @@ public class GrabStick : MonoBehaviour
     {
         if (blockadeType == _blockadeType)
         {
-            Debug.Log("activeself woodenblocakde gone");
+            //Debug.Log("activeself woodenblocakde gone");
             if (ActivateTaskEvent != null)
             {
                 ActivateTaskEvent(taskNumber);
             }
             Destroy(this.gameObject);
             Destroy(blockade);
+            image.SetActive(false);
+            SoundManager.Instance.Play(sfxClip);
+
         }
     }
 

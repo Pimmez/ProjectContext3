@@ -5,7 +5,8 @@ public class AnimalMovement : MonoBehaviour
     [Header("Component References")]
     [SerializeField] private CharacterController charController = null;
     [SerializeField] private Camera mainCamera = null;
-    public Animator anim;
+    public Animator animfox = null;
+    public Animator animdove = null;
 
     [Header("Movement Settings")]
     [SerializeField] private float movementSpeed = 500f;
@@ -22,6 +23,13 @@ public class AnimalMovement : MonoBehaviour
 
     private void Update()
     {
+        //float setPosY;
+        //setPosY = 50f;
+        //Vector3 charTrans = charController.transform.position;
+
+        //charTrans.y = setPosY;
+        //charController.Move(new Vector3(transform.position.x, 0, transform.position.z));
+
         MoveThePlayer();
         TurnThePlayer();
     }
@@ -67,16 +75,35 @@ public class AnimalMovement : MonoBehaviour
     //Move the object
     private void MoveThePlayer()
     {
+        Vector3 newmove = new Vector3(movementDirection.x * movementSpeed * Time.deltaTime, -1, movementDirection.z * movementSpeed * Time.deltaTime);
         //charController.Move(CameraDirection(moveDirection) * movementSpeed * Time.deltaTime);
-        charController.Move(movementDirection * movementSpeed * Time.deltaTime);
+        charController.Move(newmove);
 
-        if(movementDirection != Vector3.zero)
+
+        //charController.Move(movementDirection * movementSpeed * Time.deltaTime);
+       
+        if(GameManager.Instance.isDoveActive.activeSelf)
         {
-            anim.SetBool("isWalking", true);
+            if (movementDirection != Vector3.zero)
+            {
+                animdove.SetBool("isWalking", true);
+            }
+            else
+            {
+                animdove.SetBool("isWalking", false);
+            }
         }
-        else
+
+        if (GameManager.Instance.isFoxActive.activeSelf)
         {
-            anim.SetBool("isWalking", false);
-        }
+            if (movementDirection != Vector3.zero)
+            {
+                animfox.SetBool("isWalking", true);
+            }
+            else
+            {
+                animfox.SetBool("isWalking", false);
+            }
+        }       
     }
 }

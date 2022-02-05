@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Rendering;
 
 public class MenuManager : MonoBehaviour
 {
@@ -9,21 +10,37 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject MenuHUD = null;
     [SerializeField] private GameObject SettingsHUD = null;
     [SerializeField] private GameObject CreditsHUD = null;
+    public RenderPipelineAsset[] qualitylevels = null;
+    public Dropdown dropdown = null;
 
     [Header("Audio References")]
-    [SerializeField] private AudioMixer mainMixer;
-    [SerializeField] private Slider allVolumeSlider;
-    [SerializeField] private Slider backgroundVolumeSlider;
-    [SerializeField] private Slider sfxVolumeSlider;
-    [SerializeField] private AudioSource sfxSource;
-    [SerializeField] private AudioSource backgroundSource;
-    [SerializeField] private AudioClip backgroundClip;
+    [SerializeField] private AudioMixer mainMixer = null;
+    [SerializeField] private Slider allVolumeSlider = null;
+    [SerializeField] private Slider backgroundVolumeSlider = null;
+    [SerializeField] private Slider sfxVolumeSlider = null;
+    [SerializeField] private AudioSource sfxSource = null;
+    [SerializeField] private AudioSource backgroundSource = null;
+    [SerializeField] private AudioClip backgroundClip = null;
 
     private void Start()
     {
+        if(dropdown != null)
+        {
+            dropdown.value = QualitySettings.GetQualityLevel();
+        }
+
+        if(mainMixer != null)
+        {
+            LoadAudioValues();
+        }
+        
         SoundManager.Instance.PlayMusic(backgroundClip);
-        LoadAudioValues();
-        LoadQualityValues();
+        //LoadQualityValues();
+    }
+    public void ChangeQualityLevels(int value)
+    {
+        QualitySettings.SetQualityLevel(value);
+        QualitySettings.renderPipeline = qualitylevels[value];
     }
 
     public void SceneChanger(string _scene)
@@ -58,6 +75,18 @@ public class MenuManager : MonoBehaviour
     public void OpenURL()
     {
         Application.OpenURL("https://www.peacebrigades.nl/");
+    }
+    public void OpenFACEBOOK()
+    {
+        Application.OpenURL("https://www.facebook.com/PBINederland/");
+    }
+    public void OpenTWITTER()
+    {
+        Application.OpenURL("https://twitter.com/PBINederland");
+    }
+    public void OpenDONATION()
+    {
+        Application.OpenURL("https://www.peacebrigades.nl/doe-mee/doneren/");
     }
 
     public void SetQualityLow(bool _qualityIndex)

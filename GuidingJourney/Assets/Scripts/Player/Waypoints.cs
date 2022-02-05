@@ -72,7 +72,7 @@ public class Waypoints : MonoBehaviour
                     HRDTaskList.Instance.dialogueElinah.WeirdVoicesDialogue();
                 }
 
-                if(HRDTaskList.Instance.ForestTextActive)
+                if(HRDTaskList.Instance.ForestTextActive && HRDTaskList.Instance.DoForestTextOnce)
                 {
                     HRDTaskList.Instance.dialogueElinah.ForestBlockadeDialogue();
                 }
