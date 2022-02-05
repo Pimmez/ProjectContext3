@@ -7,6 +7,7 @@ public class ScrollBehaviour : MonoBehaviour
     [Header("Component References")]
     [SerializeField] private Sprite scrollClosedImage, scrollOpenImage;
     [SerializeField] private GameObject scroll = null;
+    [SerializeField] private GameObject letter = null;
 
     //Action Events
     public static Action<int> OnAnimalChangeEvent;
@@ -14,6 +15,7 @@ public class ScrollBehaviour : MonoBehaviour
     //Privates
     private bool isScrollActive = false;
     private Image scrollImage;
+    private bool isFirstTimeDoveChange = true;
 
     private void Awake()
     {
@@ -62,11 +64,26 @@ public class ScrollBehaviour : MonoBehaviour
 
     public void DoveActivation()
     {
-        if (OnAnimalChangeEvent != null)
+        if (isFirstTimeDoveChange)
         {
-            OnAnimalChangeEvent(1);
+            isFirstTimeDoveChange = false;
+            GlobalVideoPlayer.Instance.PlayVideo("Cutscene3.mp4", true);
+            letter.SetActive(true);
+            if (OnAnimalChangeEvent != null)
+            {
+                OnAnimalChangeEvent(1);
+            }
+            isScrollActive = false;
+            ChangeScrollImage();
         }
-        isScrollActive = false;
-        ChangeScrollImage();
+        else
+        {
+            if (OnAnimalChangeEvent != null)
+            {
+                OnAnimalChangeEvent(1);
+            }
+            isScrollActive = false;
+            ChangeScrollImage();
+        }  
     }
 }

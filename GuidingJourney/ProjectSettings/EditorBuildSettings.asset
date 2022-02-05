@@ -11,10 +11,31 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/MenuScene.unity
-    guid: 3a781a0278dfbce4fa391c1672e0648b
+    guid: efc88bddfc07526439687faa3f7ae20f
+  - enabled: 1
+    path: Assets/Scenes/Cinematic_1Scene.unity
+    guid: a67251dd5a3fd2342ba8938bc53c1334
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: f6e0a53b1f8e1fe47b00ecd4a56dbf00
+  - enabled: 1
+    path: Assets/Scenes/Cinematic_2Scene.unity
+    guid: 65b3924e75f5e854b9831b22165acc89
+  - enabled: 1
+    path: Assets/Scenes/Cinematic_3Scene.unity
+    guid: 420431465919fc640bf1b7a4abbccaa1
+  - enabled: 1
+    path: Assets/Scenes/CreditsScene.unity
+    guid: 4cbe8cafe159e3446a215a0703112f93
+  - enabled: 1
+    path: Assets/Scenes/PBIScene.unity
+    guid: c7404b7b1801d5449b429faa2b100647
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

@@ -20,7 +20,7 @@ public class Item : MonoBehaviour
     //Privates
     private bool isTriggered = false;
     private bool isDoingOnceImage = false;
-
+    private bool isHoldingItem = false;
 
     private void OnTriggerEnter(Collider _other)
     {
@@ -61,8 +61,16 @@ public class Item : MonoBehaviour
 
     public void AnimationEvent()
     {
-        //isHoldingItem = true;
-        this.transform.position = foxHoldTransform.position;
+        isHoldingItem = true;
+        GameManager.Instance.isGamePaused = false;
+    }
+
+    private void Update()
+    {
+        if(isHoldingItem)
+        {
+            this.transform.position = foxHoldTransform.position;
+        }
     }
 
     //Activated by Action event from PlayerController
@@ -72,9 +80,11 @@ public class Item : MonoBehaviour
         {
             image.SetActive(false);
             GameManager.Instance.isHoldingObject = true;
+
+            GameManager.Instance.isGamePaused = true;
             //anim.SetTrigger("isGrabbing");
             anim.SetBool("isgrabbing", true);
-            this.transform.parent = parentTransform;
+            this.transform.parent = foxHoldTransform;
 
 
             col.enabled = false;
@@ -115,6 +125,7 @@ public class Item : MonoBehaviour
 
             GameManager.Instance.isHoldingObject = false;
             //isHoldingItem = false;
+            isHoldingItem = false;
 
             col.enabled = true;
             
