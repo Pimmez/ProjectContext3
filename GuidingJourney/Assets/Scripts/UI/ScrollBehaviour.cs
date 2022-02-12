@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -67,7 +68,10 @@ public class ScrollBehaviour : MonoBehaviour
         if (isFirstTimeDoveChange)
         {
             isFirstTimeDoveChange = false;
+
             GlobalVideoPlayer.Instance.PlayVideo("Cutscene3.mp4", true);
+            HRDTaskList.Instance.LetterTextActive = true;
+
             letter.SetActive(true);
             if (OnAnimalChangeEvent != null)
             {

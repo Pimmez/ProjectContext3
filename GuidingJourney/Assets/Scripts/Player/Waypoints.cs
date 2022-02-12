@@ -76,7 +76,18 @@ public class Waypoints : MonoBehaviour
                 {
                     HRDTaskList.Instance.dialogueElinah.ForestBlockadeDialogue();
                 }
-                
+
+                if (HRDTaskList.Instance.ClickBagTextActive)
+                {
+                    HRDTaskList.Instance.dialogueElinah.ClickBagDialogue();
+                    HRDTaskList.Instance.ClickBagTextActive = true;
+                }
+
+                if (HRDTaskList.Instance.LetterTextActive)
+                {
+                    HRDTaskList.Instance.dialogueElinah.LetterDialogue();
+                    HRDTaskList.Instance.LetterTextActive = true;
+                }
 
 
                 routeCounter++;

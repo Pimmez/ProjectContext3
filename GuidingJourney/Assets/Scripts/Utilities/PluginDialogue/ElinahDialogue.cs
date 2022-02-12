@@ -16,13 +16,22 @@ public class ElinahDialogue : MonoBehaviour
     public List<DialogData> weirdVoicesDialogue = new List<DialogData>();
     public List<DialogData> forestDialogue = new List<DialogData>();
 
+    public List<DialogData> pbiBagDialogue = new List<DialogData>();
+    public List<DialogData> letterDialogue = new List<DialogData>();
+
     // Start is called before the first frame update
     void Awake()
     {
         var dialogTexts = new List<DialogData>();
 
+        tutorialDialogue.Add(new DialogData("Come on Fox, follow me. (...Click here to continue)", "Elinah"));
+        tutorialDialogue.Add(new DialogData("Hi fox, my name is Elinah.", "Elinah"));
+        tutorialDialogue.Add(new DialogData("I am a Human Rights defender.", "Elinah"));
+        tutorialDialogue.Add(new DialogData("I can’t stand the injustice that is being done to me and my community.", "Elinah"));
+        tutorialDialogue.Add(new DialogData("Therefore, I will make a stand and make the human rights violations visible to the world.", "Elinah"));
+        tutorialDialogue.Add(new DialogData("So that our human rights can be met and we can live peacefully.", "Elinah"));
 
-        tutorialDialogue.Add(new DialogData("Come on, fox, follow me!", "Elinah"));
+
         tutorialDialogue.Add(new DialogData("Today's event is very important, people from around the whole region will show up.", "Elinah"));
         tutorialDialogue.Add(new DialogData("So come on, let's get going!", "Elinah"));
         tutorialDialogue.Add(new DialogData("I lost something last night.", "Elinah"));
@@ -30,18 +39,17 @@ public class ElinahDialogue : MonoBehaviour
         tutorialDialogue.Add(new DialogData("Let's stay on the path, alright?", "Elinah"));
         tutorialDialogue.Add(new DialogData("Come on, we shouldn't take too long or we'll be late.", "Elinah"));
 
-        beforeCaveDialogue.Add(new DialogData("After I dropped my bag yesterday evening, I thought I saw an animal take it into this tunnel.", "Elinah")); 
+        beforeCaveDialogue.Add(new DialogData("Somebody tried to sabotage my work and stole my bag from me.", "Elinah"));
+        beforeCaveDialogue.Add(new DialogData("Can you check if it is hidden in this tunnel?", "Elinah"));
         beforeCaveDialogue.Add(new DialogData("I don't think I could reach it, but maybe you can?", "Elinah"));
         beforeCaveDialogue.Add(new DialogData("If you get close to that little hole, you could probably dig your way in!", "Elinah"));
 
         afterCaveDialogue.Add(new DialogData("Yes, that's my bag! Thank you for retrieving it!", "Elinah"));
         afterCaveDialogue.Add(new DialogData("I needed this bag, because there's a lot of stuff in it.", "Elinah"));
         afterCaveDialogue.Add(new DialogData("I brought some flyers and banners for the protest we're heading to.", "Elinah"));
-        afterCaveDialogue.Add(new DialogData("But also things like make-up, because I do want to look good!", "Elinah"));
 
         weirdVoicesDialogue.Add(new DialogData("The human rights defender should be passing this road.", "Voice1"));
         weirdVoicesDialogue.Add(new DialogData("Let's make sure she can't reach the city!", "Voice1"));
-        weirdVoicesDialogue.Add(new DialogData("Hold up, it's a woman? Well, that should make this easy", "Voice2"));
         weirdVoicesDialogue.Add(new DialogData("Oh no, do you hear that? They will try to block me on the road ahead.", "Elinah"));
         weirdVoicesDialogue.Add(new DialogData("The PBI handbook says we should find an alternate escape route,", "Elinah"));
         weirdVoicesDialogue.Add(new DialogData("so we can avoid a dangerous situation.", "Elinah"));
@@ -53,12 +61,20 @@ public class ElinahDialogue : MonoBehaviour
 
         forestDialogue.Add(new DialogData("I’m not as small as you are, fox. I can’t move through the forest as easily.", "Elinah"));
         forestDialogue.Add(new DialogData("You're much smaller. Perhaps you could crawl your way through these piles?", "Elinah"));
+
+        forestDialogue.Add(new DialogData("It's very important that we stay together, so try to stay close to me!", "Elinah"));
+
         DialogData forestDialogueData = new DialogData("Fox, is there anything you can do on the other side that would allow me to pass as well?", "Elinah");
         forestDialogue.Add(forestDialogueData);
         forestDialogueData.Callback = () => ForestCallBackFunction();
         //forestDialogue.Add(new DialogData("Wait before you go on, I'm still stuck here!", "Elinah"));
         //forestDialogue.Add(new DialogData("It worked! Let's continue.", "Elinah"));
         //forestDialogue.Add(new DialogData("We can't go there, it's too dangerous. We'll go through the forest.", "Elinah"));
+
+        pbiBagDialogue.Add(new DialogData("We should interact with the PBI bag.", "Elinah"));
+
+        letterDialogue.Add(new DialogData("Could you search for the letter and then bring it to me?", "Elinah"));
+
 
 
         //INTRO CUTSCENE
@@ -216,10 +232,20 @@ public class ElinahDialogue : MonoBehaviour
     private void WeirdVoiceCallBackFunction()
     {
         HRDTaskList.Instance.ForestTextActive = true;
-        if(WeirdVoicesEvent != null)
+        if (WeirdVoicesEvent != null)
         {
             WeirdVoicesEvent(true);
         }
+    }
+
+    public void ClickBagDialogue()
+    {
+        DialogManager.Show(pbiBagDialogue);
+    }
+
+    public void LetterDialogue()
+    {
+        DialogManager.Show(letterDialogue);
     }
 
     private void ForestCallBackFunction()

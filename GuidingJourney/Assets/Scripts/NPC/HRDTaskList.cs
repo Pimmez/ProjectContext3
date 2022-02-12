@@ -31,6 +31,9 @@ public class HRDTaskList : GenericSingleton<HRDTaskList, HRDTaskList>
     public bool SetWeirdVoicesActive = false;
     public bool ForestTextActive = false;
     public bool DoForestTextOnce = true;
+
+    public bool ClickBagTextActive = false;
+    public bool LetterTextActive = false;
     
     //Action Events
     public static Action<bool> GrabbedItemEvent;
@@ -39,6 +42,9 @@ public class HRDTaskList : GenericSingleton<HRDTaskList, HRDTaskList>
     public static Action<bool> Task3BEvent;
     public static Action<bool> Task3CEvent;
     public static Action<bool> CampSiteEvent;
+
+    public static Action<bool> ClickBagEvent;
+    public static Action<bool> LetterEvent;
 
     //Privates
     private bool completedTaskBag = false;
@@ -173,6 +179,22 @@ public class HRDTaskList : GenericSingleton<HRDTaskList, HRDTaskList>
         if (CampSiteEvent != null)
         {
             CampSiteEvent(true);
+        }
+    }
+
+    private void ClickBagNow()
+    {
+        if (ClickBagEvent != null)
+        {
+            ClickBagEvent(true);
+        }
+    }
+
+    private void LetterNow()
+    {
+        if (LetterEvent != null)
+        {
+            LetterEvent(true);
         }
     }
 
